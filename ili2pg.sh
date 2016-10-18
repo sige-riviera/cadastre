@@ -12,12 +12,16 @@ export GDAL_DATA=$PREFIX/share/gdal
 
 export PGSERVICE=cadastre
 
-psql -c "DROP SCHEMA IF EXISTS cadastre CASCADE"
-psql -c "CREATE SCHEMA cadastre"
+psql -c "DROP SCHEMA IF EXISTS vaud CASCADE; CREATE SCHEMA vaud;"
+psql -c "DROP SCHEMA IF EXISTS valais CASCADE; CREATE SCHEMA valais;"
+psql -c "DROP SCHEMA IF EXISTS fribroug CASCADE; CREATE SCHEMA fribroug;"
+
+echo "*** Port-Valais ***"
+./gdal-build/bin/ogr2ogr -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=valais" data/port-valais.itf,bdco.imd
+echo "*** VD-1 ***"      
+./gdal-build/bin/ogr2ogr -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-1.itf,bdco.imd
+echo "*** VD-2 ***"      
+./gdal-build/bin/ogr2ogr -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-2.itf,bdco.imd
 
 
-./gdal-build/bin/ogr2ogr -a_srs "EPSG:2056" -gt 20000 -lco schema=cadastre                 -f PostgreSQL PG:dbname=cadastre data/vd-1.itf,bdco.imd
-./gdal-build/bin/ogr2ogr -a_srs "EPSG:2056" -gt 20000 -lco schema=cadastre -update -append -f PostgreSQL PG:dbname=cadastre data/vd-2.itf,bdco.imd
-./gdal-build/bin/ogr2ogr -a_srs "EPSG:2056" -gt 20000 -lco schema=cadastre -update -append -f PostgreSQL PG:dbname=cadastre data/port-valais.itf,bdco.imd
-
-
+psql -f finalize_import.sql -v ON_ERROR_STOP=ON

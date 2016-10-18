@@ -13,10 +13,12 @@ Le but est d'avoir une procédure uniformisée pour l'import des données sur le
 2.  Solution interlis 1 -> ogr2ogr -> postgis
 	Nécessite GDAL 2.0.4+ / 2.1.2+ 
 	Un bug a été corrigé https://trac.osgeo.org/gdal/ticket/6688
+	Lancer ili2pg.sh
 
 3. Solution interlis 1 -> itf2xml -> interlis 2 -> ili2pg -> postgis
 	3.1. Faire un fichier zip avec les fichiers ITF et ILI
 	3.2. Lancer le script itf2xml.sh avec le nom du zip comme paramètre (voir doc itf2xml)
+	3.3. Utiliser l'outil ili2pg (pas testé)
 	
 	
 	
