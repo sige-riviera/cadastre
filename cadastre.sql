@@ -1,5 +1,5 @@
-DROP VIEW IF EXISTS cadastre.bf_immeuble;
-CREATE VIEW cadastre.bf_immeuble AS
+DROP MATERIALIZED VIEW IF EXISTS cadastre.bf_immeuble;
+CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 	SELECT * FROM
 	(
 		SELECT
