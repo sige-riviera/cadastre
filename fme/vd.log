@@ -1,699 +1,251 @@
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME 2016.1.3.0 (20161103 - Build 16709 - linux-x64)
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME_HOME is '/opt/fme-desktop-2016/'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Database Edition (node locked-crc)
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Serial Number: 0
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Temporary License: 30 days left.
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Machine host name is: rouzaudd-sige-ch
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|START - ProcessID: 23165, peak process memory usage: 0 kB, current process memory usage: 149884 kB
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `/opt/fme-desktop-2016//bin/fme' `/home/drouzaud/Documents/data/cadastre/interlis/fme/wb-xlate-1479222722942_29040' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{913c528e-2683-44ce-85c5-e0cf706009de}'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for formats are : /opt/fme-desktop-2016/datasources;/home/drouzaud/.fme/Formats
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for transformers are : /opt/fme-desktop-2016/transformers;/home/drouzaud/.fme/Transformers
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : /home/drouzaud/.fme/CoordinateSystems
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : /home/drouzaud/.fme/CoordinateSystemExceptions
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : /home/drouzaud/.fme/CoordinateSystemGridOverrides
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : /home/drouzaud/.fme/CsmapTransformationExceptions
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Shared folders for transformer categories are : /home/drouzaud/.fme/TransformerCategories
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `/home/drouzaud/Documents/data/cadastre/interlis/fme'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `/tmp'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `/opt/fme-desktop-2016/'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/home/drouzaud/Documents/data/cadastre/interlis/fme/'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'vd.fmw'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2016.1.3.0'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|System Status: 7.69 GB of disk space available in the FME temporary folder (/tmp)
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|System Status: 16777216.00 TB of virtual memory available
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Operating System:  24 (Workstation Edition)
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Platform: linux-x64
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|The memory allocator being used by FME is : `/opt/fme-desktop-2016//fmecore/libsmartheap_mt64.so'
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|Locale: en_US.utf8
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Process limits are 15.43 GB of physical memory and 16777216.00 TB of address space
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 16777216.00 TB of memory or 16777216.00 TB of address space
-2016-11-15 16:12:50|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 12582912.00 TB of memory and 12582912.00 TB of address space
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating writer for format: 
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating reader for format: 
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_1
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_2
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_5
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding CH.EHI.FME.MAIN Reader with keyword ch.ehi.fme.Main_6
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_3
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Using Multi Reader $Revision$ ( $Date$ ) with keyword `MULTI_READER' to read multiple datasets
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_1[NULL] set to `CH1903Plus_1.LV95/01'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Coordinate System `CH1903Plus_1.LV95/01' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.6333333333333' MIN_LNG=`5.4' ORG_LAT=`46.9524055555556' ORG_LNG=`7.43958333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001' 
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|LD_LIBRARY_PATH is '/opt/fme-desktop-2016//fmecore:/opt/fme-desktop-2016/fmecore:/home/drouzaud/opt/Oracle/instantclient_10_2:'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Loaded module 'NULL' from file '/opt/fme-desktop-2016/plugins/null.so'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Using MultiWriter $Revision$ ( $Date$ ) with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Loaded module 'LogCount_func' from file '/opt/fme-desktop-2016/plugins/logcount_func.so'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20160224)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating writer for format: FME Feature Store (FFS)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_2[NULL] set to `CH1903Plus_1.LV95/01'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Coordinate System `CH1903Plus_1.LV95/01' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.6333333333333' MIN_LNG=`5.4' ORG_LAT=`46.9524055555556' ORG_LNG=`7.43958333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001' 
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Creating reader for format: Swiss INTERLIS (ili2fme)
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Trying to find a JAVA plugin for reader named `CH.EHI.FME.MAIN'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_6[CH.EHI.FME.MAIN] set to `CH1903Plus_1.LV95/01'
-2016-11-15 16:12:50|   0.1|  0.0|INFORM|Coordinate System `CH1903Plus_1.LV95/01' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.6333333333333' MIN_LNG=`5.4' ORG_LAT=`46.9524055555556' ORG_LNG=`7.43958333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001' 
-2016-11-15 16:12:50|   0.2|  0.1|INFORM|ili2fme-5.8.0-20131209
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili2c-4.5.1-20131209
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|java.version 1.8.0_111
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|Using Java Reader Interface Version 2.0 (Oct 31, 2000) with module ch.ehi.fme.Main to read data from dataset `/home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf'
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili2fme reader uses enhanced geometry handling
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|checkUniqueOid <false>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|checkAttrType <true>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|checkAttrMultiplicity <true>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|trimValues <true>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|geometryEncoding <OGCHEXBIN>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili1RenumberTid <false>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|createLineTables <false>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|skipPolygonBuilding <true>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|inheritanceMapping <SuperClass>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|createEnumTypes <No>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili1AddDefVal <false>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili1EnumAsItfCode <false>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili1ConvertArea <>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili1ConvertSurface <>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|ili1CheckConvert <true>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|xtfFile </home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|modeldir </home/drouzaud/Documents/data/cadastre/interlis/data;http://models.interlis.ch/;/opt/fme-desktop-2016/plugins/interlis2/ilimodels;/opt/fme-desktop-2016/plugins/interlis2/ili22models;/home/drouzaud/Documents/data/cadastre/interlis/model>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|model from xtf <MD01MOVDMN95V24>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|lookup model <MD01MOVDMN95V24> in repository </home/drouzaud/Documents/data/cadastre/interlis/data>
-2016-11-15 16:12:50|   0.3|  0.0|INFORM|lookup model <MD01MOVDMN95V24> in repository <http://models.interlis.ch/>
-2016-11-15 16:12:50|   0.4|  0.1|INFORM|lookup model <MD01MOVDMN95V24> in repository </opt/fme-desktop-2016/plugins/interlis2/ilimodels>
-2016-11-15 16:12:51|   0.6|  0.1|INFORM|lookup model <MD01MOVDMN95V24> in repository </opt/fme-desktop-2016/plugins/interlis2/ili22models>
-2016-11-15 16:12:51|   0.7|  0.1|INFORM|lookup model <MD01MOVDMN95V24> in repository </home/drouzaud/Documents/data/cadastre/interlis/model>
-2016-11-15 16:12:51|   1.2|  0.5|INFORM|ilifile </home/drouzaud/Documents/data/cadastre/interlis/model/MD01MOVDMN95V24.ili>
-2016-11-15 16:12:51|   2.0|  0.8|INFORM|MD01MOVDMN95V24.Points_fixesCategorie1 itf0...
-2016-11-15 16:12:51|   2.2|  0.2|INFORM|MD01MOVDMN95V24.Points_fixesCategorie2 itf1...
-2016-11-15 16:12:51|   2.5|  0.3|INFORM|MD01MOVDMN95V24.Points_fixesCategorie3 itf2...
-2016-11-15 16:12:51|   3.6|  1.0|INFORM|Reading source feature # 2500
-2016-11-15 16:12:51|   3.8|  0.3|INFORM|Reading source feature # 5000
-2016-11-15 16:12:52|   4.2|  0.4|INFORM|Reading source feature # 7500
-2016-11-15 16:12:52|   4.4|  0.2|INFORM|Reading source feature # 10000
-2016-11-15 16:12:52|   4.6|  0.2|INFORM|Reading source feature # 12500
-2016-11-15 16:12:52|   4.8|  0.2|INFORM|Reading source feature # 15000
-2016-11-15 16:12:52|   4.9|  0.1|INFORM|Reading source feature # 17500
-2016-11-15 16:12:53|   5.1|  0.2|INFORM|Reading source feature # 20000
-2016-11-15 16:12:53|   5.2|  0.1|INFORM|Reading source feature # 22500
-2016-11-15 16:12:53|   5.4|  0.1|INFORM|Reading source feature # 25000
-2016-11-15 16:12:53|   5.5|  0.2|INFORM|Reading source feature # 27500
-2016-11-15 16:12:53|   5.6|  0.1|INFORM|MD01MOVDMN95V24.Couverture_du_sol itf3...
-2016-11-15 16:13:00|  13.7|  8.1|INFORM|Reading source feature # 30000
-2016-11-15 16:13:00|  13.9|  0.2|INFORM|Reading source feature # 32500
-2016-11-15 16:13:00|  14.0|  0.1|INFORM|Reading source feature # 35000
-2016-11-15 16:13:00|  14.1|  0.1|INFORM|Reading source feature # 37500
-2016-11-15 16:13:00|  14.2|  0.1|INFORM|Reading source feature # 40000
-2016-11-15 16:13:01|  14.3|  0.1|INFORM|Reading source feature # 42500
-2016-11-15 16:13:01|  14.5|  0.1|INFORM|Reading source feature # 45000
-2016-11-15 16:13:01|  14.6|  0.1|INFORM|Reading source feature # 47500
-2016-11-15 16:13:01|  14.8|  0.1|INFORM|Reading source feature # 50000
-2016-11-15 16:13:01|  14.9|  0.1|INFORM|Reading source feature # 52500
-2016-11-15 16:13:01|  15.1|  0.2|INFORM|Reading source feature # 55000
-2016-11-15 16:13:01|  15.3|  0.2|INFORM|Reading source feature # 57500
-2016-11-15 16:13:02|  15.7|  0.4|INFORM|Reading source feature # 60000
-2016-11-15 16:13:02|  15.9|  0.2|INFORM|Reading source feature # 62500
-2016-11-15 16:13:02|  16.0|  0.2|INFORM|Reading source feature # 65000
-2016-11-15 16:13:02|  16.2|  0.2|INFORM|Reading source feature # 67500
-2016-11-15 16:13:02|  16.4|  0.2|INFORM|Reading source feature # 70000
-2016-11-15 16:13:02|  16.5|  0.2|INFORM|Reading source feature # 72500
-2016-11-15 16:13:03|  16.7|  0.2|INFORM|Reading source feature # 75000
-2016-11-15 16:13:03|  16.9|  0.2|INFORM|Reading source feature # 77500
-2016-11-15 16:13:03|  17.0|  0.2|INFORM|Reading source feature # 80000
-2016-11-15 16:13:03|  17.2|  0.2|INFORM|Reading source feature # 82500
-2016-11-15 16:13:03|  17.4|  0.2|INFORM|Reading source feature # 85000
-2016-11-15 16:13:03|  17.5|  0.2|INFORM|Reading source feature # 87500
-2016-11-15 16:13:04|  17.7|  0.2|INFORM|Reading source feature # 90000
-2016-11-15 16:13:04|  17.9|  0.2|INFORM|Reading source feature # 92500
-2016-11-15 16:13:04|  18.0|  0.2|INFORM|Reading source feature # 95000
-2016-11-15 16:13:04|  18.2|  0.2|INFORM|Reading source feature # 97500
-2016-11-15 16:13:04|  18.3|  0.2|INFORM|Reading source feature # 100000
-2016-11-15 16:13:04|  18.5|  0.2|INFORM|Reading source feature # 102500
-2016-11-15 16:13:05|  18.7|  0.2|INFORM|Reading source feature # 105000
-2016-11-15 16:13:05|  18.8|  0.2|INFORM|Reading source feature # 107500
-2016-11-15 16:13:05|  19.0|  0.2|INFORM|Reading source feature # 110000
-2016-11-15 16:13:05|  19.2|  0.2|INFORM|Reading source feature # 112500
-2016-11-15 16:13:05|  19.3|  0.2|INFORM|Reading source feature # 115000
-2016-11-15 16:13:05|  19.5|  0.2|INFORM|Reading source feature # 117500
-2016-11-15 16:13:06|  19.6|  0.2|INFORM|Reading source feature # 120000
-2016-11-15 16:13:06|  19.8|  0.2|INFORM|Reading source feature # 122500
-2016-11-15 16:13:06|  20.0|  0.2|INFORM|Reading source feature # 125000
-2016-11-15 16:13:06|  20.1|  0.2|INFORM|Reading source feature # 127500
-2016-11-15 16:13:06|  20.3|  0.2|INFORM|Reading source feature # 130000
-2016-11-15 16:13:06|  20.5|  0.2|INFORM|Reading source feature # 132500
-2016-11-15 16:13:07|  20.6|  0.2|INFORM|Reading source feature # 135000
-2016-11-15 16:13:07|  20.8|  0.2|INFORM|Reading source feature # 137500
-2016-11-15 16:13:07|  21.0|  0.2|INFORM|Reading source feature # 140000
-2016-11-15 16:13:07|  21.2|  0.2|INFORM|Reading source feature # 142500
-2016-11-15 16:13:07|  21.3|  0.2|INFORM|Reading source feature # 145000
-2016-11-15 16:13:07|  21.5|  0.2|INFORM|Reading source feature # 147500
-2016-11-15 16:13:08|  21.7|  0.2|INFORM|Reading source feature # 150000
-2016-11-15 16:13:08|  21.8|  0.2|INFORM|Reading source feature # 152500
-2016-11-15 16:13:08|  22.0|  0.2|INFORM|Reading source feature # 155000
-2016-11-15 16:13:08|  22.2|  0.2|INFORM|Reading source feature # 157500
-2016-11-15 16:13:08|  22.3|  0.1|INFORM|Reading source feature # 160000
-2016-11-15 16:13:08|  22.5|  0.1|INFORM|Reading source feature # 162500
-2016-11-15 16:13:08|  22.6|  0.1|INFORM|Reading source feature # 165000
-2016-11-15 16:13:09|  22.8|  0.2|INFORM|Reading source feature # 167500
-2016-11-15 16:13:09|  22.9|  0.2|INFORM|Reading source feature # 170000
-2016-11-15 16:13:09|  23.1|  0.1|INFORM|Reading source feature # 172500
-2016-11-15 16:13:09|  23.2|  0.1|INFORM|Reading source feature # 175000
-2016-11-15 16:13:09|  23.3|  0.1|INFORM|Reading source feature # 177500
-2016-11-15 16:13:09|  23.5|  0.1|INFORM|Reading source feature # 180000
-2016-11-15 16:13:09|  23.6|  0.2|INFORM|Reading source feature # 182500
-2016-11-15 16:13:10|  23.8|  0.1|INFORM|Reading source feature # 185000
-2016-11-15 16:13:10|  23.9|  0.1|INFORM|Reading source feature # 187500
-2016-11-15 16:13:10|  24.1|  0.1|INFORM|Reading source feature # 190000
-2016-11-15 16:13:10|  24.2|  0.1|INFORM|Reading source feature # 192500
-2016-11-15 16:13:10|  24.4|  0.1|INFORM|Reading source feature # 195000
-2016-11-15 16:13:10|  24.5|  0.1|INFORM|Reading source feature # 197500
-2016-11-15 16:13:11|  24.7|  0.1|INFORM|Reading source feature # 200000
-2016-11-15 16:13:11|  24.8|  0.1|INFORM|Reading source feature # 202500
-2016-11-15 16:13:11|  24.9|  0.1|INFORM|Reading source feature # 205000
-2016-11-15 16:13:11|  25.1|  0.1|INFORM|Reading source feature # 207500
-2016-11-15 16:13:11|  25.2|  0.1|INFORM|Reading source feature # 210000
-2016-11-15 16:13:11|  25.4|  0.1|INFORM|Reading source feature # 212500
-2016-11-15 16:13:11|  25.5|  0.1|INFORM|Reading source feature # 215000
-2016-11-15 16:13:12|  25.7|  0.1|INFORM|Reading source feature # 217500
-2016-11-15 16:13:12|  25.8|  0.1|INFORM|Reading source feature # 220000
-2016-11-15 16:13:12|  25.9|  0.1|INFORM|Reading source feature # 222500
-2016-11-15 16:13:12|  26.1|  0.1|INFORM|Reading source feature # 225000
-2016-11-15 16:13:12|  26.2|  0.1|INFORM|Reading source feature # 227500
-2016-11-15 16:13:12|  26.4|  0.1|INFORM|Reading source feature # 230000
-2016-11-15 16:13:12|  26.5|  0.1|INFORM|Reading source feature # 232500
-2016-11-15 16:13:13|  26.7|  0.1|INFORM|Reading source feature # 235000
-2016-11-15 16:13:13|  26.8|  0.1|INFORM|Reading source feature # 237500
-2016-11-15 16:13:13|  27.0|  0.1|INFORM|Reading source feature # 240000
-2016-11-15 16:13:13|  27.1|  0.1|INFORM|Reading source feature # 242500
-2016-11-15 16:13:13|  27.3|  0.1|INFORM|Reading source feature # 245000
-2016-11-15 16:13:13|  27.4|  0.2|INFORM|Reading source feature # 247500
-2016-11-15 16:13:13|  27.6|  0.1|INFORM|Reading source feature # 250000
-2016-11-15 16:13:14|  27.7|  0.2|INFORM|Reading source feature # 252500
-2016-11-15 16:13:14|  27.7|  0.0|INFORM|MD01MOVDMN95V24.Objets_divers itf4...
-2016-11-15 16:13:14|  28.2|  0.4|INFORM|Reading source feature # 255000
-2016-11-15 16:13:14|  28.3|  0.1|INFORM|Reading source feature # 257500
-2016-11-15 16:13:14|  28.4|  0.1|INFORM|Reading source feature # 260000
-2016-11-15 16:13:14|  28.5|  0.1|INFORM|Reading source feature # 262500
-2016-11-15 16:13:14|  28.6|  0.1|INFORM|Reading source feature # 265000
-2016-11-15 16:13:15|  28.7|  0.1|INFORM|Reading source feature # 267500
-2016-11-15 16:13:15|  28.8|  0.1|INFORM|Reading source feature # 270000
-2016-11-15 16:13:15|  28.9|  0.1|INFORM|Reading source feature # 272500
-2016-11-15 16:13:15|  29.0|  0.1|INFORM|Reading source feature # 275000
-2016-11-15 16:13:15|  29.2|  0.1|INFORM|Reading source feature # 277500
-2016-11-15 16:13:15|  29.3|  0.1|INFORM|Reading source feature # 280000
-2016-11-15 16:13:15|  29.4|  0.1|INFORM|Reading source feature # 282500
-2016-11-15 16:13:15|  29.5|  0.1|INFORM|Reading source feature # 285000
-2016-11-15 16:13:15|  29.6|  0.1|INFORM|Reading source feature # 287500
-2016-11-15 16:13:16|  29.7|  0.1|INFORM|Reading source feature # 290000
-2016-11-15 16:13:16|  29.8|  0.1|INFORM|Reading source feature # 292500
-2016-11-15 16:13:16|  29.9|  0.1|INFORM|Reading source feature # 295000
-2016-11-15 16:13:16|  30.1|  0.1|INFORM|Reading source feature # 297500
-2016-11-15 16:13:16|  30.2|  0.1|INFORM|Reading source feature # 300000
-2016-11-15 16:13:16|  30.3|  0.1|INFORM|Reading source feature # 302500
-2016-11-15 16:13:16|  30.4|  0.1|INFORM|Reading source feature # 305000
-2016-11-15 16:13:16|  30.5|  0.1|INFORM|Reading source feature # 307500
-2016-11-15 16:13:16|  30.6|  0.1|INFORM|Reading source feature # 310000
-2016-11-15 16:13:17|  30.7|  0.1|INFORM|Reading source feature # 312500
-2016-11-15 16:13:17|  30.8|  0.1|INFORM|Reading source feature # 315000
-2016-11-15 16:13:17|  31.0|  0.1|INFORM|Reading source feature # 317500
-2016-11-15 16:13:17|  31.1|  0.1|INFORM|Reading source feature # 320000
-2016-11-15 16:13:17|  31.2|  0.1|INFORM|Reading source feature # 322500
-2016-11-15 16:13:17|  31.3|  0.1|INFORM|Reading source feature # 325000
-2016-11-15 16:13:17|  31.4|  0.1|INFORM|Reading source feature # 327500
-2016-11-15 16:13:17|  31.5|  0.1|INFORM|Reading source feature # 330000
-2016-11-15 16:13:17|  31.7|  0.1|INFORM|Reading source feature # 332500
-2016-11-15 16:13:18|  31.8|  0.1|INFORM|Reading source feature # 335000
-2016-11-15 16:13:18|  31.9|  0.1|INFORM|Reading source feature # 337500
-2016-11-15 16:13:18|  32.0|  0.1|INFORM|Reading source feature # 340000
-2016-11-15 16:13:18|  32.1|  0.1|INFORM|Reading source feature # 342500
-2016-11-15 16:13:18|  32.2|  0.1|INFORM|Reading source feature # 345000
-2016-11-15 16:13:18|  32.3|  0.1|INFORM|Reading source feature # 347500
-2016-11-15 16:13:18|  32.5|  0.1|INFORM|Reading source feature # 350000
-2016-11-15 16:13:18|  32.6|  0.1|INFORM|Reading source feature # 352500
-2016-11-15 16:13:18|  32.7|  0.1|INFORM|Reading source feature # 355000
-2016-11-15 16:13:19|  32.8|  0.1|INFORM|Reading source feature # 357500
-2016-11-15 16:13:19|  32.9|  0.1|INFORM|Reading source feature # 360000
-2016-11-15 16:13:19|  33.0|  0.1|INFORM|Reading source feature # 362500
-2016-11-15 16:13:19|  33.1|  0.1|INFORM|Reading source feature # 365000
-2016-11-15 16:13:19|  33.2|  0.1|INFORM|Reading source feature # 367500
-2016-11-15 16:13:19|  33.4|  0.1|INFORM|Reading source feature # 370000
-2016-11-15 16:13:19|  33.5|  0.1|INFORM|Reading source feature # 372500
-2016-11-15 16:13:19|  33.6|  0.1|INFORM|Reading source feature # 375000
-2016-11-15 16:13:20|  33.7|  0.1|INFORM|Reading source feature # 377500
-2016-11-15 16:13:20|  33.8|  0.1|INFORM|Reading source feature # 380000
-2016-11-15 16:13:20|  33.9|  0.1|INFORM|Reading source feature # 382500
-2016-11-15 16:13:20|  34.0|  0.1|INFORM|Reading source feature # 385000
-2016-11-15 16:13:20|  34.1|  0.1|INFORM|Reading source feature # 387500
-2016-11-15 16:13:20|  34.3|  0.1|INFORM|Reading source feature # 390000
-2016-11-15 16:13:20|  34.4|  0.1|INFORM|Reading source feature # 392500
-2016-11-15 16:13:20|  34.5|  0.1|INFORM|Reading source feature # 395000
-2016-11-15 16:13:20|  34.6|  0.1|INFORM|Reading source feature # 397500
-2016-11-15 16:13:21|  34.7|  0.1|INFORM|Reading source feature # 400000
-2016-11-15 16:13:21|  34.8|  0.1|INFORM|Reading source feature # 402500
-2016-11-15 16:13:21|  35.0|  0.1|INFORM|Reading source feature # 405000
-2016-11-15 16:13:21|  35.1|  0.1|INFORM|Reading source feature # 407500
-2016-11-15 16:13:21|  35.2|  0.2|INFORM|Reading source feature # 410000
-2016-11-15 16:13:21|  35.3|  0.1|INFORM|Reading source feature # 412500
-2016-11-15 16:13:21|  35.5|  0.1|INFORM|Reading source feature # 415000
-2016-11-15 16:13:21|  35.6|  0.1|INFORM|Reading source feature # 417500
-2016-11-15 16:13:21|  35.7|  0.1|INFORM|Reading source feature # 420000
-2016-11-15 16:13:22|  35.8|  0.1|INFORM|Reading source feature # 422500
-2016-11-15 16:13:22|  35.9|  0.1|INFORM|Reading source feature # 425000
-2016-11-15 16:13:22|  36.1|  0.1|INFORM|Reading source feature # 427500
-2016-11-15 16:13:22|  36.2|  0.1|INFORM|Reading source feature # 430000
-2016-11-15 16:13:22|  36.3|  0.1|INFORM|Reading source feature # 432500
-2016-11-15 16:13:22|  36.4|  0.1|INFORM|Reading source feature # 435000
-2016-11-15 16:13:22|  36.5|  0.1|INFORM|Reading source feature # 437500
-2016-11-15 16:13:22|  36.6|  0.1|INFORM|Reading source feature # 440000
-2016-11-15 16:13:23|  36.7|  0.1|INFORM|Reading source feature # 442500
-2016-11-15 16:13:23|  36.9|  0.1|INFORM|Reading source feature # 445000
-2016-11-15 16:13:23|  37.0|  0.1|INFORM|Reading source feature # 447500
-2016-11-15 16:13:23|  37.1|  0.1|INFORM|Reading source feature # 450000
-2016-11-15 16:13:23|  37.2|  0.1|INFORM|Reading source feature # 452500
-2016-11-15 16:13:23|  37.3|  0.1|INFORM|Reading source feature # 455000
-2016-11-15 16:13:23|  37.4|  0.1|INFORM|Reading source feature # 457500
-2016-11-15 16:13:23|  37.5|  0.1|INFORM|Reading source feature # 460000
-2016-11-15 16:13:23|  37.6|  0.1|INFORM|Reading source feature # 462500
-2016-11-15 16:13:24|  37.8|  0.1|INFORM|Reading source feature # 465000
-2016-11-15 16:13:24|  37.9|  0.1|INFORM|Reading source feature # 467500
-2016-11-15 16:13:24|  38.0|  0.1|INFORM|Reading source feature # 470000
-2016-11-15 16:13:24|  38.1|  0.1|INFORM|Reading source feature # 472500
-2016-11-15 16:13:24|  38.2|  0.1|INFORM|Reading source feature # 475000
-2016-11-15 16:13:24|  38.3|  0.1|INFORM|Reading source feature # 477500
-2016-11-15 16:13:24|  38.5|  0.1|INFORM|Reading source feature # 480000
-2016-11-15 16:13:24|  38.6|  0.1|INFORM|Reading source feature # 482500
-2016-11-15 16:13:24|  38.7|  0.1|INFORM|Reading source feature # 485000
-2016-11-15 16:13:25|  38.8|  0.1|INFORM|Reading source feature # 487500
-2016-11-15 16:13:25|  39.2|  0.4|INFORM|Reading source feature # 490000
-2016-11-15 16:13:25|  39.4|  0.2|INFORM|Reading source feature # 492500
-2016-11-15 16:13:25|  39.9|  0.5|INFORM|Reading source feature # 495000
-2016-11-15 16:13:26|  40.1|  0.1|INFORM|Reading source feature # 497500
-2016-11-15 16:13:26|  40.3|  0.2|INFORM|Reading source feature # 500000
-2016-11-15 16:13:26|  40.4|  0.2|INFORM|Reading source feature # 502500
-2016-11-15 16:13:26|  40.6|  0.2|INFORM|Reading source feature # 505000
-2016-11-15 16:13:26|  40.7|  0.2|INFORM|Reading source feature # 507500
-2016-11-15 16:13:26|  40.9|  0.2|INFORM|Reading source feature # 510000
-2016-11-15 16:13:26|  41.1|  0.2|INFORM|Reading source feature # 512500
-2016-11-15 16:13:27|  41.2|  0.2|INFORM|Reading source feature # 515000
-2016-11-15 16:13:27|  41.4|  0.2|INFORM|Reading source feature # 517500
-2016-11-15 16:13:27|  41.5|  0.2|INFORM|Reading source feature # 520000
-2016-11-15 16:13:27|  41.7|  0.2|INFORM|Reading source feature # 522500
-2016-11-15 16:13:27|  41.8|  0.2|INFORM|Reading source feature # 525000
-2016-11-15 16:13:27|  42.0|  0.2|INFORM|Reading source feature # 527500
-2016-11-15 16:13:28|  42.2|  0.2|INFORM|Reading source feature # 530000
-2016-11-15 16:13:28|  42.3|  0.2|INFORM|Reading source feature # 532500
-2016-11-15 16:13:28|  42.5|  0.2|INFORM|Reading source feature # 535000
-2016-11-15 16:13:28|  42.6|  0.2|INFORM|Reading source feature # 537500
-2016-11-15 16:13:28|  42.8|  0.2|INFORM|Reading source feature # 540000
-2016-11-15 16:13:28|  43.0|  0.2|INFORM|Reading source feature # 542500
-2016-11-15 16:13:29|  43.1|  0.2|INFORM|Reading source feature # 545000
-2016-11-15 16:13:29|  43.3|  0.2|INFORM|Reading source feature # 547500
-2016-11-15 16:13:29|  43.4|  0.2|INFORM|Reading source feature # 550000
-2016-11-15 16:13:29|  43.6|  0.2|INFORM|Reading source feature # 552500
-2016-11-15 16:13:29|  43.7|  0.1|INFORM|Reading source feature # 555000
-2016-11-15 16:13:29|  43.9|  0.2|INFORM|Reading source feature # 557500
-2016-11-15 16:13:29|  44.0|  0.2|INFORM|Reading source feature # 560000
-2016-11-15 16:13:30|  44.2|  0.1|INFORM|Reading source feature # 562500
-2016-11-15 16:13:30|  44.4|  0.2|INFORM|Reading source feature # 565000
-2016-11-15 16:13:30|  44.5|  0.2|INFORM|Reading source feature # 567500
-2016-11-15 16:13:30|  44.7|  0.2|INFORM|Reading source feature # 570000
-2016-11-15 16:13:30|  44.8|  0.2|INFORM|Reading source feature # 572500
-2016-11-15 16:13:30|  45.0|  0.2|INFORM|Reading source feature # 575000
-2016-11-15 16:13:31|  45.2|  0.2|INFORM|Reading source feature # 577500
-2016-11-15 16:13:31|  45.3|  0.2|INFORM|Reading source feature # 580000
-2016-11-15 16:13:31|  45.5|  0.2|INFORM|Reading source feature # 582500
-2016-11-15 16:13:31|  45.7|  0.2|INFORM|Reading source feature # 585000
-2016-11-15 16:13:31|  45.8|  0.2|INFORM|Reading source feature # 587500
-2016-11-15 16:13:31|  46.1|  0.2|INFORM|Reading source feature # 590000
-2016-11-15 16:13:32|  46.2|  0.2|INFORM|Reading source feature # 592500
-2016-11-15 16:13:32|  46.4|  0.2|INFORM|Reading source feature # 595000
-2016-11-15 16:13:32|  46.6|  0.2|INFORM|Reading source feature # 597500
-2016-11-15 16:13:32|  46.7|  0.2|INFORM|Reading source feature # 600000
-2016-11-15 16:13:32|  46.9|  0.2|INFORM|Reading source feature # 602500
-2016-11-15 16:13:32|  47.0|  0.2|INFORM|Reading source feature # 605000
-2016-11-15 16:13:33|  47.2|  0.2|INFORM|Reading source feature # 607500
-2016-11-15 16:13:33|  47.4|  0.2|INFORM|Reading source feature # 610000
-2016-11-15 16:13:33|  47.5|  0.2|INFORM|Reading source feature # 612500
-2016-11-15 16:13:33|  47.7|  0.2|INFORM|Reading source feature # 615000
-2016-11-15 16:13:33|  47.9|  0.2|INFORM|Reading source feature # 617500
-2016-11-15 16:13:33|  48.0|  0.2|INFORM|Reading source feature # 620000
-2016-11-15 16:13:34|  48.2|  0.2|INFORM|Reading source feature # 622500
-2016-11-15 16:13:34|  48.4|  0.2|INFORM|Reading source feature # 625000
-2016-11-15 16:13:34|  48.5|  0.2|INFORM|Reading source feature # 627500
-2016-11-15 16:13:34|  48.7|  0.2|INFORM|Reading source feature # 630000
-2016-11-15 16:13:34|  48.8|  0.2|INFORM|Reading source feature # 632500
-2016-11-15 16:13:34|  49.0|  0.2|INFORM|Reading source feature # 635000
-2016-11-15 16:13:35|  49.2|  0.2|INFORM|Reading source feature # 637500
-2016-11-15 16:13:35|  49.3|  0.2|INFORM|Reading source feature # 640000
-2016-11-15 16:13:35|  49.5|  0.2|INFORM|Reading source feature # 642500
-2016-11-15 16:13:35|  49.6|  0.2|INFORM|Reading source feature # 645000
-2016-11-15 16:13:35|  49.8|  0.2|INFORM|Reading source feature # 647500
-2016-11-15 16:13:35|  49.9|  0.2|INFORM|Reading source feature # 650000
-2016-11-15 16:13:36|  50.1|  0.2|INFORM|Reading source feature # 652500
-2016-11-15 16:13:36|  50.3|  0.2|INFORM|Reading source feature # 655000
-2016-11-15 16:13:36|  50.4|  0.2|INFORM|Reading source feature # 657500
-2016-11-15 16:13:36|  50.6|  0.2|INFORM|Reading source feature # 660000
-2016-11-15 16:13:36|  50.7|  0.2|INFORM|Reading source feature # 662500
-2016-11-15 16:13:36|  50.9|  0.2|INFORM|Reading source feature # 665000
-2016-11-15 16:13:36|  51.0|  0.2|INFORM|Reading source feature # 667500
-2016-11-15 16:13:37|  51.2|  0.2|INFORM|Reading source feature # 670000
-2016-11-15 16:13:37|  51.4|  0.2|INFORM|Reading source feature # 672500
-2016-11-15 16:13:37|  51.5|  0.1|INFORM|Reading source feature # 675000
-2016-11-15 16:13:37|  51.7|  0.2|INFORM|Reading source feature # 677500
-2016-11-15 16:13:37|  51.8|  0.2|INFORM|Reading source feature # 680000
-2016-11-15 16:13:37|  52.0|  0.2|INFORM|Reading source feature # 682500
-2016-11-15 16:13:38|  52.2|  0.2|INFORM|Reading source feature # 685000
-2016-11-15 16:13:38|  52.3|  0.2|INFORM|Reading source feature # 687500
-2016-11-15 16:13:38|  52.5|  0.2|INFORM|Reading source feature # 690000
-2016-11-15 16:13:38|  52.6|  0.2|INFORM|Reading source feature # 692500
-2016-11-15 16:13:38|  52.8|  0.2|INFORM|Reading source feature # 695000
-2016-11-15 16:13:38|  53.0|  0.2|INFORM|Reading source feature # 697500
-2016-11-15 16:13:39|  53.1|  0.2|INFORM|Reading source feature # 700000
-2016-11-15 16:13:39|  53.3|  0.2|INFORM|Reading source feature # 702500
-2016-11-15 16:13:39|  53.5|  0.2|INFORM|Reading source feature # 705000
-2016-11-15 16:13:39|  53.6|  0.2|INFORM|Reading source feature # 707500
-2016-11-15 16:13:39|  53.8|  0.2|INFORM|Reading source feature # 710000
-2016-11-15 16:13:39|  53.9|  0.2|INFORM|Reading source feature # 712500
-2016-11-15 16:13:39|  54.1|  0.2|INFORM|Reading source feature # 715000
-2016-11-15 16:13:40|  54.3|  0.2|INFORM|Reading source feature # 717500
-2016-11-15 16:13:40|  54.4|  0.2|INFORM|Reading source feature # 720000
-2016-11-15 16:13:40|  54.6|  0.2|INFORM|Reading source feature # 722500
-2016-11-15 16:13:40|  54.8|  0.2|INFORM|Reading source feature # 725000
-2016-11-15 16:13:40|  54.9|  0.2|INFORM|Reading source feature # 727500
-2016-11-15 16:13:40|  55.1|  0.2|INFORM|Reading source feature # 730000
-2016-11-15 16:13:41|  55.3|  0.2|INFORM|Reading source feature # 732500
-2016-11-15 16:13:41|  55.5|  0.2|INFORM|Reading source feature # 735000
-2016-11-15 16:13:41|  55.6|  0.2|INFORM|Reading source feature # 737500
-2016-11-15 16:13:41|  55.8|  0.2|INFORM|Reading source feature # 740000
-2016-11-15 16:13:41|  56.0|  0.2|INFORM|Reading source feature # 742500
-2016-11-15 16:13:41|  56.1|  0.1|INFORM|Reading source feature # 745000
-2016-11-15 16:13:42|  56.2|  0.2|INFORM|Reading source feature # 747500
-2016-11-15 16:13:42|  56.4|  0.2|INFORM|Reading source feature # 750000
-2016-11-15 16:13:42|  56.6|  0.2|INFORM|Reading source feature # 752500
-2016-11-15 16:13:42|  56.7|  0.2|INFORM|Reading source feature # 755000
-2016-11-15 16:13:42|  56.9|  0.2|INFORM|Reading source feature # 757500
-2016-11-15 16:13:42|  57.0|  0.2|INFORM|Reading source feature # 760000
-2016-11-15 16:13:42|  57.2|  0.1|INFORM|Reading source feature # 762500
-2016-11-15 16:13:43|  57.3|  0.1|INFORM|Reading source feature # 765000
-2016-11-15 16:13:43|  57.5|  0.1|INFORM|MD01MOVDMN95V24.Altimetrie itf5...
-2016-11-15 16:13:43|  57.5|  0.0|INFORM|MD01MOVDMN95V24.Nomenclature itf6...
-2016-11-15 16:13:43|  57.5|  0.0|INFORM|Reading source feature # 767500
-2016-11-15 16:13:43|  57.6|  0.1|INFORM|Reading source feature # 770000
-2016-11-15 16:13:43|  57.7|  0.1|INFORM|MD01MOVDMN95V24.Biens_fonds itf7...
-2016-11-15 16:13:43|  58.3|  0.5|INFORM|Reading source feature # 772500
-2016-11-15 16:13:44|  58.5|  0.2|INFORM|Reading source feature # 775000
-2016-11-15 16:13:44|  58.6|  0.2|INFORM|Reading source feature # 777500
-2016-11-15 16:13:44|  58.8|  0.2|INFORM|Reading source feature # 780000
-2016-11-15 16:13:44|  59.0|  0.2|INFORM|Reading source feature # 782500
-2016-11-15 16:13:44|  59.2|  0.2|INFORM|Reading source feature # 785000
-2016-11-15 16:13:45|  59.4|  0.2|INFORM|Reading source feature # 787500
-2016-11-15 16:13:45|  59.6|  0.2|INFORM|Reading source feature # 790000
-2016-11-15 16:13:45|  59.8|  0.2|INFORM|Reading source feature # 792500
-2016-11-15 16:13:45|  59.9|  0.2|INFORM|Reading source feature # 795000
-2016-11-15 16:13:45|  60.1|  0.2|INFORM|Reading source feature # 797500
-2016-11-15 16:13:46|  60.3|  0.2|INFORM|Reading source feature # 800000
-2016-11-15 16:13:46|  60.5|  0.2|INFORM|Reading source feature # 802500
-2016-11-15 16:13:46|  60.7|  0.2|INFORM|Reading source feature # 805000
-2016-11-15 16:13:46|  60.9|  0.2|INFORM|Reading source feature # 807500
-2016-11-15 16:13:46|  61.1|  0.2|INFORM|Reading source feature # 810000
-2016-11-15 16:13:46|  61.2|  0.2|INFORM|Reading source feature # 812500
-2016-11-15 16:13:47|  61.4|  0.2|INFORM|Reading source feature # 815000
-2016-11-15 16:13:47|  61.6|  0.2|INFORM|Reading source feature # 817500
-2016-11-15 16:13:47|  61.8|  0.2|INFORM|Reading source feature # 820000
-2016-11-15 16:13:47|  62.0|  0.2|INFORM|Reading source feature # 822500
-2016-11-15 16:13:47|  62.2|  0.2|INFORM|Reading source feature # 825000
-2016-11-15 16:13:48|  62.3|  0.2|INFORM|Reading source feature # 827500
-2016-11-15 16:13:48|  62.5|  0.2|INFORM|Reading source feature # 830000
-2016-11-15 16:13:48|  62.7|  0.2|INFORM|Reading source feature # 832500
-2016-11-15 16:13:48|  62.9|  0.2|INFORM|Reading source feature # 835000
-2016-11-15 16:13:48|  63.1|  0.2|INFORM|Reading source feature # 837500
-2016-11-15 16:13:48|  63.2|  0.2|INFORM|Reading source feature # 840000
-2016-11-15 16:13:49|  63.4|  0.2|INFORM|Reading source feature # 842500
-2016-11-15 16:13:49|  63.6|  0.2|INFORM|Reading source feature # 845000
-2016-11-15 16:13:49|  63.8|  0.2|INFORM|Reading source feature # 847500
-2016-11-15 16:13:49|  64.0|  0.2|INFORM|Reading source feature # 850000
-2016-11-15 16:13:49|  64.2|  0.2|INFORM|Reading source feature # 852500
-2016-11-15 16:13:50|  64.4|  0.2|INFORM|Reading source feature # 855000
-2016-11-15 16:13:50|  64.5|  0.2|INFORM|Reading source feature # 857500
-2016-11-15 16:13:50|  64.7|  0.2|INFORM|Reading source feature # 860000
-2016-11-15 16:13:50|  64.9|  0.2|INFORM|Reading source feature # 862500
-2016-11-15 16:13:50|  65.1|  0.2|INFORM|Reading source feature # 865000
-2016-11-15 16:13:50|  65.3|  0.2|INFORM|Reading source feature # 867500
-2016-11-15 16:13:51|  65.5|  0.2|INFORM|Reading source feature # 870000
-2016-11-15 16:13:51|  65.6|  0.2|INFORM|Reading source feature # 872500
-2016-11-15 16:13:51|  65.8|  0.2|INFORM|Reading source feature # 875000
-2016-11-15 16:13:51|  66.0|  0.2|INFORM|Reading source feature # 877500
-2016-11-15 16:13:51|  66.2|  0.2|INFORM|Reading source feature # 880000
-2016-11-15 16:13:52|  66.4|  0.2|INFORM|Reading source feature # 882500
-2016-11-15 16:13:52|  66.6|  0.2|INFORM|Reading source feature # 885000
-2016-11-15 16:13:52|  66.8|  0.2|INFORM|Reading source feature # 887500
-2016-11-15 16:13:52|  66.9|  0.2|INFORM|Reading source feature # 890000
-2016-11-15 16:13:52|  67.1|  0.2|INFORM|Reading source feature # 892500
-2016-11-15 16:13:52|  67.3|  0.2|INFORM|Reading source feature # 895000
-2016-11-15 16:13:53|  67.5|  0.2|INFORM|Reading source feature # 897500
-2016-11-15 16:13:53|  67.7|  0.2|INFORM|Reading source feature # 900000
-2016-11-15 16:13:53|  67.8|  0.2|INFORM|Reading source feature # 902500
-2016-11-15 16:13:53|  68.0|  0.2|INFORM|Reading source feature # 905000
-2016-11-15 16:13:53|  68.2|  0.2|INFORM|Reading source feature # 907500
-2016-11-15 16:13:54|  68.4|  0.2|INFORM|Reading source feature # 910000
-2016-11-15 16:13:54|  68.6|  0.2|INFORM|Reading source feature # 912500
-2016-11-15 16:13:54|  68.7|  0.2|INFORM|Reading source feature # 915000
-2016-11-15 16:13:54|  68.9|  0.2|INFORM|Reading source feature # 917500
-2016-11-15 16:13:54|  69.1|  0.2|INFORM|Reading source feature # 920000
-2016-11-15 16:13:54|  69.3|  0.2|INFORM|Reading source feature # 922500
-2016-11-15 16:13:55|  69.5|  0.2|INFORM|Reading source feature # 925000
-2016-11-15 16:13:55|  69.6|  0.2|INFORM|Reading source feature # 927500
-2016-11-15 16:13:55|  69.8|  0.1|INFORM|Reading source feature # 930000
-2016-11-15 16:13:55|  69.9|  0.1|INFORM|Reading source feature # 932500
-2016-11-15 16:13:55|  70.0|  0.1|INFORM|Reading source feature # 935000
-2016-11-15 16:13:55|  70.2|  0.2|INFORM|Reading source feature # 937500
-2016-11-15 16:13:56|  70.4|  0.1|INFORM|Reading source feature # 940000
-2016-11-15 16:13:56|  70.5|  0.1|INFORM|Reading source feature # 942500
-2016-11-15 16:13:56|  70.6|  0.1|INFORM|Reading source feature # 945000
-2016-11-15 16:13:56|  70.8|  0.1|INFORM|Reading source feature # 947500
-2016-11-15 16:13:56|  70.9|  0.1|INFORM|Reading source feature # 950000
-2016-11-15 16:13:56|  71.1|  0.1|INFORM|Reading source feature # 952500
-2016-11-15 16:13:56|  71.2|  0.1|INFORM|Reading source feature # 955000
-2016-11-15 16:13:57|  71.4|  0.2|INFORM|Reading source feature # 957500
-2016-11-15 16:13:57|  71.5|  0.2|INFORM|Reading source feature # 960000
-2016-11-15 16:13:57|  71.7|  0.2|INFORM|Reading source feature # 962500
-2016-11-15 16:13:57|  71.8|  0.2|INFORM|Reading source feature # 965000
-2016-11-15 16:13:57|  72.0|  0.1|INFORM|Reading source feature # 967500
-2016-11-15 16:13:57|  72.2|  0.2|INFORM|Reading source feature # 970000
-2016-11-15 16:13:57|  72.3|  0.1|INFORM|Reading source feature # 972500
-2016-11-15 16:13:58|  72.5|  0.1|INFORM|Reading source feature # 975000
-2016-11-15 16:13:58|  72.6|  0.1|INFORM|Reading source feature # 977500
-2016-11-15 16:13:58|  72.7|  0.1|INFORM|Reading source feature # 980000
-2016-11-15 16:13:58|  72.9|  0.1|INFORM|Reading source feature # 982500
-2016-11-15 16:13:58|  73.0|  0.1|INFORM|Reading source feature # 985000
-2016-11-15 16:13:58|  73.2|  0.1|INFORM|Reading source feature # 987500
-2016-11-15 16:13:59|  73.3|  0.1|INFORM|Reading source feature # 990000
-2016-11-15 16:13:59|  73.5|  0.1|INFORM|Reading source feature # 992500
-2016-11-15 16:13:59|  73.6|  0.1|INFORM|Reading source feature # 995000
-2016-11-15 16:13:59|  73.8|  0.1|INFORM|Reading source feature # 997500
-2016-11-15 16:13:59|  73.9|  0.1|INFORM|Reading source feature # 1000000
-2016-11-15 16:13:59|  74.1|  0.1|INFORM|Reading source feature # 1002500
-2016-11-15 16:13:59|  74.2|  0.1|INFORM|Reading source feature # 1005000
-2016-11-15 16:14:00|  74.3|  0.1|INFORM|Reading source feature # 1007500
-2016-11-15 16:14:00|  74.5|  0.1|INFORM|Reading source feature # 1010000
-2016-11-15 16:14:00|  74.6|  0.1|INFORM|Reading source feature # 1012500
-2016-11-15 16:14:00|  74.8|  0.1|INFORM|Reading source feature # 1015000
-2016-11-15 16:14:00|  74.9|  0.1|INFORM|Reading source feature # 1017500
-2016-11-15 16:14:00|  75.1|  0.2|INFORM|Reading source feature # 1020000
-2016-11-15 16:14:00|  75.2|  0.2|INFORM|Reading source feature # 1022500
-2016-11-15 16:14:01|  75.4|  0.1|INFORM|Reading source feature # 1025000
-2016-11-15 16:14:01|  75.5|  0.2|INFORM|Reading source feature # 1027500
-2016-11-15 16:14:01|  75.7|  0.2|INFORM|Reading source feature # 1030000
-2016-11-15 16:14:01|  75.8|  0.1|INFORM|Reading source feature # 1032500
-2016-11-15 16:14:01|  76.0|  0.1|INFORM|Reading source feature # 1035000
-2016-11-15 16:14:01|  76.1|  0.1|INFORM|Reading source feature # 1037500
-2016-11-15 16:14:01|  76.3|  0.1|INFORM|Reading source feature # 1040000
-2016-11-15 16:14:02|  76.4|  0.2|INFORM|Reading source feature # 1042500
-2016-11-15 16:14:02|  76.6|  0.1|INFORM|Reading source feature # 1045000
-2016-11-15 16:14:02|  76.7|  0.1|INFORM|Reading source feature # 1047500
-2016-11-15 16:14:02|  76.9|  0.1|INFORM|Reading source feature # 1050000
-2016-11-15 16:14:02|  77.0|  0.1|INFORM|Reading source feature # 1052500
-2016-11-15 16:14:02|  77.1|  0.1|INFORM|Reading source feature # 1055000
-2016-11-15 16:14:02|  77.3|  0.1|INFORM|Reading source feature # 1057500
-2016-11-15 16:14:03|  77.4|  0.1|INFORM|Reading source feature # 1060000
-2016-11-15 16:14:03|  77.6|  0.1|INFORM|Reading source feature # 1062500
-2016-11-15 16:14:03|  77.7|  0.2|INFORM|Reading source feature # 1065000
-2016-11-15 16:14:03|  77.9|  0.1|INFORM|Reading source feature # 1067500
-2016-11-15 16:14:03|  78.0|  0.2|INFORM|Reading source feature # 1070000
-2016-11-15 16:14:03|  78.2|  0.1|INFORM|Reading source feature # 1072500
-2016-11-15 16:14:03|  78.3|  0.1|INFORM|Reading source feature # 1075000
-2016-11-15 16:14:04|  78.5|  0.2|INFORM|Reading source feature # 1077500
-2016-11-15 16:14:04|  78.6|  0.2|INFORM|Reading source feature # 1080000
-2016-11-15 16:14:04|  78.8|  0.1|INFORM|Reading source feature # 1082500
-2016-11-15 16:14:04|  78.9|  0.2|INFORM|Reading source feature # 1085000
-2016-11-15 16:14:04|  79.1|  0.2|INFORM|Reading source feature # 1087500
-2016-11-15 16:14:04|  79.3|  0.2|INFORM|Reading source feature # 1090000
-2016-11-15 16:14:05|  79.4|  0.2|INFORM|Reading source feature # 1092500
-2016-11-15 16:14:05|  79.6|  0.2|INFORM|Reading source feature # 1095000
-2016-11-15 16:14:05|  79.8|  0.2|INFORM|Reading source feature # 1097500
-2016-11-15 16:14:05|  79.9|  0.2|INFORM|Reading source feature # 1100000
-2016-11-15 16:14:05|  80.1|  0.2|INFORM|Reading source feature # 1102500
-2016-11-15 16:14:05|  80.2|  0.2|INFORM|Reading source feature # 1105000
-2016-11-15 16:14:06|  80.4|  0.2|INFORM|Reading source feature # 1107500
-2016-11-15 16:14:06|  80.5|  0.2|INFORM|Reading source feature # 1110000
-2016-11-15 16:14:06|  80.7|  0.2|INFORM|Reading source feature # 1112500
-2016-11-15 16:14:09|  83.9|  3.2|INFORM|MD01MOVDMN95V24.Conduites itf8...
-2016-11-15 16:14:09|  83.9|  0.0|INFORM|MD01MOVDMN95V24.Domaines_numerotation itf9...
-2016-11-15 16:14:09|  83.9|  0.0|INFORM|Reading source feature # 1115000
-2016-11-15 16:14:09|  84.2|  0.3|INFORM|MD01MOVDMN95V24.Limites_commune itf10...
-2016-11-15 16:14:09|  84.3|  0.1|INFORM|MD01MOVDMN95V24.Limites_district itf11...
-2016-11-15 16:14:09|  84.3|  0.0|INFORM|MD01MOVDMN95V24.Limites_canton itf12...
-2016-11-15 16:14:09|  84.3|  0.0|INFORM|MD01MOVDMN95V24.Limites_nationales itf13...
-2016-11-15 16:14:09|  84.3|  0.0|INFORM|MD01MOVDMN95V24.Repartitions_plans itf14...
-2016-11-15 16:14:10|  84.7|  0.4|INFORM|MD01MOVDMN95V24.RepartitionNT itf15...
-2016-11-15 16:14:10|  84.7|  0.0|INFORM|MD01MOVDMN95V24.Zones_glissement itf16...
-2016-11-15 16:14:10|  84.7|  0.0|INFORM|MD01MOVDMN95V24.NPA_Localite itf17...
-2016-11-15 16:14:10|  84.7|  0.1|INFORM|MD01MOVDMN95V24.Adresses_des_batiments itf18...
-2016-11-15 16:14:10|  84.9|  0.1|INFORM|Reading source feature # 1117500
-2016-11-15 16:14:10|  85.0|  0.1|INFORM|Reading source feature # 1120000
-2016-11-15 16:14:10|  85.5|  0.4|INFORM|Reading source feature # 1122500
-2016-11-15 16:14:11|  85.8|  0.3|INFORM|Reading source feature # 1125000
-2016-11-15 16:14:11|  86.0|  0.3|INFORM|Reading source feature # 1127500
-2016-11-15 16:14:11|  86.2|  0.2|INFORM|Reading source feature # 1130000
-2016-11-15 16:14:11|  86.4|  0.2|INFORM|Reading source feature # 1132500
-2016-11-15 16:14:11|  86.6|  0.2|INFORM|Reading source feature # 1135000
-2016-11-15 16:14:11|  86.8|  0.2|INFORM|Reading source feature # 1137500
-2016-11-15 16:14:12|  86.9|  0.2|INFORM|Reading source feature # 1140000
-2016-11-15 16:14:12|  87.1|  0.2|INFORM|MD01MOVDMN95V24.Bords_de_plan itf19...
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_3[NULL] set to `CH1903Plus_1.LV95/01'
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|Coordinate System `CH1903Plus_1.LV95/01' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.6333333333333' MIN_LNG=`5.4' ORG_LAT=`46.9524055555556' ORG_LNG=`7.43958333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001' 
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 1142469 features from 5 readers
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|Emptying factory pipeline
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Router and Unexpected Input Remover(RoutingFactory): Tested 1142469 input feature(s), wrote 1142469 output feature(s): 0 matched merge filters, 0 were routed to output, 1142469 could not be routed.
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 1142469 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_1 Feature Counter -1 160(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP (ch.ehi.fme.Main_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_1 Feature Counter -1 159(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_6) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_6_0_Zow5iKWZAOE= Feature Counter -1 38(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_6_1_eng3HmTZN0w= Feature Counter -1 39(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_5) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_5 Feature Counter -1 34(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.DDP (ch.ehi.fme.Main_5) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.DDP_ch.ehi.fme.Main_5 Feature Counter -1 35(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_2) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_2 Feature Counter -1 299(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP (ch.ehi.fme.Main_2) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_2 Feature Counter -1 298(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Immeuble (ch.ehi.fme.Main_3) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Immeuble_ch.ehi.fme.Main_3 Feature Counter -1 36(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_DirCreator(CreationFactory): Created 1 features
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_DirCreatorCleanerUpper(TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_FeatureDirector(TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds___FeatureDirector1(TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_VectorSetterUpper(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds___PointCloudThinner(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Bien_fonds_RasterSetterUpper(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|MD01MOVDMN95V24.Biens_fonds.Bien_fonds_Recorder(RecorderFactory): Recorded 0 feature(s) to file `/tmp/vd_161250/inspector.ffs'
-2016-11-15 16:14:12|  87.1|  0.0|STATS |AttributeCreator_3_OUTPUT Feature Counter -1 447(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |AttributeCreator_2_OUTPUT Feature Counter -1 446(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |StringConcatenator(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |StringConcatenator_OUTPUT Feature Counter -1 143(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Destination Feature Type Routing Correlator(RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|STATS |f_35(CreationFactory): Created 1 features
-2016-11-15 16:14:12|  87.1|  0.0|STATS |f_36(TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|Feature output statistics for `FFS' writer using keyword `W_1':
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |                               Features Written
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |==============================================================================
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Total Features Written                                                       0
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |                            Features Read Summary
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Adresses_des_batiments.Entree_batiment                    9597
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Adresses_des_batiments.Localisation                        813
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Adresses_des_batiments.Nom_localisation                    813
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Adresses_des_batiments.PosNom_localisation                2131
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Adresses_des_batiments.PosNumero_maison                   9597
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Adresses_des_batiments.Troncon_rue                        2752
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Immeuble                                     16925
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Mise_a_jourBF_Perimetre                          1
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.Point_limite                                154252
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.PosImmeuble                                  17535
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.PosPoint_limite                             154255
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Biens_fonds.SymbolePoint_limite                             12
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Conduites.Element_conduite                                   5
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Conduites.Element_lineaire                                   6
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Conduites.PosElement_conduite                                3
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.Mise_a_jourCS_Perimetre                    1
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.Nom_objet                               1235
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.Numero_de_batiment                     13652
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.Point_particulier                      97013
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.PosNom_objet                            1262
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.PosNumero_de_batiment                  13563
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.PosPoint_particulier                   97015
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Couverture_du_sol.SymboleSurfaceCS                         391
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Domaines_numerotation.Domaine_numerotation                 586
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Limites_canton.Partie_limite_canton                          4
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Limites_commune.Commune                                     17
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Limites_district.Partie_limite_district                     11
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Limites_nationales.Partie_limite_nationale                   1
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.NPA_Localite.Nom_localite                                   27
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.NPA_Localite.PosNom_localite                                27
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Nomenclature.Lieudit                                      2332
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Nomenclature.PosLieudit                                   2332
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Nomenclature.PosNom_local                                   37
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.Element_lineaire                          251756
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.Mise_a_jourOD_Perimetre                        1
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.Nom_Objet                                   1133
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.Numero_Objet                                2278
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.Objet_divers                              235655
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.Point_particulier                          10078
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.PosNom_Objet                                1189
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.PosNumero_Objet                             2320
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Objets_divers.PosPoint_particulier                       10078
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie1.PFA1                                 51
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie1.PFP1                                  3
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie1.PosPFA1                              51
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie1.PosPFP1                               3
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie2.PFA2                                 66
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie2.PFP2                                128
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie2.PosPFA2                              66
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie2.PosPFP2                             128
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie3.PFA3                                 91
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie3.PFP3                              13975
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie3.PosPFA3                              91
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Points_fixesCategorie3.PosPFP3                           13975
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Repartitions_plans.Plan                                    564
-2016-11-15 16:14:12|  87.1|  0.0|STATS |MD01MOVDMN95V24.Repartitions_plans.Posplan                                 565
-2016-11-15 16:14:12|  87.1|  0.0|STATS |XTF_BASKETS                                                                 20
-2016-11-15 16:14:12|  87.1|  0.0|STATS |XTF_TRANSFER                                                                 1
-2016-11-15 16:14:12|  87.1|  0.0|STATS |==============================================================================
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Total Features Read                                                    1142469
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |                           Features Written Summary
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|STATS |==============================================================================
-2016-11-15 16:14:12|  87.1|  0.0|STATS |Total Features Written                                                       0
-2016-11-15 16:14:12|  87.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (0 feature(s) output)
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|FME Session Duration: 1 minute 21.6 seconds. (CPU: 86.6s user, 0.4s system)
-2016-11-15 16:14:12|  87.1|  0.0|INFORM|END - ProcessID: 23165, peak process memory usage: 0 kB, current process memory usage: 293752 kB
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME 2016.1.3.0 (20161103 - Build 16709 - linux-x64)
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME_HOME is '/opt/fme-desktop-2016/'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Database Edition (node locked-crc)
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Serial Number: 0
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Temporary License: 28 days left.
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Machine host name is: rouzaudd-sige-ch
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|START - ProcessID: 32224, peak process memory usage: 0 kB, current process memory usage: 146912 kB
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `/opt/fme-desktop-2016//bin/fme' `/home/drouzaud/Documents/data/cadastre/interlis/fme/wb-xlate-1479371041225_29040' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{6d325174-1ad9-48f1-87e1-0eb2f8d6df28}'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for formats are : /opt/fme-desktop-2016/datasources;/home/drouzaud/.fme/Formats
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for transformers are : /opt/fme-desktop-2016/transformers;/home/drouzaud/.fme/Transformers
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : /home/drouzaud/.fme/CoordinateSystems
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : /home/drouzaud/.fme/CoordinateSystemExceptions
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : /home/drouzaud/.fme/CoordinateSystemGridOverrides
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : /home/drouzaud/.fme/CsmapTransformationExceptions
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Shared folders for transformer categories are : /home/drouzaud/.fme/TransformerCategories
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `/home/drouzaud/Documents/data/cadastre/interlis/fme'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `/tmp'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `/opt/fme-desktop-2016/'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/home/drouzaud/Documents/data/cadastre/interlis/fme/'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'vd.fmw'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2016.1.3.0'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|System Status: 7.69 GB of disk space available in the FME temporary folder (/tmp)
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|System Status: 16777216.00 TB of virtual memory available
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Operating System:  24 (Workstation Edition)
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Platform: linux-x64
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|The memory allocator being used by FME is : `/opt/fme-desktop-2016//fmecore/libsmartheap_mt64.so'
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Locale: en_US.utf8
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Process limits are 15.43 GB of physical memory and 16777216.00 TB of address space
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 16777216.00 TB of memory or 16777216.00 TB of address space
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 12582912.00 TB of memory and 12582912.00 TB of address space
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Creating writer for format: 
+2016-11-17 09:24:01|   0.0|  0.0|INFORM|Creating reader for format: 
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_1
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_2
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword ch.ehi.fme.Main_3
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding CH.EHI.FME.MAIN Reader with keyword ch.ehi.fme.Main_4
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Using Multi Reader $Revision$ ( $Date$ ) with keyword `MULTI_READER' to read multiple datasets
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_1[NULL] set to `CH1903Plus_1.LV95/01'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Coordinate System `CH1903Plus_1.LV95/01' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.6333333333333' MIN_LNG=`5.4' ORG_LAT=`46.9524055555556' ORG_LNG=`7.43958333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001' 
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|LD_LIBRARY_PATH is '/opt/fme-desktop-2016//fmecore:/opt/fme-desktop-2016/fmecore:/home/drouzaud/opt/Oracle/instantclient_10_2:'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Loaded module 'NULL' from file '/opt/fme-desktop-2016/plugins/null.so'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Using MultiWriter $Revision$ ( $Date$ ) with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Loaded module 'LogCount_func' from file '/opt/fme-desktop-2016/plugins/logcount_func.so'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20160224)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Creating writer for format: FME Feature Store (FFS)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_2[NULL] set to `CH1903Plus_1.LV95/01'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Coordinate System `CH1903Plus_1.LV95/01' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.6333333333333' MIN_LNG=`5.4' ORG_LAT=`46.9524055555556' ORG_LNG=`7.43958333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001' 
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Creating reader for format: NULL (Nothing)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20160224)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Creating reader for format: Swiss INTERLIS (ili2fme)
+2016-11-17 09:24:01|   0.1|  0.0|INFORM|Trying to find a JAVA plugin for reader named `CH.EHI.FME.MAIN'
+2016-11-17 09:24:01|   0.2|  0.1|INFORM|ili2fme-5.8.0-20131209
+2016-11-17 09:24:01|   0.2|  0.0|INFORM|ili2c-4.5.1-20131209
+2016-11-17 09:24:01|   0.2|  0.0|INFORM|java.version 1.8.0_111
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|Using Java Reader Interface Version 2.0 (Oct 31, 2000) with module ch.ehi.fme.Main to read data from dataset `/home/drouzaud/Documents/data/cadastre/interlis/data/vs_movs.itf'
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili2fme reader uses enhanced geometry handling
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|checkUniqueOid <false>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|checkAttrType <true>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|checkAttrMultiplicity <true>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|trimValues <true>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|geometryEncoding <OGCHEXBIN>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili1RenumberTid <false>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|createLineTables <false>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|skipPolygonBuilding <true>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|inheritanceMapping <SuperClass>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|createEnumTypes <No>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili1AddDefVal <false>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili1EnumAsItfCode <false>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili1ConvertArea <>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili1ConvertSurface <>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|ili1CheckConvert <true>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|xtfFile </home/drouzaud/Documents/data/cadastre/interlis/data/vs_movs.itf>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|modeldir </home/drouzaud/Documents/data/cadastre/interlis/data;http://models.interlis.ch/;/opt/fme-desktop-2016/plugins/interlis2/ilimodels;/opt/fme-desktop-2016/plugins/interlis2/ili22models;/home/drouzaud/Documents/data/cadastre/interlis/model>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|model from xtf <MD01MOVSMN952F>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|lookup model <MD01MOVSMN952F> in repository </home/drouzaud/Documents/data/cadastre/interlis/data>
+2016-11-17 09:24:01|   0.3|  0.0|INFORM|lookup model <MD01MOVSMN952F> in repository <http://models.interlis.ch/>
+2016-11-17 09:24:01|   0.4|  0.1|INFORM|lookup model <MD01MOVSMN952F> in repository </opt/fme-desktop-2016/plugins/interlis2/ilimodels>
+2016-11-17 09:24:01|   0.6|  0.2|INFORM|lookup model <MD01MOVSMN952F> in repository </opt/fme-desktop-2016/plugins/interlis2/ili22models>
+2016-11-17 09:24:01|   0.7|  0.1|INFORM|lookup model <MD01MOVSMN952F> in repository </home/drouzaud/Documents/data/cadastre/interlis/model>
+2016-11-17 09:24:02|   1.2|  0.5|INFORM|ilifile </home/drouzaud/Documents/data/cadastre/interlis/model/MD.01-MO-VS_MN95_2f.ili>
+2016-11-17 09:24:02|   2.1|  0.9|INFORM|MD01MOVSMN952F.Points_fixesCategorie1 itf0...
+2016-11-17 09:24:02|   2.2|  0.1|INFORM|MD01MOVSMN952F.Points_fixesCategorie2 itf1...
+2016-11-17 09:24:02|   2.2|  0.0|INFORM|MD01MOVSMN952F.Points_fixesCategorie3 itf2...
+2016-11-17 09:24:02|   3.6|  1.4|INFORM|Reading source feature # 2500
+2016-11-17 09:24:02|   4.1|  0.5|INFORM|Reading source feature # 5000
+2016-11-17 09:24:02|   4.3|  0.3|INFORM|Reading source feature # 7500
+2016-11-17 09:24:02|   4.4|  0.1|INFORM|MD01MOVSMN952F.Couverture_du_sol itf3...
+2016-11-17 09:24:04|   6.3|  2.0|INFORM|Reading source feature # 10000
+2016-11-17 09:24:04|   6.6|  0.2|INFORM|Reading source feature # 12500
+2016-11-17 09:24:04|   6.9|  0.3|INFORM|Reading source feature # 15000
+2016-11-17 09:24:04|   7.0|  0.1|INFORM|Reading source feature # 17500
+2016-11-17 09:24:04|   7.1|  0.1|INFORM|MD01MOVSMN952F.Objets_divers itf4...
+2016-11-17 09:24:04|   7.2|  0.1|INFORM|Reading source feature # 20000
+2016-11-17 09:24:04|   7.6|  0.4|INFORM|Reading source feature # 22500
+2016-11-17 09:24:05|   7.9|  0.3|INFORM|Reading source feature # 25000
+2016-11-17 09:24:05|   8.1|  0.2|INFORM|MD01MOVSMN952F.Altimetrie itf5...
+2016-11-17 09:24:05|   8.1|  0.0|INFORM|MD01MOVSMN952F.Nomenclature itf6...
+2016-11-17 09:24:05|   8.2|  0.1|INFORM|MD01MOVSMN952F.Biens_fonds itf7...
+2016-11-17 09:24:05|   8.3|  0.1|INFORM|Reading source feature # 27500
+2016-11-17 09:24:05|   8.6|  0.3|INFORM|Reading source feature # 30000
+2016-11-17 09:24:05|   8.9|  0.3|INFORM|Reading source feature # 32500
+2016-11-17 09:24:05|   9.1|  0.2|INFORM|Reading source feature # 35000
+2016-11-17 09:24:06|   9.3|  0.2|INFORM|Reading source feature # 37500
+2016-11-17 09:24:06|   9.5|  0.1|INFORM|Reading source feature # 40000
+2016-11-17 09:24:06|   9.6|  0.1|INFORM|Reading source feature # 42500
+2016-11-17 09:24:06|   9.8|  0.2|INFORM|Reading source feature # 45000
+2016-11-17 09:24:06|   9.9|  0.1|INFORM|Reading source feature # 47500
+2016-11-17 09:24:06|  10.0|  0.1|INFORM|Reading source feature # 50000
+2016-11-17 09:24:06|  10.1|  0.1|INFORM|Reading source feature # 52500
+2016-11-17 09:24:07|  10.2|  0.1|INFORM|Reading source feature # 55000
+2016-11-17 09:24:07|  10.3|  0.1|INFORM|Reading source feature # 57500
+2016-11-17 09:24:07|  10.6|  0.3|INFORM|Reading source feature # 60000
+2016-11-17 09:24:07|  10.9|  0.2|INFORM|Reading source feature # 62500
+2016-11-17 09:24:07|  11.6|  0.7|INFORM|MD01MOVSMN952F.Conduites itf8...
+2016-11-17 09:24:07|  11.6|  0.0|INFORM|MD01MOVSMN952F.Domaines_numerotation itf9...
+2016-11-17 09:24:07|  11.6|  0.0|INFORM|MD01MOVSMN952F.Limites_commune itf10...
+2016-11-17 09:24:08|  11.6|  0.1|INFORM|MD01MOVSMN952F.Limites_district itf11...
+2016-11-17 09:24:08|  11.6|  0.0|INFORM|MD01MOVSMN952F.Limites_canton itf12...
+2016-11-17 09:24:08|  11.6|  0.0|INFORM|MD01MOVSMN952F.Limites_nationales itf13...
+2016-11-17 09:24:08|  11.6|  0.0|INFORM|MD01MOVSMN952F.Repartitions_plans itf14...
+2016-11-17 09:24:08|  11.7|  0.0|INFORM|MD01MOVSMN952F.RepartitionNT itf15...
+2016-11-17 09:24:08|  11.7|  0.0|INFORM|MD01MOVSMN952F.Zones_glissement itf16...
+2016-11-17 09:24:08|  11.7|  0.0|INFORM|MD01MOVSMN952F.NPA_Localite itf17...
+2016-11-17 09:24:08|  11.7|  0.0|INFORM|MD01MOVSMN952F.Adresses_des_batiments itf18...
+2016-11-17 09:24:08|  11.8|  0.1|INFORM|Reading source feature # 65000
+2016-11-17 09:24:08|  12.1|  0.3|INFORM|Reading source feature # 67500
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|MD01MOVSMN952F.Bords_de_plan itf19...
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 68280 features from 4 readers
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|Emptying factory pipeline
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Router and Unexpected Input Remover(RoutingFactory): Tested 68280 input feature(s), wrote 68280 output feature(s): 0 matched merge filters, 0 were routed to output, 68280 could not be routed.
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 68280 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_1 Feature Counter -1 160(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP (ch.ehi.fme.Main_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_1 Feature Counter -1 159(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_2) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_2 Feature Counter -1 299(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP (ch.ehi.fme.Main_2) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_2 Feature Counter -1 298(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24F.Biens_fonds.DDP (ch.ehi.fme.Main_3) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24F.Biens_fonds.DDP_ch.ehi.fme.Main_3 Feature Counter -1 31(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_3) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOCH24F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_3 Feature Counter -1 30(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_4) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_4 Feature Counter -1 35(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.DDP (ch.ehi.fme.Main_4) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.DDP_ch.ehi.fme.Main_4 Feature Counter -1 36(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |AttributeCreator_3_OUTPUT Feature Counter -1 447(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |AttributeCreator_2_OUTPUT Feature Counter -1 446(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |StringConcatenator(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |StringConcatenator_OUTPUT Feature Counter -1 143(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Destination Feature Type Routing Correlator(RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|Feature output statistics for `FFS' writer using keyword `W_1':
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |                               Features Written
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |==============================================================================
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Total Features Written                                                       0
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |                            Features Read Summary
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Adresses_des_batiments.Entree_batiment                     1947
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Adresses_des_batiments.Localisation                          72
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Adresses_des_batiments.Nom_localisation                      72
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Adresses_des_batiments.PosNom_localisation                  109
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Adresses_des_batiments.PosNumero_maison                    1947
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Adresses_des_batiments.Troncon_rue                          121
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.Immeuble                                       2319
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.ImmeubleProj                                     28
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.Point_limite                                  10387
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.PosImmeuble                                    2318
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.PosImmeubleProj                                  28
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.PosPoint_limite                               10385
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Biens_fonds.SymbolePoint_limite                           10387
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.Nom_objet                                  54
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.Numero_de_batiment                       1729
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.Point_particulier                        3354
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.PosNom_objet                               54
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.PosNumero_de_batiment                    1728
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.PosPoint_particulier                     3354
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Couverture_du_sol.SymboleSurfaceCS                          182
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Domaines_numerotation.Domaine_numerotation                    4
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Domaines_numerotation.PosDomaine_numerotation                 4
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Limites_canton.Partie_limite_canton                           2
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Limites_commune.Commune                                       1
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Limites_commune.Point_limite_ter                            356
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Limites_commune.PosPoint_limite_ter                         356
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Limites_commune.SymbolePoint_limite_ter                     356
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Limites_district.Partie_limite_district                       2
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.NPA_Localite.Groupement_de_Localite                           1
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.NPA_Localite.Nom_localite                                     1
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.NPA_Localite.Texte_Groupement_de_Localite                     1
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Nomenclature.Lieudit                                         68
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Nomenclature.PosLieudit                                      68
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Nomenclature.PosNom_de_lieu                                   3
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Nomenclature.PosNom_local                                   138
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.Element_lineaire                             3540
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.Element_ponctuel                               19
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.Nom_Objet                                      23
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.Objet_divers                                 2888
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.Point_particulier                             651
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.PosNom_Objet                                   23
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.PosPoint_particulier                          651
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Objets_divers.SymboleElement_lineaire                        68
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie1.PFA1                                  12
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie1.PosPFA1                               12
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie2.PFP2                                   7
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie2.PosPFP2                                7
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie2.SymbolePFP2                            7
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie3.PFP3                                 208
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie3.Point_fixe_auxiliaire               2576
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie3.PosPFP3                              208
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie3.PosPoint_fixe_auxiliaire            2575
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie3.SymbolePFP3                          208
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Points_fixesCategorie3.SymbolePoint_fixe_auxiliaire        2576
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Repartitions_plans.Plan                                      32
+2016-11-17 09:24:08|  12.1|  0.0|STATS |MD01MOVSMN952F.Repartitions_plans.Posplan                                   32
+2016-11-17 09:24:08|  12.1|  0.0|STATS |XTF_BASKETS                                                                 20
+2016-11-17 09:24:08|  12.1|  0.0|STATS |XTF_TRANSFER                                                                 1
+2016-11-17 09:24:08|  12.1|  0.0|STATS |==============================================================================
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Total Features Read                                                      68280
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |                           Features Written Summary
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|STATS |==============================================================================
+2016-11-17 09:24:08|  12.1|  0.0|STATS |Total Features Written                                                       0
+2016-11-17 09:24:08|  12.1|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (0 feature(s) output)
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|FME Session Duration: 6.9 seconds. (CPU: 11.9s user, 0.2s system)
+2016-11-17 09:24:08|  12.1|  0.0|INFORM|END - ProcessID: 32224, peak process memory usage: 0 kB, current process memory usage: 302408 kB

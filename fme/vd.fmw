@@ -9,20 +9,19 @@
 #          --SourceDataset_ch.ehi.fme.Main "/home/drouzaud/Documents/data/cadastre/interlis/data/vd-1.itf"
 #          --DestDataset_POSTGIS "cadastre<space>pg"
 #          --SourceDataset_ch.ehi.fme.Main_9 "/home/drouzaud/Documents/data/cadastre/interlis/data/vd-2.itf"
-#          --SourceDataset_ch.ehi.fme.Main_7 "/home/drouzaud/Documents/data/cadastre/interlis/data/vs.itf"
-#          --SourceDataset_ch.ehi.fme.Main_10 "/home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf"
-#          --SourceDataset_ch.ehi.fme.Main_4 "/home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf"
+#          --SourceDataset_ch.ehi.fme.Main_6 "/home/drouzaud/Documents/data/cadastre/interlis/data/vs_moch.itf"
+#          --SourceDataset_ch.ehi.fme.Main_5 "/home/drouzaud/Documents/data/cadastre/interlis/data/vs_movs.itf"
 #    
 #    
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   LAST_SAVE_DATE="2016-11-16T15:40:52"
-#!   FME_DOCUMENT_PRIORGUID="924119aa-aa7b-11e6-a05c-8cdcd427c23c,3d661518-aa7e-11e6-a05c-8cdcd427c23c,7fa777ea-aa7f-11e6-a05c-8cdcd427c23c,1242f372-aa80-11e6-a05c-8cdcd427c23c,5c56caa0-aa81-11e6-a05c-8cdcd427c23c,60e56fac-ab37-11e6-a05c-8cdcd427c23c,963c022e-ab37-11e6-a05c-8cdcd427c23c,4420d8ac-ab41-11e6-a05c-8cdcd427c23c,582fd028-ab41-11e6-a05c-8cdcd427c23c"
+#!   LAST_SAVE_DATE="2016-11-17T09:21:37"
+#!   FME_DOCUMENT_PRIORGUID="924119aa-aa7b-11e6-a05c-8cdcd427c23c,3d661518-aa7e-11e6-a05c-8cdcd427c23c,7fa777ea-aa7f-11e6-a05c-8cdcd427c23c,1242f372-aa80-11e6-a05c-8cdcd427c23c,5c56caa0-aa81-11e6-a05c-8cdcd427c23c,60e56fac-ab37-11e6-a05c-8cdcd427c23c,963c022e-ab37-11e6-a05c-8cdcd427c23c,4420d8ac-ab41-11e6-a05c-8cdcd427c23c,582fd028-ab41-11e6-a05c-8cdcd427c23c,a6087f98-ab41-11e6-a05c-8cdcd427c23c,3c152fc6-ac9c-11e6-a05c-8cdcd427c23c,4c4546f4-ac9e-11e6-a05c-8cdcd427c23c"
 #!   FME_REPROJECTION_ENGINE="FME"
 #!   TERMINATE_REJECTED="YES"
 #!   DESTINATION="NONE"
-#!   DOC_TOP_LEFT="-6940.42 -18960.6"
-#!   FME_DOCUMENT_GUID="a6087f98-ab41-11e6-a05c-8cdcd427c23c"
+#!   DOC_TOP_LEFT="-6169.29 -18960.6"
+#!   FME_DOCUMENT_GUID="8827b490-ac9e-11e6-a05c-8cdcd427c23c"
 #!   BEGIN_TCL=""
 #!   HISTORY=""
 #!   FME_STROKE_MAX_DEVIATION="0"
@@ -31,17 +30,17 @@
 #!   END_TCL=""
 #!   REDIRECT_TERMINATORS="NONE"
 #!   FME_SERVER_SERVICES=""
-#!   DOC_EXTENTS="9728.61 18989.1"
+#!   DOC_EXTENTS="8957.48 18989.1"
 #!   WORKSPACE_VERSION="1"
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   DESCRIPTION=""
 #!   END_PYTHON=""
 #!   PASSWORD=""
-#!   VIEW_POSITION="-7313.28 -9056.69"
+#!   VIEW_POSITION="-7961.62 -9800.1"
 #!   DESTINATION_ROUTING_FILE=""
 #!   BEGIN_PYTHON=""
 #!   REQUIREMENTS=""
-#!   ZOOM_SCALE="53"
+#!   ZOOM_SCALE="39"
 #!   MAX_LOG_FEATURES="200"
 #!   SOURCE="NONE"
 #!   PYTHON_COMPATIBILITY="27"
@@ -123,8 +122,8 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="ch.ehi.fme.Main"
-#!   DATASET="$(SourceDataset_ch.ehi.fme.Main_7)"
-#!   KEYWORD="ch.ehi.fme.Main_5"
+#!   DATASET="$(SourceDataset_ch.ehi.fme.Main_6)"
+#!   KEYWORD="ch.ehi.fme.Main_3"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
 #!   ATTR_CASE="ANY"
@@ -152,8 +151,8 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="ch.ehi.fme.Main"
-#!   DATASET="$(SourceDataset_ch.ehi.fme.Main_10)"
-#!   KEYWORD="ch.ehi.fme.Main_6"
+#!   DATASET="$(SourceDataset_ch.ehi.fme.Main_5)"
+#!   KEYWORD="ch.ehi.fme.Main_4"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
 #!   ATTR_CASE="ANY"
@@ -174,36 +173,7 @@
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
 #!   START_FEATURE=""
 #!   MIN_FEATURES=""
-#!   COORDSYS="CH1903Plus_1.LV95/01"
-#!   FEATURE_TYPES=""
-#! />
-#! <DATASET
-#!   IS_SOURCE="true"
-#!   ROLE="READER"
-#!   FORMAT="ch.ehi.fme.Main"
-#!   DATASET="$(SourceDataset_ch.ehi.fme.Main_4)"
-#!   KEYWORD="ch.ehi.fme.Main_3"
-#!   MULTI_GEOM_ALLOWED="false"
-#!   ATTR_MAX_LENGTH="0"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE=""
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="multi_reader_type xtf_char(50) fme_feature_type xtf_char(50) fme_secondary_axis xtf_real64 fme_text_size xtf_real64 xtf_geomattr xtf_char(255) fme_rotation xtf_real64 xtf_basket xtf_char(200) fme_start_angle xtf_real64 xtf_operation xtf_char(6) multi_reader_keyword xtf_char(50) fme_geometry fme_char(50) xtf_consistency xtf_char(12) multi_reader_full_id xtf_int32 fme_color xtf_char(50) fme_basename xtf_char(50) fme_dataset xtf_char(50) fme_text_string xtf_char(50) xtf_class xtf_char(255) fme_primary_axis xtf_real64 multi_reader_id xtf_int32 fme_type xtf_char(50) fme_fill_color xtf_char(50) fme_sweep_angle xtf_real64"
-#!   DEFLINE_PARMS=""
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILE"
-#!   GENERATE_FME_BUILD_NUM="16709"
-#!   MAX_FEATURES=""
-#!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   START_FEATURE=""
-#!   MIN_FEATURES=""
-#!   COORDSYS="CH1903Plus_1.LV95/01"
+#!   COORDSYS=""
 #!   FEATURE_TYPES=""
 #! />
 #! <DATASET
@@ -814,8 +784,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="23"
 #!   FEAT_GEOMTYPE="xtf_area"
-#!   POSITION="-2856.91 -13021.1"
-#!   BOUNDING_RECT="-2856.91 -13021.1 1444.63 71"
+#!   POSITION="-2856.91 -12028.7"
+#!   BOUNDING_RECT="-2856.91 -12028.7 1444.63 71"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
 #!   KEYWORD="ch.ehi.fme.Main_1"
@@ -903,6 +873,86 @@
 #!   PARMS_EDITED="true"
 #!   ENABLED="false"
 #!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DDP_de" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PartieNumeroImmeuble" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="xtf_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Biens_fonds.Bien_fonds"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="183"
+#!   FEAT_GEOMTYPE="xtf_area"
+#!   POSITION="-1103.26 -12028.7"
+#!   BOUNDING_RECT="-1103.26 -12028.7 1441.39 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Bien_fonds_de" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PartieNumeroImmeuble" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="xtf_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24F.Biens_fonds.Bien_fonds"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="34"
+#!   FEAT_GEOMTYPE="xtf_area"
+#!   POSITION="-4658.05 -13176.3"
+#!   BOUNDING_RECT="-4658.05 -13176.3 1181.09 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Bien_fonds_de" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PartieNumeroImmeuble" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24F.Biens_fonds.DDP"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="122"
+#!   FEAT_GEOMTYPE="xtf_surface"
+#!   POSITION="-4658.05 -13314.3"
+#!   BOUNDING_RECT="-4658.05 -13314.3 1181.09 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   HIDDEN_USER_ATTRS=""
 #!   MERGE_FILTER=""
 #!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
 #!   MERGE_FILTER_CASE_SENSITIVE="false"
@@ -915,45 +965,19 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="true"
-#!   NODE_NAME="MD01MOCH24MN95F.Biens_fonds.Bien_fonds"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="183"
-#!   FEAT_GEOMTYPE="xtf_area"
-#!   POSITION="-1103.26 -13021.1"
-#!   BOUNDING_RECT="-1103.26 -13021.1 1441.39 71"
-#!   ORDER="5e+14"
-#!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_2"
-#!   PARMS_EDITED="true"
-#!   ENABLED="false"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER=""
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Bien_fonds_de" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PartieNumeroImmeuble" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
 #!   NODE_NAME="MD01MOVSMN952F.Biens_fonds.DDP"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="89"
+#!   IDENTIFIER="90"
 #!   FEAT_GEOMTYPE="xtf_surface"
-#!   POSITION="-4552.99 -12185.8"
-#!   BOUNDING_RECT="-4552.99 -12185.8 -1 -1"
+#!   POSITION="-6169.29 -10352.7"
+#!   BOUNDING_RECT="-6169.29 -10352.7 -1 -1"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_5"
+#!   KEYWORD="ch.ehi.fme.Main_4"
 #!   PARMS_EDITED="true"
-#!   ENABLED="false"
+#!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
 #!   MERGE_FILTER="*"
 #!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
@@ -972,87 +996,25 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="107"
+#!   IDENTIFIER="108"
 #!   FEAT_GEOMTYPE="xtf_area"
-#!   POSITION="-4552.99 -11630.1"
-#!   BOUNDING_RECT="-4552.99 -11630.1 -1 -1"
+#!   POSITION="-6169.29 -10214.7"
+#!   BOUNDING_RECT="-6169.29 -10214.7 -1 -1"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_5"
-#!   PARMS_EDITED="true"
-#!   ENABLED="false"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER="*"
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="false"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Bien_fonds_de" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PartieNumeroImmeuble" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="xtf_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="MD01MOVDMN95V24.Biens_fonds.Bien_fonds"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="44"
-#!   FEAT_GEOMTYPE="xtf_area"
-#!   POSITION="-6940.42 -9500.68"
-#!   BOUNDING_RECT="-6940.42 -9500.68 1435.07 71"
-#!   ORDER="5e+14"
-#!   COLLAPSED="false"
-#!   KEYWORD="ch.ehi.fme.Main_6"
+#!   KEYWORD="ch.ehi.fme.Main_4"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
 #!   MERGE_FILTER="*"
 #!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
 #!   DYNAMIC_SCHEMA="false"
 #! >
 #!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="Bien_fonds_de" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="PartieNumeroImmeuble" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="SuperficieRF" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="UFID" ATTR_TYPE="xtf_decimal(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="xtf_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="MD01MOVDMN95V24.Biens_fonds.Immeuble"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="118"
-#!   FEAT_GEOMTYPE="xtf_none"
-#!   POSITION="-6312.56 -10692.6"
-#!   BOUNDING_RECT="-6312.56 -10692.6 -1 -1"
-#!   ORDER="5e+14"
-#!   COLLAPSED="false"
-#!   KEYWORD="ch.ehi.fme.Main_3"
-#!   PARMS_EDITED="true"
-#!   ENABLED="false"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER="*"
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="false"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="EGRIS_EGRID" ATTR_TYPE="xtf_char(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Validite" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Integralite" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Genre" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Superficie_totale" ATTR_TYPE="xtf_int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="UFID" ATTR_TYPE="xtf_decimal(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="xtf_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
@@ -1075,18 +1037,13 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_7 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:"
-#!   DEFAULT_VALUE="/home/drouzaud/Documents/data/cadastre/interlis/data/vs.itf"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_6 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:"
+#!   DEFAULT_VALUE="/home/drouzaud/Documents/data/cadastre/interlis/data/vs_moch.itf"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_10 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:"
-#!   DEFAULT_VALUE="/home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_4 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:"
-#!   DEFAULT_VALUE="/home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_5 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:"
+#!   DEFAULT_VALUE="/home/drouzaud/Documents/data/cadastre/interlis/data/vs_movs.itf"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -1186,7 +1143,7 @@
 #!   BOUNDING_RECT="-4882.05 26.3586 1517.4 18981"
 #!   STICKY="true"
 #!   COLOUR="0.729412,0.0235294,0.341176"
-#!   CONTENTS="107 89 "
+#!   CONTENTS="34 122 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -1269,8 +1226,8 @@
 #!   IDENTIFIER="157"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
-#!   POSITION="816.318 -11927"
-#!   BOUNDING_RECT="816.318 -11927 -1 -1"
+#!   POSITION="770.164 -11757.8"
+#!   BOUNDING_RECT="770.164 -11757.8 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1285,16 +1242,6 @@
 #!     <XFORM_ATTR ATTR_NAME="Superficie" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Bien_fonds_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SuperficieRF" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="UFID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EGRIS_EGRID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Validite" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Integralite" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Genre" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Superficie_totale" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; canton SET_TO vaud"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1357,16 +1304,6 @@
 #!     <XFORM_ATTR ATTR_NAME="Superficie" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Bien_fonds_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SuperficieRF" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="UFID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EGRIS_EGRID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Validite" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Integralite" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Genre" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Superficie_totale" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="output_name2" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
@@ -1375,34 +1312,6 @@
 #!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator"/>
 #!     <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;canton&lt;closeparen&gt;.&lt;at&gt;ReplaceString&lt;openparen&gt;&lt;at&gt;ReplaceRegEx&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;&lt;comma&gt;&lt;quote&gt;MD01MOCH.*&lt;backslash&gt;.&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;_&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;quote&gt;.&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;__&lt;quote&gt;&lt;closeparen&gt;"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="37"
-#!   TYPE="Inspector"
-#!   VERSION="3"
-#!   POSITION="-5357.35 -9500.68"
-#!   BOUNDING_RECT="-5357.35 -9500.68 -1 -1"
-#!   ORDER="5e+14"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="16709"
-#! >
-#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="MD01MOVDMN95V24.Biens_fonds.Bien_fonds"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
-#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1429,41 +1338,8 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="38"
-#!   SOURCE_NODE="44"
-#!   TARGET_NODE="157"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="39"
-#!   SOURCE_NODE="44"
-#!   TARGET_NODE="37"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="35"
-#!   SOURCE_NODE="89"
-#!   TARGET_NODE="440"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="34"
-#!   SOURCE_NODE="107"
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="34"
 #!   TARGET_NODE="440"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
@@ -1474,8 +1350,30 @@
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="36"
-#!   SOURCE_NODE="118"
-#!   TARGET_NODE="157"
+#!   SOURCE_NODE="90"
+#!   TARGET_NODE="440"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="108"
+#!   TARGET_NODE="440"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="122"
+#!   TARGET_NODE="440"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1571,25 +1469,22 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
-GUI IGNORE SourceDataset_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1,SourceDataset_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_2,SourceDataset_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_5,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_5,SourceDataset_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_6,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_6,SourceDataset_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_3,DestDataset_POSTGIS_1,POSTGIS_OUT_START_TRANSACTION_POSTGIS_1,POSTGIS_OUT_TRANSACTION_INTERVAL_POSTGIS_1,POSTGIS_OUT_BULK_COPY_POSTGIS_1,POSTGIS_OUT_INSERT_TEXT_GEOMETRY_POSTGIS_1,POSTGIS_OUT_BEGIN_SQL_POSTGIS_1,POSTGIS_OUT_END_SQL_POSTGIS_1
+GUI IGNORE SourceDataset_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1,SourceDataset_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_2,SourceDataset_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_3,SourceDataset_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_4,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_4,DestDataset_POSTGIS_1,POSTGIS_OUT_START_TRANSACTION_POSTGIS_1,POSTGIS_OUT_TRANSACTION_INTERVAL_POSTGIS_1,POSTGIS_OUT_BULK_COPY_POSTGIS_1,POSTGIS_OUT_INSERT_TEXT_GEOMETRY_POSTGIS_1,POSTGIS_OUT_BEGIN_SQL_POSTGIS_1,POSTGIS_OUT_END_SQL_POSTGIS_1
 DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main /home/drouzaud/Documents/data/cadastre/interlis/data/vd-1.itf
 GUI MULTIFILE SourceDataset_ch.ehi.fme.Main INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
 DEFAULT_MACRO DestDataset_POSTGIS cadastre<space>pg
 GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGIS FMT:POSTGIS%FAMILY:PostgreSQL Connection:
 DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_9 /home/drouzaud/Documents/data/cadastre/interlis/data/vd-2.itf
 GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_9 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_7 /home/drouzaud/Documents/data/cadastre/interlis/data/vs.itf
-GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_7 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_10 /home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf
-GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_10 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_4 /home/drouzaud/Documents/data/cadastre/interlis/data/vd_movd.itf
-GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_4 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_6 /home/drouzaud/Documents/data/cadastre/interlis/data/vs_moch.itf
+GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_6 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_5 /home/drouzaud/Documents/data/cadastre/interlis/data/vs_movs.itf
+GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_5 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
 INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_POSTGIS)} == {}} { puts_real {Parameter 'DestDataset_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_9)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_9' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_7)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_7' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_10)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_10' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_4)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_4' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_6)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_6' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_5)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_5' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -1603,15 +1498,11 @@ MULTI_READER_KEYWORD{1} ch.ehi.fme.Main_2
 MULTI_READER_GEN_DIRECTIVES{1} SKIP_POLYGONBUILDING,Yes,CREATE_LINETABLES,No,CREATEFEATURETYPE4ENUM,No,CHECK_ATTRTYPE,Yes,TRACEMSGS,No,ILI1_CONVERTAREA,,TRIM_VALUES,Yes,_MERGE_SCHEMAS,YES,HTTP_PROXYHOST,,MODELS,%DATA,ILI1_CHECKCONVERT,Yes,ILI1_RENUMBERTID,No,CHECK_UNIQUEOID,No,CHECK_ATTRMULTIPLICITY,Yes,HTTP_PROXYPORT,,GEOMETRY_ENCODING,OGCHEXBIN,TOPICS_FILTER,,ILI1_CONVERTSURFACE,,MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ili22models,ILI1_ADDDEFVAL,No,ILI1_ENUMASITFCODE,No,INHERITANCE_MAPPING,SuperClass
 MULTI_READER_TYPE{2} NULL
 MULTI_READER_FORMAT{2} ch.ehi.fme.Main
-MULTI_READER_KEYWORD{2} ch.ehi.fme.Main_5
+MULTI_READER_KEYWORD{2} ch.ehi.fme.Main_3
 MULTI_READER_GEN_DIRECTIVES{2} SKIP_POLYGONBUILDING,Yes,CREATE_LINETABLES,No,CREATEFEATURETYPE4ENUM,No,CHECK_ATTRTYPE,Yes,TRACEMSGS,No,ILI1_CONVERTAREA,,TRIM_VALUES,Yes,_MERGE_SCHEMAS,YES,HTTP_PROXYHOST,,MODELS,%DATA,ILI1_CHECKCONVERT,Yes,ILI1_RENUMBERTID,No,CHECK_UNIQUEOID,No,CHECK_ATTRMULTIPLICITY,Yes,HTTP_PROXYPORT,,GEOMETRY_ENCODING,OGCHEXBIN,TOPICS_FILTER,,ILI1_CONVERTSURFACE,,MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ili22models<semicolon><solidus>home<solidus>drouzaud<solidus>Documents<solidus>data<solidus>cadastre<solidus>interlis<solidus>model,ILI1_ADDDEFVAL,No,ILI1_ENUMASITFCODE,No,INHERITANCE_MAPPING,SuperClass
 MULTI_READER_TYPE{3} ch.ehi.fme.Main
-MULTI_READER_KEYWORD{3} ch.ehi.fme.Main_6
+MULTI_READER_KEYWORD{3} ch.ehi.fme.Main_4
 MULTI_READER_GEN_DIRECTIVES{3} SKIP_POLYGONBUILDING,Yes,CREATE_LINETABLES,No,CREATEFEATURETYPE4ENUM,No,CHECK_ATTRTYPE,Yes,TRACEMSGS,No,ILI1_CONVERTAREA,,TRIM_VALUES,Yes,_MERGE_SCHEMAS,YES,HTTP_PROXYHOST,,MODELS,%DATA,ILI1_CHECKCONVERT,Yes,ILI1_RENUMBERTID,No,CHECK_UNIQUEOID,No,CHECK_ATTRMULTIPLICITY,Yes,HTTP_PROXYPORT,,GEOMETRY_ENCODING,OGCHEXBIN,TOPICS_FILTER,,ILI1_CONVERTSURFACE,,MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ili22models<semicolon><solidus>home<solidus>drouzaud<solidus>Documents<solidus>data<solidus>cadastre<solidus>interlis<solidus>model,ILI1_ADDDEFVAL,No,ILI1_ENUMASITFCODE,No,INHERITANCE_MAPPING,SuperClass
-MULTI_READER_TYPE{4} NULL
-MULTI_READER_FORMAT{4} ch.ehi.fme.Main
-MULTI_READER_KEYWORD{4} ch.ehi.fme.Main_3
-MULTI_READER_GEN_DIRECTIVES{4} SKIP_POLYGONBUILDING,Yes,CREATE_LINETABLES,No,CREATEFEATURETYPE4ENUM,No,CHECK_ATTRTYPE,Yes,TRACEMSGS,No,ILI1_CONVERTAREA,,TRIM_VALUES,Yes,_MERGE_SCHEMAS,YES,HTTP_PROXYHOST,,MODELS,%DATA,ILI1_CHECKCONVERT,Yes,ILI1_RENUMBERTID,No,CHECK_UNIQUEOID,No,CHECK_ATTRMULTIPLICITY,Yes,HTTP_PROXYPORT,,GEOMETRY_ENCODING,OGCHEXBIN,TOPICS_FILTER,,ILI1_CONVERTSURFACE,,MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon><solidus>opt<solidus>fme-desktop-2016<solidus>plugins<solidus>interlis2<solidus>ili22models<semicolon><solidus>home<solidus>drouzaud<solidus>Documents<solidus>data<solidus>cadastre<solidus>interlis<solidus>model,ILI1_ADDDEFVAL,No,ILI1_ENUMASITFCODE,No,INHERITANCE_MAPPING,SuperClass
 
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
@@ -1695,7 +1586,7 @@ DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 No
 ch.ehi.fme.Main_1_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1)"
 GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 Yes%No Enable Trace Messages:
 # ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 
+DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 AUTH_INFO_GROUP,NO,AUTH_METHOD,<lt>Unused<gt>,NAMED_CONNECTION,<lt>Unused<gt>,AUTH_USERNAME,<lt>Unused<gt>,AUTH_PASSWORD,<Unused>
 ch.ehi.fme.Main_1_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1)"
 GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
 # ===========================================================================
@@ -1805,190 +1696,6 @@ DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_2 $(SourceDataset_ch.ehi.fme.Main_9)
 ch.ehi.fme.Main_2_DATASET "$(SourceDataset_ch.ehi.fme.Main_2)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "ch.ehi.fme.Main_5"
-#! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_5
-# ============================================================================
-# The following GUI line prompts for a file to be used as the
-# source of the input data.
-# The user input is stored in a macro, which is then used to define
-# the dataset to be read.
-# The dataset this mapping file was generated from was:
-GUI FILENAME SourceDataset_ch.ehi.fme.Main_5 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_5 %DATA
-ch.ehi.fme.Main_5_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_5)"
-GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_5 Models:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_5 %XTF_DIR;http://models.interlis.ch/;$(FME_HOME)plugins/interlis2/ilimodels;$(FME_HOME)plugins/interlis2/ili22models;/home/drouzaud/Documents/data/cadastre/interlis/model
-ch.ehi.fme.Main_5_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_5)"
-GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_5 Models Directory:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_5 
-ch.ehi.fme.Main_5_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_5)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_5 Topics filter:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_5 Yes%No Check TID/OID Uniqueness:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_5 Yes
-ch.ehi.fme.Main_5_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_5 Yes%No Check Attribute Type:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_5 Yes
-ch.ehi.fme.Main_5_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_5 Yes%No Check Attribute Multiplicity:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_5 OGCHEXBIN
-ch.ehi.fme.Main_5_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_5 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_5 Yes%No Create Linetables:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_5 Yes
-ch.ehi.fme.Main_5_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_5 Yes%No Skip Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_5 SuperClass
-ch.ehi.fme.Main_5_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_5 SuperClass%SubClass Inheritance Mapping Strategy:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_5 Yes
-ch.ehi.fme.Main_5_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_5 Yes%No Trim Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_5 Yes%No ITF Add Default Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_5 Yes%No ITF Renumber TIDs:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_5 
-ch.ehi.fme.Main_5_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_5)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_5 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_5 
-ch.ehi.fme.Main_5_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_5)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_5 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_5 Yes
-ch.ehi.fme.Main_5_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_5 Yes%No ITF Check Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_5 Yes%No ITF Read enum Values as Code:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_5 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_5 
-ch.ehi.fme.Main_5_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_5)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_5 http Proxy Host:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_5 
-ch.ehi.fme.Main_5_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_5)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_5 http Proxy Port:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_5 No
-ch.ehi.fme.Main_5_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_5)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_5 Yes%No Enable Trace Messages:
-# ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_5 
-ch.ehi.fme.Main_5_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_5)"
-GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_5 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
-# ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_5 ALL
-ch.ehi.fme.Main_5_ATTRIBUTE_READING "$(ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_5)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO SourceDataset
-INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_5 $(SourceDataset)}     \
- } ]
-#! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_5
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_5 $(SourceDataset_ch.ehi.fme.Main_7)
-ch.ehi.fme.Main_5_DATASET "$(SourceDataset_ch.ehi.fme.Main_5)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-MACRO WB_KEYWORD "ch.ehi.fme.Main_6"
-#! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_6
-# ============================================================================
-# The following GUI line prompts for a file to be used as the
-# source of the input data.
-# The user input is stored in a macro, which is then used to define
-# the dataset to be read.
-# The dataset this mapping file was generated from was:
-GUI FILENAME SourceDataset_ch.ehi.fme.Main_6 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_6 %DATA
-ch.ehi.fme.Main_6_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_6)"
-GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_6 Models:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_6 %XTF_DIR;http://models.interlis.ch/;$(FME_HOME)plugins/interlis2/ilimodels;$(FME_HOME)plugins/interlis2/ili22models;/home/drouzaud/Documents/data/cadastre/interlis/model
-ch.ehi.fme.Main_6_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_6)"
-GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_6 Models Directory:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_6 
-ch.ehi.fme.Main_6_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_6)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_6 Topics filter:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_6 Yes%No Check TID/OID Uniqueness:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_6 Yes
-ch.ehi.fme.Main_6_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_6 Yes%No Check Attribute Type:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_6 Yes
-ch.ehi.fme.Main_6_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_6 Yes%No Check Attribute Multiplicity:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_6 OGCHEXBIN
-ch.ehi.fme.Main_6_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_6 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_6 Yes%No Create Linetables:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_6 Yes
-ch.ehi.fme.Main_6_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_6 Yes%No Skip Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_6 SuperClass
-ch.ehi.fme.Main_6_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_6 SuperClass%SubClass Inheritance Mapping Strategy:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_6 Yes
-ch.ehi.fme.Main_6_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_6 Yes%No Trim Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_6 Yes%No ITF Add Default Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_6 Yes%No ITF Renumber TIDs:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_6 
-ch.ehi.fme.Main_6_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_6)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_6 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_6 
-ch.ehi.fme.Main_6_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_6)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_6 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_6 Yes
-ch.ehi.fme.Main_6_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_6 Yes%No ITF Check Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_6 Yes%No ITF Read enum Values as Code:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_6 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_6 
-ch.ehi.fme.Main_6_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_6)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_6 http Proxy Host:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_6 
-ch.ehi.fme.Main_6_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_6)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_6 http Proxy Port:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_6 No
-ch.ehi.fme.Main_6_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_6)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_6 Yes%No Enable Trace Messages:
-# ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_6 AUTH_INFO_GROUP,NO,AUTH_METHOD,<lt>Unused<gt>,NAMED_CONNECTION,<lt>Unused<gt>,AUTH_USERNAME,<lt>Unused<gt>,AUTH_PASSWORD,<Unused>
-ch.ehi.fme.Main_6_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_6)"
-GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_6 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
-# ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_6 ALL
-ch.ehi.fme.Main_6_ATTRIBUTE_READING "$(ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_6)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO SourceDataset
-INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_6 $(SourceDataset)}     \
- } ]
-#! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_6
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_6 $(SourceDataset_ch.ehi.fme.Main_10)
-ch.ehi.fme.Main_6_DATASET "$(SourceDataset_ch.ehi.fme.Main_6)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
 MACRO WB_KEYWORD "ch.ehi.fme.Main_3"
 #! END_WB_HEADER
 #! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_3
@@ -2077,8 +1784,100 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_3
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_3 $(SourceDataset_ch.ehi.fme.Main_4)
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_3 $(SourceDataset_ch.ehi.fme.Main_6)
 ch.ehi.fme.Main_3_DATASET "$(SourceDataset_ch.ehi.fme.Main_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ch.ehi.fme.Main_4"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_4
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the input data.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+GUI FILENAME SourceDataset_ch.ehi.fme.Main_4 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_4 %DATA
+ch.ehi.fme.Main_4_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_4)"
+GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_4 Models:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_4 %XTF_DIR;http://models.interlis.ch/;$(FME_HOME)plugins/interlis2/ilimodels;$(FME_HOME)plugins/interlis2/ili22models;/home/drouzaud/Documents/data/cadastre/interlis/model
+ch.ehi.fme.Main_4_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_4)"
+GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_4 Models Directory:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_4 
+ch.ehi.fme.Main_4_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_4)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_4 Topics filter:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_4 Yes%No Check TID/OID Uniqueness:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_4 Yes
+ch.ehi.fme.Main_4_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_4 Yes%No Check Attribute Type:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_4 Yes
+ch.ehi.fme.Main_4_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_4 Yes%No Check Attribute Multiplicity:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_4 OGCHEXBIN
+ch.ehi.fme.Main_4_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_4 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_4 Yes%No Create Linetables:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_4 Yes
+ch.ehi.fme.Main_4_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_4 Yes%No Skip Polygon Building:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_4 SuperClass
+ch.ehi.fme.Main_4_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_4 SuperClass%SubClass Inheritance Mapping Strategy:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_4 Yes
+ch.ehi.fme.Main_4_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_4 Yes%No Trim Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_4 Yes%No ITF Add Default Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_4 Yes%No ITF Renumber TIDs:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_4 
+ch.ehi.fme.Main_4_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_4)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_4 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_4 
+ch.ehi.fme.Main_4_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_4)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_4 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_4 Yes
+ch.ehi.fme.Main_4_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_4 Yes%No ITF Check Polygon Building:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_4 Yes%No ITF Read enum Values as Code:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_4 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_4 
+ch.ehi.fme.Main_4_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_4)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_4 http Proxy Host:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_4 
+ch.ehi.fme.Main_4_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_4)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_4 http Proxy Port:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_4 No
+ch.ehi.fme.Main_4_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_4)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_4 Yes%No Enable Trace Messages:
+# ===========================================================================
+DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_4 
+ch.ehi.fme.Main_4_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_4)"
+GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_4 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_4 ALL
+ch.ehi.fme.Main_4_ATTRIBUTE_READING "$(ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_4)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_4 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_4
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_4 $(SourceDataset_ch.ehi.fme.Main_5)
+ch.ehi.fme.Main_4_DATASET "$(SourceDataset_ch.ehi.fme.Main_4)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "POSTGIS_1"
@@ -2143,9 +1942,8 @@ FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_1 ch.ehi.fme.Main_1
 DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_2 ch.ehi.fme.Main_2
-DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_5 ch.ehi.fme.Main_5
-DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_6 ch.ehi.fme.Main_6
 DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_3 ch.ehi.fme.Main_3
+DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_4 ch.ehi.fme.Main_4
 DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_1 POSTGIS_1
 # -------------------------------------------------------------------------
 
@@ -2157,22 +1955,16 @@ ch.ehi.fme.Main_2_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
-ch.ehi.fme.Main_5_READER_META_ATTRIBUTES fme_feature_type
-
-# -------------------------------------------------------------------------
-
-ch.ehi.fme.Main_6_READER_META_ATTRIBUTES fme_feature_type
-
-# -------------------------------------------------------------------------
-
 ch.ehi.fme.Main_3_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ch.ehi.fme.Main_4_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
 ch.ehi.fme.Main_1_COORDINATE_SYSTEM CH1903Plus_1.LV95/01
 ch.ehi.fme.Main_2_COORDINATE_SYSTEM CH1903Plus_1.LV95/01
-ch.ehi.fme.Main_6_COORDINATE_SYSTEM CH1903Plus_1.LV95/01
-ch.ehi.fme.Main_3_COORDINATE_SYSTEM CH1903Plus_1.LV95/01
 POSTGIS_1_COORDINATE_SYSTEM CH1903Plus_1.LV95/01
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
@@ -2181,24 +1973,20 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 MACRO WORKSPACE_NAME vd
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
-
-INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
-MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
-MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
-MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+ch.ehi.fme.Main_4_DEF MD01MOVSMN952F.Biens_fonds.Bien_fonds   xtf_id                       xtf_char(200)   Bien_fonds_de                xtf_char(200)   PartieNumeroImmeuble         xtf_char(12)   Superficie                   xtf_int32
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_6_DEF MD01MOVDMN95V24.Biens_fonds.Bien_fonds   xtf_id                       xtf_char(200)   Bien_fonds_de                xtf_char(200)   PartieNumeroImmeuble         xtf_char(12)   Superficie                   xtf_int32   SuperficieRF                 xtf_int32   UFID                         xtf_decimal(10,0)
+ch.ehi.fme.Main_4_DEF MD01MOVSMN952F.Biens_fonds.DDP   xtf_id                       xtf_char(200)   DDP_de                       xtf_char(200)   PartieNumeroImmeuble         xtf_char(12)   Superficie                   xtf_int32
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_6::MD01MOVDMN95V24.Biens_fonds.Bien_fonds multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_6) TO FME_GENERIC ::MD01MOVDMN95V24.Biens_fonds.Bien_fonds ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_4::MD01MOVSMN952F.Biens_fonds.Bien_fonds multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_4) TO FME_GENERIC ::MD01MOVSMN952F.Biens_fonds.Bien_fonds ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_4::MD01MOVSMN952F.Biens_fonds.DDP multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_4) TO FME_GENERIC ::MD01MOVSMN952F.Biens_fonds.DDP ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Biens_fonds.Bien_fonds EXACT MD01MOCH24MN95F.Biens_fonds.Bien_fonds
 ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Biens_fonds.DDP EXACT MD01MOCH24MN95F.Biens_fonds.DDP
 ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::MD01MOCH24MN95F.Biens_fonds.Bien_fonds EXACT MD01MOCH24MN95F.Biens_fonds.Bien_fonds
 ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::MD01MOCH24MN95F.Biens_fonds.DDP EXACT MD01MOCH24MN95F.Biens_fonds.DDP
-ch.ehi.fme.Main_5_MERGE_DEF ch.ehi.fme.Main_5::MD01MOVSMN952F.Biens_fonds.Bien_fonds EXACT MD01MOVSMN952F.Biens_fonds.Bien_fonds
-ch.ehi.fme.Main_5_MERGE_DEF ch.ehi.fme.Main_5::MD01MOVSMN952F.Biens_fonds.DDP EXACT MD01MOVSMN952F.Biens_fonds.DDP
-ch.ehi.fme.Main_6_MERGE_DEF ch.ehi.fme.Main_6::MD01MOVDMN95V24.Biens_fonds.Bien_fonds EXACT MD01MOVDMN95V24.Biens_fonds.Bien_fonds
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::MD01MOVDMN95V24.Biens_fonds.Immeuble EXACT MD01MOVDMN95V24.Biens_fonds.Immeuble
+ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::MD01MOCH24F.Biens_fonds.DDP EXACT MD01MOCH24F.Biens_fonds.DDP
+ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::MD01MOCH24F.Biens_fonds.Bien_fonds EXACT MD01MOCH24F.Biens_fonds.Bien_fonds
+ch.ehi.fme.Main_4_MERGE_DEF ch.ehi.fme.Main_4::MD01MOVSMN952F.Biens_fonds.Bien_fonds EXACT MD01MOVSMN952F.Biens_fonds.Bien_fonds
+ch.ehi.fme.Main_4_MERGE_DEF ch.ehi.fme.Main_4::MD01MOVSMN952F.Biens_fonds.DDP EXACT MD01MOVSMN952F.Biens_fonds.DDP
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds      multi_reader_keyword $(DATASET_KEYWORD_ch.ehi.fme.Main_1)    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_1
@@ -2207,76 +1995,31 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Biens_fonds.Bien_fonds
 FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Biens_fonds.DDP (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP      multi_reader_keyword $(DATASET_KEYWORD_ch.ehi.fme.Main_1)    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOVDMN95V24.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_6) Splitter"    INPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds    OUTPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_6_0_Zow5iKWZAOE=    OUTPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_6_1_eng3HmTZN0w=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOVSMN952F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_5) Splitter"    INPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.Bien_fonds    OUTPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_5
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOVSMN952F.Biens_fonds.DDP (ch.ehi.fme.Main_5) Splitter"    INPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.DDP    OUTPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.DDP_ch.ehi.fme.Main_5
-# -------------------------------------------------------------------------
-
 FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_2) Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds      multi_reader_keyword $(DATASET_KEYWORD_ch.ehi.fme.Main_2)    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_2
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Biens_fonds.DDP (ch.ehi.fme.Main_2) Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP      multi_reader_keyword $(DATASET_KEYWORD_ch.ehi.fme.Main_2)    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_2
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOVDMN95V24.Biens_fonds.Immeuble (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Immeuble    OUTPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Immeuble_ch.ehi.fme.Main_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24F.Biens_fonds.DDP (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE MD01MOCH24F.Biens_fonds.DDP    OUTPUT FEATURE_TYPE MD01MOCH24F.Biens_fonds.DDP_ch.ehi.fme.Main_3
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE MD01MOCH24F.Biens_fonds.Bien_fonds    OUTPUT FEATURE_TYPE MD01MOCH24F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_3
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOVSMN952F.Biens_fonds.Bien_fonds (ch.ehi.fme.Main_4) Splitter"    INPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.Bien_fonds    OUTPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_4
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOVSMN952F.Biens_fonds.DDP (ch.ehi.fme.Main_4) Splitter"    INPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.DDP    OUTPUT FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.DDP_ch.ehi.fme.Main_4
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
-# Set the directive to add all the meta-attributes to the features.
-# We do this so users see all possible information in the viewed
-# features.
-
-READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {MD01MOVDMN95V24.Biens_fonds.Bien_fonds} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
-# Make the temporary directory that the FFS files will live in.
-FACTORY_DEF * CreationFactory      FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
-FACTORY_DEF * TeeFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
-# Send raster, point cloud and vector features down different paths to prepare
-# them for viewing
-
-FACTORY_DEF * TestFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds_FeatureDirector    INPUT  FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_6_1_eng3HmTZN0w=    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___RasterFeatures___
-FACTORY_DEF * TestFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds___FeatureDirector1    INPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___PointCloudFeatures___
-# Vector features simply may get their colors overridden
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds_VectorSetterUpper    INPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
-# Point Cloud Features Might Need to be thinned
-
-# Note that we don't call the ThinPointCloud function directly, but rather
-# do it through TCL. This should allow this transformer to be used with a
-# Desktop license, even though ThinPointCloud requires Professional.
-
-Tcl2 proc MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds___PointCloudThinner    INPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_thinPointCloud")
-Tcl2 proc MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds_RasterSetterUpper    INPUT FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-# MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_VIS_FEAT_TYPE changes the feature types
-# of the features being visualized.
-
-DEFAULT_MACRO MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_VIS_FEAT_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds$(CATMAC)
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME MD01MOVDMN95V24.Biens_fonds.Bien_fonds_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(MD01MOVDMN95V24.Biens_fonds.Bien_fonds_f942f20c_ab45_11e6_a05c_8cdcd427c23c1_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA xtf_id,varchar<openparen>255<closeparen>,Bien_fonds_de,varchar<openparen>255<closeparen>,PartieNumeroImmeuble,varchar<openparen>255<closeparen>,Superficie,varchar<openparen>255<closeparen>,SuperficieRF,varchar<openparen>255<closeparen>,UFID,varchar<openparen>255<closeparen>,fme_feature_type,varchar<openparen>255<closeparen>    MODE RECORD    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_5    INPUT  FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.DDP_ch.ehi.fme.Main_5    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "canton" "SET_TO" "valais"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE MD01MOCH24F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_3    INPUT  FEATURE_TYPE MD01MOCH24F.Biens_fonds.DDP_ch.ehi.fme.Main_3    INPUT  FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_4    INPUT  FEATURE_TYPE MD01MOVSMN952F.Biens_fonds.DDP_ch.ehi.fme.Main_4    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "canton" "SET_TO" "valais"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
 
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_1    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_1    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_2    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_2    INPUT  FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_6_0_Zow5iKWZAOE=    INPUT  FEATURE_TYPE MD01MOVDMN95V24.Biens_fonds.Immeuble_ch.ehi.fme.Main_3    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "canton" "SET_TO" "vaud"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_1    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_1    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.DDP_ch.ehi.fme.Main_2    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Biens_fonds.Bien_fonds_ch.ehi.fme.Main_2    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "canton" "SET_TO" "vaud"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
 
 
 # -------------------------------------------------------------------------
@@ -2293,9 +2036,5 @@ FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Corr
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
 # -------------------------------------------------------------------------
 POSTGIS_1_DEF Table1   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       geom   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   output_name                  varchar(200)   canton                       varchar(200)   xtf_id                       varchar(200)   ddp_de                       varchar(200)   partienumeroimmeuble         varchar(12)   superficie                   int4   bien_fonds_de                varchar(200)
