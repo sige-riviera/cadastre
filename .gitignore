@@ -4,4 +4,4 @@ ili2c-*
 ili2pg-*/
 *.imd
 *.*~
-
+*.recover
