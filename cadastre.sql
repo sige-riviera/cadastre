@@ -151,3 +151,115 @@ CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 	)
 	;
 CREATE INDEX ab_rue_geom_idx ON cadastre.ab_rue USING gist (geometrie);
+
+
+
+-- *****************
+-- ELEMENTS SURFACIQUES
+
+DROP MATERIALIZED VIEW IF EXISTS cadastre.od_element_surfacique;
+CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
+	(
+		SELECT 
+			1000000 + row_number() OVER (ORDER BY os.ogc_fid,os._tid ASC) AS cid,
+			od.origine,
+			od.qualite,
+			od.genre,
+			os.wkb_geometry::geometry(Polygon,2056) as geometry,
+			num.numero,
+			pos.pos_0 as x,
+			pos.pos_1 as y,
+			90-180.0/200.0*pos.ori AS ori, 
+			pos.hali, 
+			pos.vali, 
+			pos.grandeur
+		FROM valais.objets_divers__element_surfacique os
+		LEFT OUTER JOIN valais.objets_divers__objet_divers od ON od._tid = os.element_surfacique_de
+		LEFT OUTER JOIN (SELECT DISTINCT ON (numero_objet_de) * FROM valais.objets_divers__numero_objet) num ON num.numero_objet_de = od._tid
+		LEFT OUTER JOIN (SELECT DISTINCT ON (posnumero_objet_de) * FROM valais.objets_divers__posnumero_objet) pos ON pos.posnumero_objet_de = num._tid
+	)
+	UNION
+	(
+		SELECT 
+			2000000 + row_number() OVER (ORDER BY os.ogc_fid,os._tid ASC) AS cid,
+			od.origine,
+			od.qualite,
+			od.genre,
+			os.wkb_geometry::geometry(Polygon,2056) as geometry,
+			num.numero,
+			pos.pos_0 as x,
+			pos.pos_1 as y,
+			90-180.0/200.0*pos.ori AS ori, 
+			pos.hali, 
+			pos.vali, 
+			pos.grandeur
+		FROM vaud.objets_divers__element_surfacique os
+		LEFT OUTER JOIN vaud.objets_divers__objet_divers od ON od._tid = os.element_surfacique_de
+		LEFT OUTER JOIN (SELECT DISTINCT ON (numero_objet_de) * FROM vaud.objets_divers__numero_objet) num ON num.numero_objet_de = od._tid
+		LEFT OUTER JOIN (SELECT DISTINCT ON (posnumero_objet_de) * FROM vaud.objets_divers__posnumero_objet) pos ON pos.posnumero_objet_de = num._tid
+	)
+	;
+CREATE INDEX od_element_surfacique_geom_idx ON cadastre.od_element_surfacique USING gist (geometry);
+
+
+-- *****************
+-- ELEMENTS LINEAIRES
+
+DROP MATERIALIZED VIEW IF EXISTS cadastre.od_element_lineaire;
+CREATE MATERIALIZED VIEW cadastre.od_element_lineaire AS
+	(
+		SELECT 
+			1000000 + row_number() OVER (ORDER BY ol.ogc_fid,ol._tid ASC) AS cid,
+			od.origine,
+			od.qualite,
+			od.genre,
+			ol.wkb_geometry::geometry(MultiLineString,2056) as geometry
+		FROM valais.objets_divers__element_lineaire ol
+		LEFT OUTER JOIN valais.objets_divers__objet_divers od ON od._tid = ol.element_lineaire_de
+	)
+	UNION
+	(
+		SELECT 
+			2000000 + row_number() OVER (ORDER BY ol.ogc_fid,ol._tid ASC) AS cid,
+			od.origine,
+			od.qualite,
+			od.genre,
+			ol.wkb_geometry::geometry(MultiLineString,2056) as geometry
+		FROM vaud.objets_divers__element_lineaire ol
+		LEFT OUTER JOIN vaud.objets_divers__objet_divers od ON od._tid = ol.element_lineaire_de
+	)
+	;
+CREATE INDEX od_element_lineaire_geom_idx ON cadastre.od_element_lineaire USING gist (geometry);
+
+
+
+-- *****************
+-- POINT LIMITES
+
+DROP MATERIALIZED VIEW IF EXISTS cadastre.bf_point_limite;
+CREATE MATERIALIZED VIEW cadastre.bf_point_limite AS
+	SELECT 
+		1000000 + row_number() OVER (ORDER BY ogc_fid,_tid ASC) AS cid,
+		origine,
+		identification,
+		precplan,
+		fiabplan,
+		signe,
+		defini_exactement,
+		anc_borne_speciale,
+		wkb_geometry::geometry(Point,2056) as geometry
+	FROM valais.biens_fonds__point_limite
+	UNION
+	SELECT 
+		2000000 + row_number() OVER (ORDER BY ogc_fid,_tid ASC) AS cid,
+		origine,
+		identification,
+		precplan,
+		fiabplan,
+		signe,
+		defini_exactement,
+		anc_borne_speciale,
+		wkb_geometry::geometry(Point,2056) as geometry
+	FROM vaud.biens_fonds__point_limite
+	;
+CREATE INDEX bf_point_limite_geom_idx ON cadastre.bf_point_limite USING gist (geometry);
