@@ -85,7 +85,7 @@ CREATE MATERIALIZED VIEW cadastre.cs_couverture_sol AS
 			pos.grandeur
 		FROM valais.couverture_du_sol__surfacecs cs
 		LEFT OUTER JOIN valais.couverture_du_sol__numero_de_batiment num ON cs._tid = num.numero_de_batiment_de
-		LEFT OUTER JOIN valais.couverture_du_sol__posnumero_de_batiment pos ON pos.posnumero_de_batiment_de = num._tid
+		LEFT OUTER JOIN (SELECT DISTINCT ON(posnumero_de_batiment_de) * FROM valais.couverture_du_sol__posnumero_de_batiment) pos ON pos.posnumero_de_batiment_de = num._tid
 	)
 	UNION 
 	(
@@ -105,8 +105,8 @@ CREATE MATERIALIZED VIEW cadastre.cs_couverture_sol AS
 			pos.vali, 
 			pos.grandeur
 		FROM vaud.couverture_du_sol__surfacecs cs
-		LEFT OUTER JOIN vaud.couverture_du_sol__numero_de_batiment num ON cs._tid = num.numero_de_batiment_de
-		LEFT OUTER JOIN vaud.couverture_du_sol__posnumero_de_batiment pos ON pos.posnumero_de_batiment_de = num._tid
+		LEFT OUTER JOIN (SELECT DISTINCT ON (numero_de_batiment_de) * FROM vaud.couverture_du_sol__numero_de_batiment) num ON cs._tid = num.numero_de_batiment_de
+		LEFT OUTER JOIN (SELECT DISTINCT ON (posnumero_de_batiment_de) * FROM vaud.couverture_du_sol__posnumero_de_batiment) pos ON pos.posnumero_de_batiment_de = num._tid
 	);
 CREATE INDEX cs_cs_geom_idx ON cadastre.cs_couverture_sol USING gist (geometrie); 
 
