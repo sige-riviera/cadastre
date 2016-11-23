@@ -19,10 +19,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2557564.92644008575007319</xmin>
-      <ymin>1145550.20944666489958763</ymin>
-      <xmax>2557918.93894043145701289</xmax>
-      <ymax>1146065.34808829054236412</ymax>
+      <xmin>2552494.85293578030541539</xmin>
+      <ymin>1146692.6927306866273284</ymin>
+      <xmax>2552848.86543612601235509</xmax>
+      <ymax>1147255.05398919712752104</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -136,6 +136,7 @@
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -188,7 +189,7 @@
         <property key="labeling/maxCurvedCharAngleIn" value="25"/>
         <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
         <property key="labeling/maxNumLabels" value="200"/>
-        <property key="labeling/mergeLines" value="true"/>
+        <property key="labeling/mergeLines" value="false"/>
         <property key="labeling/minFeatureSize" value="10"/>
         <property key="labeling/multilineAlign" value="4294967295"/>
         <property key="labeling/multilineHeight" value="1"/>
@@ -275,6 +276,8 @@
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -301,6 +304,34 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Sans Serif,10,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
         <alias field="troncon_rue_de" index="0" name=""/>
@@ -313,15 +344,32 @@
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;troncon_rue_de&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
-          <column width="243" hidden="0" type="field" name="texte"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="troncon_rue_de"/>
+          <column width="-1" hidden="0" type="field" name="texte_abrege"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
@@ -330,7 +378,13 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2545699.75</xmin>
+        <ymin>1131519.125</ymin>
+        <xmax>2571957.5</xmax>
+        <ymax>1155514.625</ymax>
+      </extent>
       <id>bf_immeuble20161019163752305</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."bf_immeuble" (geometry) sql=</datasource>
       <keywordList>
@@ -508,6 +562,7 @@
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -584,7 +639,7 @@
         <property key="labeling/repeatDistanceUnit" value="1"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="4000"/>
+        <property key="labeling/scaleMax" value="2000"/>
         <property key="labeling/scaleMin" value="1"/>
         <property key="labeling/scaleVisibility" value="true"/>
         <property key="labeling/shadowBlendMode" value="6"/>
@@ -648,6 +703,8 @@
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -674,6 +731,34 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Sans Serif,10,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
         <alias field="cid" index="0" name=""/>
@@ -694,8 +779,7 @@
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="identdn"/>
+          <column width="192" hidden="0" type="field" name="identdn"/>
           <column width="-1" hidden="0" type="field" name="_tid"/>
           <column width="-1" hidden="0" type="field" name="numero"/>
           <column width="-1" hidden="0" type="field" name="genre"/>
@@ -706,13 +790,31 @@
           <column width="-1" hidden="0" type="field" name="lbl_vali"/>
           <column width="-1" hidden="0" type="field" name="lbl_grandeur"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="cid"/>
+          <column width="-1" hidden="0" type="field" name="has_geometry"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
@@ -721,7 +823,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>cs_couverture_sol20161117155047081</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."cs_couverture_sol" (geometrie) sql=</datasource>
       <keywordList>
@@ -741,7 +843,7 @@
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "ogc_fid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -1247,6 +1349,7 @@
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -1388,6 +1491,8 @@
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -1414,6 +1519,34 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Sans Serif,10,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
         <alias field="cid" index="0" name=""/>
@@ -1434,13 +1567,44 @@
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1245211">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="cid"/>
+          <column width="-1" hidden="0" type="field" name="ogc_fid"/>
+          <column width="-1" hidden="0" type="field" name="_tid"/>
+          <column width="-1" hidden="0" type="field" name="origine"/>
+          <column width="-1" hidden="0" type="field" name="qualite"/>
+          <column width="-1" hidden="0" type="field" name="genre"/>
+          <column width="-1" hidden="0" type="field" name="numero"/>
+          <column width="-1" hidden="0" type="field" name="x"/>
+          <column width="-1" hidden="0" type="field" name="y"/>
+          <column width="-1" hidden="0" type="field" name="ori"/>
+          <column width="-1" hidden="0" type="field" name="hali"/>
+          <column width="-1" hidden="0" type="field" name="vali"/>
+          <column width="-1" hidden="0" type="field" name="grandeur"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>

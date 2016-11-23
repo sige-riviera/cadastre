@@ -29,7 +29,7 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 			UNION
 			SELECT _tid, CASE WHEN ST_IsEmpty(wkb_geometry) THEN NULL::geometry(Polygon,2056) ELSE ST_CurveToLine(wkb_geometry)::geometry(Polygon,2056) END AS geometry, ddp_de AS fk_immeuble FROM vaud.biens_fonds__ddp
 		) AS bf ON bf.fk_immeuble = imm._tid
-		LEFT OUTER JOIN valais.biens_fonds__posimmeuble pos ON pos.posimmeuble_de = imm._tid
+		LEFT OUTER JOIN (SELECT DISTINCT ON(posimmeuble_de) * FROM valais.biens_fonds__posimmeuble) pos ON pos.posimmeuble_de = imm._tid
 	)
 	UNION
 	(
@@ -57,7 +57,7 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 			UNION
 			SELECT _tid, CASE WHEN ST_IsEmpty(wkb_geometry) THEN NULL::geometry(Polygon,2056) ELSE ST_CurveToLine(wkb_geometry)::geometry(Polygon,2056) END AS geometry, ddp_de AS fk_immeuble FROM vaud.biens_fonds__ddp
 		) AS bf ON bf.fk_immeuble = imm._tid
-		LEFT OUTER JOIN vaud.biens_fonds__posimmeuble pos ON pos.posimmeuble_de = imm._tid
+		LEFT OUTER JOIN (SELECT DISTINCT ON(posimmeuble_de) * FROM vaud.biens_fonds__posimmeuble) pos ON pos.posimmeuble_de = imm._tid
 	)
 	;
 CREATE INDEX bf_immeuble_geom_idx ON cadastre.bf_immeuble USING gist (geometry);
@@ -118,7 +118,6 @@ DROP MATERIALIZED VIEW IF EXISTS cadastre.ab_rue;
 CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 	(
 		SELECT
-			DISTINCT ON(rue.troncon_rue_de) troncon_rue_de,
 			1000000 + row_number() OVER (ORDER BY rue.troncon_rue_de ASC) AS cid,
 			nom.texte_abrege,
 			--loc.*,
@@ -131,12 +130,11 @@ CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 			FROM valais.adresses_des_batiments__troncon_rue rue GROUP BY troncon_rue_de
 		) rue
 		--LEFT OUTER JOIN valais.adresses_des_batiments__localisation loc ON loc._tid = rue.troncon_rue_de
-		LEFT OUTER JOIN valais.adresses_des_batiments__nom_localisation nom ON nom.nom_localisation_de = rue.troncon_rue_de
+		LEFT OUTER JOIN (SELECT DISTINCT ON (nom_localisation_de) * FROM valais.adresses_des_batiments__nom_localisation) nom ON nom.nom_localisation_de = rue.troncon_rue_de
 	)
 	UNION
 	(
 		SELECT
-			DISTINCT ON(rue.troncon_rue_de) troncon_rue_de,
 			2000000 + row_number() OVER (ORDER BY rue.troncon_rue_de ASC) AS cid,
 			nom.texte_abrege,
 			--loc.*,
@@ -149,7 +147,7 @@ CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 			FROM vaud.adresses_des_batiments__troncon_rue rue GROUP BY troncon_rue_de
 		) rue
 		--LEFT OUTER JOIN vaud.adresses_des_batiments__localisation loc ON loc._tid = rue.troncon_rue_de
-		LEFT OUTER JOIN vaud.adresses_des_batiments__nom_localisation nom ON nom.nom_localisation_de = rue.troncon_rue_de
+		LEFT OUTER JOIN (SELECT DISTINCT ON (nom_localisation_de) * FROM vaud.adresses_des_batiments__nom_localisation) nom ON nom.nom_localisation_de = rue.troncon_rue_de
 	)
 	;
 CREATE INDEX ab_rue_geom_idx ON cadastre.ab_rue USING gist (geometrie);
