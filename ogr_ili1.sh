@@ -28,15 +28,16 @@ psql -c "DROP SCHEMA IF EXISTS vaud CASCADE; CREATE SCHEMA vaud;"
 # VALAIS
 psql -c "DROP SCHEMA IF EXISTS valais CASCADE; CREATE SCHEMA valais;"
 #echo "*** Port-Valais ***"
-./gdal-build/bin/ogr2ogr -lco SCHEMA=valais --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=valais" data/vs_moch.itf,moch.imd
+./gdal-build/bin/ogr2ogr -lco SCHEMA=valais --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=valais" data/vs.itf,moch.imd
+
+
+# FRIBOURG
+psql -c "DROP SCHEMA IF EXISTS fribourg CASCADE; CREATE SCHEMA fribourg;"
+#echo "*** Fribourg Attalens, Remaufens ***"
+./gdal-build/bin/ogr2ogr -lco SCHEMA=fribourg --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=fribourg" data/fr-1.itf,moch.imd
+./gdal-build/bin/ogr2ogr -lco SCHEMA=fribourg --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=fribourg" data/fr-2.itf,moch.imd
 
 
 
-psql -c "DROP SCHEMA IF EXISTS fribroug CASCADE; CREATE SCHEMA fribroug;"
-
-
-
-
-#./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd_movd.itf,movd.imd
 
 psql -f cadastre.sql -v ON_ERROR_STOP=ON
