@@ -13,16 +13,29 @@ export GDAL_DATA=$PREFIX/share/gdal
 
 export PGSERVICE=cadastre
 
-psql -c "DROP SCHEMA IF EXISTS vaud CASCADE; CREATE SCHEMA vaud;"
-psql -c "DROP SCHEMA IF EXISTS valais CASCADE; CREATE SCHEMA valais;"
-psql -c "DROP SCHEMA IF EXISTS fribroug CASCADE; CREATE SCHEMA fribroug;"
 
-#echo "*** Port-Valais ***"
-./gdal-build/bin/ogr2ogr -lco SCHEMA=valais --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=valais" data/vs_moch.itf,moch.imd
+# VAUD
+psql -c "DROP SCHEMA IF EXISTS vaud CASCADE; CREATE SCHEMA vaud;"
 #echo "*** VD-1 ***"      
 ./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-1.itf,moch.imd
 #echo "*** VD-2 ***"      
 ./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-2.itf,moch.imd
+#echo "*** VD-3 ***"      
+./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-3.itf,moch.imd
+#echo "*** VD-4 ***"      
+./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-4.itf,moch.imd
+
+# VALAIS
+psql -c "DROP SCHEMA IF EXISTS valais CASCADE; CREATE SCHEMA valais;"
+#echo "*** Port-Valais ***"
+./gdal-build/bin/ogr2ogr -lco SCHEMA=valais --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=valais" data/vs_moch.itf,moch.imd
+
+
+
+psql -c "DROP SCHEMA IF EXISTS fribroug CASCADE; CREATE SCHEMA fribroug;"
+
+
+
 
 #./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd_movd.itf,movd.imd
 

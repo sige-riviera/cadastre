@@ -263,3 +263,99 @@ CREATE MATERIALIZED VIEW cadastre.bf_point_limite AS
 	FROM vaud.biens_fonds__point_limite
 	;
 CREATE INDEX bf_point_limite_geom_idx ON cadastre.bf_point_limite USING gist (geometry);
+
+
+-- *****************
+-- POINT FIXES
+
+DROP MATERIALIZED VIEW IF EXISTS cadastre.pf_points_fixes;
+CREATE MATERIALIZED VIEW cadastre.pf_points_fixes AS
+	SELECT 
+		1000000 + row_number() OVER (ORDER BY _tid ASC) AS cid,
+		*
+		FROM
+		(
+			SELECT _tid, 'PFP1' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, accessibilite, signe, wkb_geometry FROM  valais.points_fixescategorie1__pfp1
+			UNION
+			SELECT _tid, 'PFP2' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, accessibilite, signe, wkb_geometry FROM  valais.points_fixescategorie2__pfp2
+			UNION
+			SELECT _tid, 'PFP3' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int as accessibilite, signe, wkb_geometry FROM  valais.points_fixescategorie3__pfp3
+			UNION
+			SELECT _tid, 'PFA1' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  valais.points_fixescategorie1__pfp1
+			UNION
+			SELECT _tid, 'PFA2' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  valais.points_fixescategorie2__pfp2
+			UNION
+			SELECT _tid, 'PFA3' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  valais.points_fixescategorie3__pfp3
+		) valais
+	UNION
+	SELECT
+		2000000 + row_number() OVER (ORDER BY _tid ASC) AS cid,
+		*
+		FROM
+		(
+			SELECT _tid, 'PFP1' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, accessibilite, signe, wkb_geometry FROM  vaud.points_fixescategorie1__pfp1
+			UNION
+			SELECT _tid, 'PFP2' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, accessibilite, signe, wkb_geometry FROM  vaud.points_fixescategorie2__pfp2
+			UNION
+			SELECT _tid, 'PFP3' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int as accessibilite, signe, wkb_geometry FROM  vaud.points_fixescategorie3__pfp3
+			UNION
+			SELECT _tid, 'PFA1' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  vaud.points_fixescategorie1__pfp1
+			UNION
+			SELECT _tid, 'PFA2' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  vaud.points_fixescategorie2__pfp2
+			UNION
+			SELECT _tid, 'PFA3' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  vaud.points_fixescategorie3__pfp3
+		) vaud	
+	;
+CREATE INDEX pf_points_fixes_geom_idx ON cadastre.pf_points_fixes USING gist (wkb_geometry);
+
+
+-- *****************
+-- ENTREE BATIMENTS
+
+DROP MATERIALIZED VIEW IF EXISTS cadastre.od_entree_batiment;
+CREATE MATERIALIZED VIEW cadastre.od_entree_batiment AS
+	(
+		SELECT 
+			1000000 + row_number() OVER (ORDER BY eb.ogc_fid,eb._tid ASC) AS cid,
+			eb.origine,
+			eb.entree_batiment_de,
+			eb.validite,
+			eb.niveau,
+			eb.numero_maison,
+			eb.dans_batiment,
+			eb.regbl_egid,
+			eb.regbl_edid,
+			eb.wkb_geometry::geometry(Point,2056) as geometry,
+			pos.pos_0 as lbl_x,
+			pos.pos_1 as lbl_y,
+			90-180.0/200.0*pos.ori AS ori, 
+			pos.hali as lbl_hali, 
+			pos.vali as lbl_vali, 
+			pos.grandeur as lbl_grandeur
+		FROM valais.adresses_des_batiments__entree_batiment eb
+		LEFT OUTER JOIN valais.adresses_des_batiments__posnumero_maison pos ON eb._tid = pos.posnumero_batiment_de
+	)
+	UNION
+	(
+		SELECT 
+			2000000 + row_number() OVER (ORDER BY eb.ogc_fid,eb._tid ASC) AS cid,
+			eb.origine,
+			eb.entree_batiment_de,
+			eb.validite,
+			eb.niveau,
+			eb.numero_maison,
+			eb.dans_batiment,
+			eb.regbl_egid,
+			eb.regbl_edid,
+			eb.wkb_geometry::geometry(Point,2056) as geometry,
+			pos.pos_0 as lbl_x,
+			pos.pos_1 as lbl_y,
+			90-180.0/200.0*pos.ori AS ori, 
+			pos.hali as lbl_hali, 
+			pos.vali as lbl_vali, 
+			pos.grandeur as lbl_grandeur
+		FROM vaud.adresses_des_batiments__entree_batiment eb
+		LEFT OUTER JOIN vaud.adresses_des_batiments__posnumero_maison pos ON eb._tid = pos.posnumero_batiment_de
+	)
+	;
+CREATE INDEX od_entree_batiment_geom_idx ON cadastre.od_entree_batiment USING gist (geometry);
