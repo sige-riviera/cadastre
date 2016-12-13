@@ -3,33 +3,42 @@
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+      <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
+    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="National_Map_1_25_00020161213094052164" name="National Map 1:25'000">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20161213094045281" name="SWISSIMAGE">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -43,7 +52,7 @@
       <ymax>1144816.54045875766314566</ymax>
     </extent>
     <rotation>0</rotation>
-    <projections>0</projections>
+    <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
         <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -57,7 +66,19 @@
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <layer_coordinate_transform_info/>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_nomenclature20161124151011953"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_points_fixes20161123144654375"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20161123111234045"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_immeuble20161019163752305"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_couverture_sol20161117155047081"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_lineaire20161123134458480"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020161213094052164"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_point_limite20161123141033694"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ab_rue20161122113837293"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_entree_batiment20161124100003328"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20161213094045281"/>
+    </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
@@ -70,56 +91,160 @@
       <item>pf_points_fixes20161123144654375</item>
       <item>od_entree_batiment20161124100003328</item>
       <item>no_nomenclature20161124151011953</item>
+      <item>SWISSIMAGE20161213094045281</item>
+      <item>National_Map_1_25_00020161213094052164</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
+    <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="National Map 1:25'000" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020161213094052164" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SWISSIMAGE" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20161213094045281" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>419995.70888743817340583</xmin>
+        <ymin>27366.12590403261128813</ymin>
+        <xmax>916216.83972122299019247</xmax>
+        <ymax>350004.34664214466465637</ymax>
+      </extent>
+      <id>National_Map_1_25_00020161213094052164</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=21781_26&amp;url=http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>National Map 1:25'000</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>419995.70888743817340583</xmin>
+        <ymin>27366.12590403261128813</ymin>
+        <xmax>916216.83972122299019247</xmax>
+        <ymax>350004.34664214466465637</ymax>
+      </extent>
+      <id>SWISSIMAGE20161213094045281</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=21781_27&amp;url=http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>SWISSIMAGE</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>ab_rue20161122113837293</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table="cadastre"."ab_rue" (geometrie) sql=</datasource>
@@ -2651,6 +2776,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Sans Serif,10,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -2676,7 +2802,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="cid" index="0" name=""/>
         <alias field="_tid" index="1" name=""/>
@@ -2707,10 +2833,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -5750,7 +5876,7 @@ def my_form_open(dialog, layer, feature):
       <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
       <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
     <Paths>
       <Absolute type="bool">false</Absolute>
