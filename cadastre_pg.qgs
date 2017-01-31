@@ -1,55 +1,61 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.0">
+<qgis projectname="" version="2.18.1">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="Cadastre">
+        <customproperties/>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="National_Map_1_25_00020161213094052164" name="National Map 1:25'000">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20161213094045281" name="SWISSIMAGE">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" name="OpenStreeMap">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="National_Map_1_25_00020161213094052164" name="National Map 1:25'000">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20161213094045281" name="SWISSIMAGE">
-      <customproperties/>
-    </layer-tree-layer>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2557785.38067827885970473</xmin>
-      <ymin>1142792.20485916524194181</ymin>
-      <xmax>2560378.29734758799895644</xmax>
-      <ymax>1145511.03654649644158781</ymax>
+      <xmin>2560998.72228114493191242</xmin>
+      <ymin>1142846.88807334494777024</ymin>
+      <xmax>2566184.55561976321041584</xmax>
+      <ymax>1148284.55144800734706223</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -71,6 +77,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_points_fixes20161123144654375"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20161123111234045"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_immeuble20161019163752305"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131085532398"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_couverture_sol20161117155047081"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_lineaire20161123134458480"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020161213094052164"/>
@@ -78,6 +85,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ab_rue20161122113837293"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_entree_batiment20161124100003328"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20161213094045281"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="12HC20_demande_export_MNT_Bignières20161215155123630"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -93,66 +101,74 @@
       <item>no_nomenclature20161124151011953</item>
       <item>SWISSIMAGE20161213094045281</item>
       <item>National_Map_1_25_00020161213094052164</item>
+      <item>OpenStreeMap20170131085532398</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Checked" name="Fonds de plans">
+      <legendgroup open="true" checked="Qt::Checked" name="Cadastre">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="National Map 1:25'000" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020161213094052164" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SWISSIMAGE" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20161213094045281" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OpenStreeMap" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="OpenStreeMap20170131085532398" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="National Map 1:25'000" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020161213094052164" visible="0"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SWISSIMAGE" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20161213094045281" visible="0"/>
-      </filegroup>
-    </legendlayer>
   </legend>
   <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
@@ -192,6 +208,52 @@
       </map-layer-style-manager>
       <pipe>
         <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>OpenStreeMap20170131085532398</id>
+      <datasource>crs=EPSG:2056&amp;format=&amp;type=xyz&amp;url=http://tile.osm.ch/2056/%7Bz%7D/%7Bx%7D/%7By%7D.png</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>OpenStreeMap</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
           <rasterTransparency/>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
@@ -245,7 +307,7 @@
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>ab_rue20161122113837293</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table="cadastre"."ab_rue" (geometrie) sql=</datasource>
       <keywordList>
@@ -269,10 +331,6 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="texte_abrege" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -330,6 +388,7 @@
         <property key="labeling/bufferTransp" value="0"/>
         <property key="labeling/centroidInside" value="false"/>
         <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/dataDefined/AlwaysShow" value="1~~1~~1~~"/>
         <property key="labeling/dataDefined/LabelDistance" value="1~~1~~CASE WHEN @map_scale &lt;= 500 THEN 10 ELSE 0 END~~"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="true"/>
@@ -552,8 +611,12 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="texte_abrege" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="8000" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="8000" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>2545699.75</xmin>
         <ymin>1131519.125</ymin>
@@ -583,20 +646,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="identdn" expression=""/>
-        <default field="_tid" expression=""/>
-        <default field="numero" expression=""/>
-        <default field="genre" expression=""/>
-        <default field="lbl_x" expression=""/>
-        <default field="lbl_y" expression=""/>
-        <default field="ori" expression=""/>
-        <default field="lbl_hali" expression=""/>
-        <default field="lbl_vali" expression=""/>
-        <default field="lbl_grandeur" expression=""/>
-        <default field="has_geometry" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -1011,8 +1060,22 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="identdn" expression=""/>
+        <default field="_tid" expression=""/>
+        <default field="numero" expression=""/>
+        <default field="genre" expression=""/>
+        <default field="lbl_x" expression=""/>
+        <default field="lbl_y" expression=""/>
+        <default field="ori" expression=""/>
+        <default field="lbl_hali" expression=""/>
+        <default field="lbl_vali" expression=""/>
+        <default field="lbl_grandeur" expression=""/>
+        <default field="has_geometry" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1500" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1500" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>bf_point_limite20161123141033694</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."bf_point_limite" (geometry) sql=</datasource>
       <keywordList>
@@ -1036,16 +1099,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="identification" expression=""/>
-        <default field="precplan" expression=""/>
-        <default field="fiabplan" expression=""/>
-        <default field="signe" expression=""/>
-        <default field="defini_exactement" expression=""/>
-        <default field="anc_borne_speciale" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -1564,8 +1617,18 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="identification" expression=""/>
+        <default field="precplan" expression=""/>
+        <default field="fiabplan" expression=""/>
+        <default field="signe" expression=""/>
+        <default field="defini_exactement" expression=""/>
+        <default field="anc_borne_speciale" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>cs_couverture_sol20161117155047081</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."cs_couverture_sol" (geometrie) sql=</datasource>
       <keywordList>
@@ -1589,21 +1652,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="ogc_fid" expression=""/>
-        <default field="_tid" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="qualite" expression=""/>
-        <default field="genre" expression=""/>
-        <default field="numero" expression=""/>
-        <default field="x" expression=""/>
-        <default field="y" expression=""/>
-        <default field="ori" expression=""/>
-        <default field="hali" expression=""/>
-        <default field="vali" expression=""/>
-        <default field="grandeur" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -2495,8 +2543,23 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="ogc_fid" expression=""/>
+        <default field="_tid" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="qualite" expression=""/>
+        <default field="genre" expression=""/>
+        <default field="numero" expression=""/>
+        <default field="x" expression=""/>
+        <default field="y" expression=""/>
+        <default field="ori" expression=""/>
+        <default field="hali" expression=""/>
+        <default field="vali" expression=""/>
+        <default field="grandeur" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="7500" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="7500" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>2547087.75</xmin>
         <ymin>1132315</ymin>
@@ -2526,18 +2589,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="_tid" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="nom" expression=""/>
-        <default field="lbl_x" expression=""/>
-        <default field="lbl_y" expression=""/>
-        <default field="ori" expression=""/>
-        <default field="lbl_hali" expression=""/>
-        <default field="lbl_vali" expression=""/>
-        <default field="lbl_grandeur" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -2861,8 +2912,20 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="_tid" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="nom" expression=""/>
+        <default field="lbl_x" expression=""/>
+        <default field="lbl_y" expression=""/>
+        <default field="ori" expression=""/>
+        <default field="lbl_hali" expression=""/>
+        <default field="lbl_vali" expression=""/>
+        <default field="lbl_grandeur" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="700" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="700" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>od_element_lineaire20161123134458480</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table="cadastre"."od_element_lineaire" (geometry) sql=</datasource>
       <keywordList>
@@ -2886,12 +2949,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="qualite" expression=""/>
-        <default field="genre" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -4046,8 +4103,14 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="qualite" expression=""/>
+        <default field="genre" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>od_element_surfacique20161123111234045</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."od_element_surfacique" (geometry) sql=</datasource>
       <keywordList>
@@ -4071,19 +4134,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="qualite" expression=""/>
-        <default field="genre" expression=""/>
-        <default field="numero" expression=""/>
-        <default field="x" expression=""/>
-        <default field="y" expression=""/>
-        <default field="ori" expression=""/>
-        <default field="hali" expression=""/>
-        <default field="vali" expression=""/>
-        <default field="grandeur" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -5017,8 +5067,21 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="qualite" expression=""/>
+        <default field="genre" expression=""/>
+        <default field="numero" expression=""/>
+        <default field="x" expression=""/>
+        <default field="y" expression=""/>
+        <default field="ori" expression=""/>
+        <default field="hali" expression=""/>
+        <default field="vali" expression=""/>
+        <default field="grandeur" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>od_entree_batiment20161124100003328</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."od_entree_batiment" (geometry) sql=</datasource>
       <keywordList>
@@ -5042,23 +5105,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="entree_batiment_de" expression=""/>
-        <default field="validite" expression=""/>
-        <default field="niveau" expression=""/>
-        <default field="numero_maison" expression=""/>
-        <default field="dans_batiment" expression=""/>
-        <default field="regbl_egid" expression=""/>
-        <default field="regbl_edid" expression=""/>
-        <default field="lbl_x" expression=""/>
-        <default field="lbl_y" expression=""/>
-        <default field="ori" expression=""/>
-        <default field="lbl_hali" expression=""/>
-        <default field="lbl_vali" expression=""/>
-        <default field="lbl_grandeur" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -5407,8 +5453,25 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="entree_batiment_de" expression=""/>
+        <default field="validite" expression=""/>
+        <default field="niveau" expression=""/>
+        <default field="numero_maison" expression=""/>
+        <default field="dans_batiment" expression=""/>
+        <default field="regbl_egid" expression=""/>
+        <default field="regbl_edid" expression=""/>
+        <default field="lbl_x" expression=""/>
+        <default field="lbl_y" expression=""/>
+        <default field="ori" expression=""/>
+        <default field="lbl_hali" expression=""/>
+        <default field="lbl_vali" expression=""/>
+        <default field="lbl_grandeur" expression=""/>
+      </defaults>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="2000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="2000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>pf_points_fixes20161123144654375</id>
       <datasource>service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."pf_points_fixes" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -5432,21 +5495,6 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="cid" expression=""/>
-        <default field="_tid" expression=""/>
-        <default field="genre" expression=""/>
-        <default field="origine" expression=""/>
-        <default field="identdn" expression=""/>
-        <default field="numero" expression=""/>
-        <default field="geomalt" expression=""/>
-        <default field="precplan" expression=""/>
-        <default field="fiabplan" expression=""/>
-        <default field="precalt" expression=""/>
-        <default field="fiabalt" expression=""/>
-        <default field="accessibilite" expression=""/>
-        <default field="signe" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -5865,6 +5913,21 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="cid" expression=""/>
+        <default field="_tid" expression=""/>
+        <default field="genre" expression=""/>
+        <default field="origine" expression=""/>
+        <default field="identdn" expression=""/>
+        <default field="numero" expression=""/>
+        <default field="geomalt" expression=""/>
+        <default field="precplan" expression=""/>
+        <default field="fiabplan" expression=""/>
+        <default field="precalt" expression=""/>
+        <default field="fiabalt" expression=""/>
+        <default field="accessibilite" expression=""/>
+        <default field="signe" expression=""/>
+      </defaults>
     </maplayer>
   </projectlayers>
   <properties>
@@ -5897,12 +5960,14 @@ def my_form_open(dialog, layer, feature):
         <value>bf_immeuble20161019163752305</value>
         <value>bf_point_limite20161123141033694</value>
         <value>cs_couverture_sol20161117155047081</value>
+        <value>no_nomenclature20161124151011953</value>
         <value>od_element_lineaire20161123134458480</value>
         <value>od_element_surfacique20161123111234045</value>
         <value>od_entree_batiment20161124100003328</value>
         <value>pf_points_fixes20161123144654375</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
@@ -5923,8 +5988,10 @@ def my_form_open(dialog, layer, feature):
         <value>1</value>
         <value>1</value>
         <value>1</value>
+        <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex</value>
         <value>to_vertex</value>
         <value>to_vertex</value>
         <value>to_vertex</value>
@@ -5937,6 +6004,7 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>10.000000</value>
         <value>10.000000</value>
         <value>10.000000</value>
         <value>10.000000</value>
