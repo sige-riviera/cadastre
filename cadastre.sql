@@ -25,7 +25,7 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 		FROM fribourg.biens_fonds__immeuble imm
 		LEFT OUTER JOIN
 		(
-			SELECT _tid, geometrie::geometry(Polygon,2056) AS geometry, bien_fonds_de AS fk_immeuble FROM vaud.biens_fonds__bien_fonds
+			SELECT _tid, geometrie::geometry(Polygon,2056) AS geometry, bien_fonds_de AS fk_immeuble FROM fribourg.biens_fonds__bien_fonds
 			UNION
 			SELECT _tid, ST_CurveToLine(wkb_geometry)::geometry(Polygon,2056) AS geometry, ddp_de AS fk_immeuble FROM fribourg.biens_fonds__ddp
 		) AS bf ON bf.fk_immeuble = imm._tid
@@ -53,9 +53,9 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 		FROM valais.biens_fonds__immeuble imm
 		LEFT OUTER JOIN
 		(
-			SELECT _tid, geometrie::geometry(Polygon,2056) AS geometry, bien_fonds_de AS fk_immeuble FROM vaud.biens_fonds__bien_fonds
+			SELECT _tid, geometrie::geometry(Polygon,2056) AS geometry, bien_fonds_de AS fk_immeuble FROM valais.biens_fonds__bien_fonds
 			UNION
-			SELECT _tid, ST_CurveToLine(wkb_geometry)::geometry(Polygon,2056) AS geometry, ddp_de AS fk_immeuble FROM vaud.biens_fonds__ddp
+			SELECT _tid, ST_CurveToLine(wkb_geometry)::geometry(Polygon,2056) AS geometry, ddp_de AS fk_immeuble FROM valais.biens_fonds__ddp
 		) AS bf ON bf.fk_immeuble = imm._tid
 		LEFT OUTER JOIN (SELECT DISTINCT ON(posimmeuble_de) * FROM valais.biens_fonds__posimmeuble) pos ON pos.posimmeuble_de = imm._tid
 	)
