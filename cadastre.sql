@@ -13,14 +13,14 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 			imm.genre,
 			pos.pos_0 as lbl_x,
 			pos.pos_1 as lbl_y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali as lbl_hali, 
-			pos.vali as lbl_vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali as lbl_hali,
+			pos.vali as lbl_vali,
 			pos.grandeur as lbl_grandeur,
 			bf.geometry IS NOT NULL as has_geometry,
 			CASE
-				WHEN bf.geometry IS NULL THEN ST_SetSRID(ST_MakeBox2D(ST_MakePoint(pos.pos_0-.1,pos.pos_1-.1),ST_MakePoint(pos.pos_0+.1,pos.pos_1+.1)),2056)::geometry(Polygon,2056) 
-				ELSE bf.geometry::geometry(Polygon,2056) 
+				WHEN bf.geometry IS NULL THEN ST_SetSRID(ST_MakeBox2D(ST_MakePoint(pos.pos_0-.1,pos.pos_1-.1),ST_MakePoint(pos.pos_0+.1,pos.pos_1+.1)),2056)::geometry(Polygon,2056)
+				ELSE bf.geometry::geometry(Polygon,2056)
 			END AS geometry
 		FROM fribourg.biens_fonds__immeuble imm
 		LEFT OUTER JOIN
@@ -41,14 +41,14 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 			imm.genre,
 			pos.pos_0 as lbl_x,
 			pos.pos_1 as lbl_y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali as lbl_hali, 
-			pos.vali as lbl_vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali as lbl_hali,
+			pos.vali as lbl_vali,
 			pos.grandeur as lbl_grandeur,
 			bf.geometry IS NOT NULL as has_geometry,
 			CASE
-				WHEN bf.geometry IS NULL THEN ST_SetSRID(ST_MakeBox2D(ST_MakePoint(pos.pos_0-.1,pos.pos_1-.1),ST_MakePoint(pos.pos_0+.1,pos.pos_1+.1)),2056)::geometry(Polygon,2056) 
-				ELSE bf.geometry::geometry(Polygon,2056) 
+				WHEN bf.geometry IS NULL THEN ST_SetSRID(ST_MakeBox2D(ST_MakePoint(pos.pos_0-.1,pos.pos_1-.1),ST_MakePoint(pos.pos_0+.1,pos.pos_1+.1)),2056)::geometry(Polygon,2056)
+				ELSE bf.geometry::geometry(Polygon,2056)
 			END AS geometry
 		FROM valais.biens_fonds__immeuble imm
 		LEFT OUTER JOIN
@@ -69,14 +69,14 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 			imm.genre,
 			pos.pos_0 as lbl_x,
 			pos.pos_1 as lbl_y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali as lbl_hali, 
-			pos.vali as lbl_vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali as lbl_hali,
+			pos.vali as lbl_vali,
 			pos.grandeur as lbl_grandeur,
 			bf.geometry IS NOT NULL as has_geometry,
 			CASE
-				WHEN bf.geometry IS NULL THEN ST_SetSRID(ST_MakeBox2D(ST_MakePoint(pos.pos_0-.1,pos.pos_1-.1),ST_MakePoint(pos.pos_0+.1,pos.pos_1+.1)),2056)::geometry(Polygon,2056) 
-				ELSE bf.geometry::geometry(Polygon,2056) 
+				WHEN bf.geometry IS NULL THEN ST_SetSRID(ST_MakeBox2D(ST_MakePoint(pos.pos_0-.1,pos.pos_1-.1),ST_MakePoint(pos.pos_0+.1,pos.pos_1+.1)),2056)::geometry(Polygon,2056)
+				ELSE bf.geometry::geometry(Polygon,2056)
 			END AS geometry
 		FROM vaud.biens_fonds__immeuble imm
 		LEFT OUTER JOIN
@@ -89,7 +89,7 @@ CREATE MATERIALIZED VIEW cadastre.bf_immeuble AS
 	)
 	;
 CREATE INDEX bf_immeuble_geom_idx ON cadastre.bf_immeuble USING gist (geometry);
-	
+
 -- *****************
 -- COUVERTURE DU SOL
 
@@ -107,15 +107,15 @@ CREATE MATERIALIZED VIEW cadastre.cs_couverture_sol AS
 			num.numero,
 			pos.pos_0 as x,
 			pos.pos_1 as y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali, 
-			pos.vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali,
+			pos.vali,
 			pos.grandeur
 		FROM fribourg.couverture_du_sol__surfacecs cs
 		LEFT OUTER JOIN fribourg.couverture_du_sol__numero_de_batiment num ON cs._tid = num.numero_de_batiment_de
 		LEFT OUTER JOIN (SELECT DISTINCT ON(posnumero_de_batiment_de) * FROM fribourg.couverture_du_sol__posnumero_de_batiment) pos ON pos.posnumero_de_batiment_de = num._tid
 	)
-	UNION 
+	UNION
 	(
 		SELECT
 			2000000 + row_number() OVER (ORDER BY cs.ogc_fid,cs._tid,num.numero ASC) AS cid,
@@ -128,17 +128,17 @@ CREATE MATERIALIZED VIEW cadastre.cs_couverture_sol AS
 			num.numero,
 			pos.pos_0 as x,
 			pos.pos_1 as y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali, 
-			pos.vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali,
+			pos.vali,
 			pos.grandeur
 		FROM valais.couverture_du_sol__surfacecs cs
 		LEFT OUTER JOIN valais.couverture_du_sol__numero_de_batiment num ON cs._tid = num.numero_de_batiment_de
 		LEFT OUTER JOIN (SELECT DISTINCT ON(posnumero_de_batiment_de) * FROM valais.couverture_du_sol__posnumero_de_batiment) pos ON pos.posnumero_de_batiment_de = num._tid
 	)
-	UNION 
+	UNION
 	(
-		SELECT 
+		SELECT
 			3000000 + row_number() OVER (ORDER BY cs.ogc_fid,cs._tid,num.numero ASC) AS cid,
 			cs.ogc_fid,
 			cs._tid,
@@ -149,15 +149,15 @@ CREATE MATERIALIZED VIEW cadastre.cs_couverture_sol AS
 			num.numero,
 			pos.pos_0 as x,
 			pos.pos_1 as y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali, 
-			pos.vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali,
+			pos.vali,
 			pos.grandeur
 		FROM vaud.couverture_du_sol__surfacecs cs
 		LEFT OUTER JOIN (SELECT DISTINCT ON (numero_de_batiment_de) * FROM vaud.couverture_du_sol__numero_de_batiment) num ON cs._tid = num.numero_de_batiment_de
 		LEFT OUTER JOIN (SELECT DISTINCT ON (posnumero_de_batiment_de) * FROM vaud.couverture_du_sol__posnumero_de_batiment) pos ON pos.posnumero_de_batiment_de = num._tid
 	);
-CREATE INDEX cs_cs_geom_idx ON cadastre.cs_couverture_sol USING gist (geometrie); 
+CREATE INDEX cs_cs_geom_idx ON cadastre.cs_couverture_sol USING gist (geometrie);
 
 
 -- *****************
@@ -168,11 +168,11 @@ CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 	(
 		SELECT
 			1000000 + row_number() OVER (ORDER BY rue.troncon_rue_de ASC) AS cid,
-			nom.texte_abrege,
+			COALESCE(nom.texte_abrege, nom.texte) AS nom_rue,
 			--loc.*,
 			rue.geometrie
 		FROM
-		( 
+		(
 			SELECT
 				troncon_rue_de,
 				ST_Multi(ST_LineMerge(ST_Union(rue.geometrie)))::geometry(MultiLineString,2056) as geometrie
@@ -185,11 +185,11 @@ CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 	(
 		SELECT
 			2000000 + row_number() OVER (ORDER BY rue.troncon_rue_de ASC) AS cid,
-			nom.texte_abrege,
+			COALESCE(nom.texte_abrege, nom.texte) AS nom_rue,
 			--loc.*,
 			rue.geometrie
 		FROM
-		( 
+		(
 			SELECT
 				troncon_rue_de,
 				ST_Multi(ST_LineMerge(ST_Union(rue.geometrie)))::geometry(MultiLineString,2056) as geometrie
@@ -202,11 +202,11 @@ CREATE MATERIALIZED VIEW cadastre.ab_rue AS
 	(
 		SELECT
 			3000000 + row_number() OVER (ORDER BY rue.troncon_rue_de ASC) AS cid,
-			nom.texte_abrege,
+			COALESCE(nom.texte_abrege, nom.texte) AS nom_rue,
 			--loc.*,
 			rue.geometrie
 		FROM
-		( 
+		(
 			SELECT
 				troncon_rue_de,
 				ST_Multi(ST_LineMerge(ST_Union(rue.geometrie)))::geometry(MultiLineString,2056) as geometrie
@@ -226,7 +226,7 @@ CREATE INDEX ab_rue_geom_idx ON cadastre.ab_rue USING gist (geometrie);
 DROP MATERIALIZED VIEW IF EXISTS cadastre.od_element_surfacique;
 CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
 	(
-		SELECT 
+		SELECT
 			1000000 + row_number() OVER (ORDER BY os.ogc_fid,os._tid ASC) AS cid,
 			od.origine,
 			od.qualite,
@@ -235,9 +235,9 @@ CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
 			num.numero,
 			pos.pos_0 as x,
 			pos.pos_1 as y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali, 
-			pos.vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali,
+			pos.vali,
 			pos.grandeur
 		FROM fribourg.objets_divers__element_surfacique os
 		LEFT OUTER JOIN fribourg.objets_divers__objet_divers od ON od._tid = os.element_surfacique_de
@@ -246,7 +246,7 @@ CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
 	)
 	UNION
 	(
-		SELECT 
+		SELECT
 			2000000 + row_number() OVER (ORDER BY os.ogc_fid,os._tid ASC) AS cid,
 			od.origine,
 			od.qualite,
@@ -255,9 +255,9 @@ CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
 			num.numero,
 			pos.pos_0 as x,
 			pos.pos_1 as y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali, 
-			pos.vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali,
+			pos.vali,
 			pos.grandeur
 		FROM valais.objets_divers__element_surfacique os
 		LEFT OUTER JOIN valais.objets_divers__objet_divers od ON od._tid = os.element_surfacique_de
@@ -266,7 +266,7 @@ CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
 	)
 	UNION
 	(
-		SELECT 
+		SELECT
 			3000000 + row_number() OVER (ORDER BY os.ogc_fid,os._tid ASC) AS cid,
 			od.origine,
 			od.qualite,
@@ -275,9 +275,9 @@ CREATE MATERIALIZED VIEW cadastre.od_element_surfacique AS
 			num.numero,
 			pos.pos_0 as x,
 			pos.pos_1 as y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali, 
-			pos.vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali,
+			pos.vali,
 			pos.grandeur
 		FROM vaud.objets_divers__element_surfacique os
 		LEFT OUTER JOIN vaud.objets_divers__objet_divers od ON od._tid = os.element_surfacique_de
@@ -294,7 +294,7 @@ CREATE INDEX od_element_surfacique_geom_idx ON cadastre.od_element_surfacique US
 DROP MATERIALIZED VIEW IF EXISTS cadastre.od_element_lineaire;
 CREATE MATERIALIZED VIEW cadastre.od_element_lineaire AS
 	(
-		SELECT 
+		SELECT
 			1000000 + row_number() OVER (ORDER BY ol.ogc_fid,ol._tid ASC) AS cid,
 			od.origine,
 			od.qualite,
@@ -305,7 +305,7 @@ CREATE MATERIALIZED VIEW cadastre.od_element_lineaire AS
 	)
 	UNION
 	(
-		SELECT 
+		SELECT
 			2000000 + row_number() OVER (ORDER BY ol.ogc_fid,ol._tid ASC) AS cid,
 			od.origine,
 			od.qualite,
@@ -316,7 +316,7 @@ CREATE MATERIALIZED VIEW cadastre.od_element_lineaire AS
 	)
 	UNION
 	(
-		SELECT 
+		SELECT
 			3000000 + row_number() OVER (ORDER BY ol.ogc_fid,ol._tid ASC) AS cid,
 			od.origine,
 			od.qualite,
@@ -335,7 +335,7 @@ CREATE INDEX od_element_lineaire_geom_idx ON cadastre.od_element_lineaire USING 
 
 DROP MATERIALIZED VIEW IF EXISTS cadastre.bf_point_limite;
 CREATE MATERIALIZED VIEW cadastre.bf_point_limite AS
-		SELECT 
+		SELECT
 			1000000 + row_number() OVER (ORDER BY ogc_fid,_tid ASC) AS cid,
 			origine,
 			identification,
@@ -347,7 +347,7 @@ CREATE MATERIALIZED VIEW cadastre.bf_point_limite AS
 			wkb_geometry::geometry(Point,2056) as geometry
 		FROM fribourg.biens_fonds__point_limite
 	UNION
-		SELECT 
+		SELECT
 			2000000 + row_number() OVER (ORDER BY ogc_fid,_tid ASC) AS cid,
 			origine,
 			identification,
@@ -359,7 +359,7 @@ CREATE MATERIALIZED VIEW cadastre.bf_point_limite AS
 			wkb_geometry::geometry(Point,2056) as geometry
 		FROM valais.biens_fonds__point_limite
 	UNION
-		SELECT 
+		SELECT
 			3000000 + row_number() OVER (ORDER BY ogc_fid,_tid ASC) AS cid,
 			origine,
 			identification,
@@ -379,7 +379,7 @@ CREATE INDEX bf_point_limite_geom_idx ON cadastre.bf_point_limite USING gist (ge
 
 DROP MATERIALIZED VIEW IF EXISTS cadastre.pf_points_fixes;
 CREATE MATERIALIZED VIEW cadastre.pf_points_fixes AS
-		SELECT 
+		SELECT
 			1000000 + row_number() OVER (ORDER BY _tid ASC) AS cid,
 			*
 			FROM
@@ -397,7 +397,7 @@ CREATE MATERIALIZED VIEW cadastre.pf_points_fixes AS
 				SELECT _tid, 'PFA3' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  fribourg.points_fixescategorie3__pfp3
 			) fribourg
 	UNION
-		SELECT 
+		SELECT
 			2000000 + row_number() OVER (ORDER BY _tid ASC) AS cid,
 			*
 			FROM
@@ -431,7 +431,7 @@ CREATE MATERIALIZED VIEW cadastre.pf_points_fixes AS
 				SELECT _tid, 'PFA2' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  vaud.points_fixescategorie2__pfp2
 				UNION
 				SELECT _tid, 'PFA3' as genre, origine, identdn, numero, geomalt, precplan, fiabplan, precalt, fiabalt, NULL::int asaccessibilite, NULL::int as signe, wkb_geometry FROM  vaud.points_fixescategorie3__pfp3
-			) vaud	
+			) vaud
 	;
 CREATE INDEX pf_points_fixes_geom_idx ON cadastre.pf_points_fixes USING gist (wkb_geometry);
 
@@ -442,7 +442,7 @@ CREATE INDEX pf_points_fixes_geom_idx ON cadastre.pf_points_fixes USING gist (wk
 DROP MATERIALIZED VIEW IF EXISTS cadastre.od_entree_batiment;
 CREATE MATERIALIZED VIEW cadastre.od_entree_batiment AS
 	(
-		SELECT 
+		SELECT
 			1000000 + row_number() OVER (ORDER BY eb.ogc_fid,eb._tid ASC) AS cid,
 			eb.origine,
 			eb.entree_batiment_de,
@@ -455,16 +455,16 @@ CREATE MATERIALIZED VIEW cadastre.od_entree_batiment AS
 			eb.wkb_geometry::geometry(Point,2056) as geometry,
 			pos.pos_0 as lbl_x,
 			pos.pos_1 as lbl_y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali as lbl_hali, 
-			pos.vali as lbl_vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali as lbl_hali,
+			pos.vali as lbl_vali,
 			pos.grandeur as lbl_grandeur
 		FROM fribourg.adresses_des_batiments__entree_batiment eb
 		LEFT OUTER JOIN fribourg.adresses_des_batiments__posnumero_maison pos ON eb._tid = pos.posnumero_batiment_de
 	)
 	UNION
 	(
-		SELECT 
+		SELECT
 			2000000 + row_number() OVER (ORDER BY eb.ogc_fid,eb._tid ASC) AS cid,
 			eb.origine,
 			eb.entree_batiment_de,
@@ -477,16 +477,16 @@ CREATE MATERIALIZED VIEW cadastre.od_entree_batiment AS
 			eb.wkb_geometry::geometry(Point,2056) as geometry,
 			pos.pos_0 as lbl_x,
 			pos.pos_1 as lbl_y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali as lbl_hali, 
-			pos.vali as lbl_vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali as lbl_hali,
+			pos.vali as lbl_vali,
 			pos.grandeur as lbl_grandeur
 		FROM valais.adresses_des_batiments__entree_batiment eb
 		LEFT OUTER JOIN valais.adresses_des_batiments__posnumero_maison pos ON eb._tid = pos.posnumero_batiment_de
 	)
 	UNION
 	(
-		SELECT 
+		SELECT
 			3000000 + row_number() OVER (ORDER BY eb.ogc_fid,eb._tid ASC) AS cid,
 			eb.origine,
 			eb.entree_batiment_de,
@@ -499,9 +499,9 @@ CREATE MATERIALIZED VIEW cadastre.od_entree_batiment AS
 			eb.wkb_geometry::geometry(Point,2056) as geometry,
 			pos.pos_0 as lbl_x,
 			pos.pos_1 as lbl_y,
-			90-180.0/200.0*pos.ori AS ori, 
-			pos.hali as lbl_hali, 
-			pos.vali as lbl_vali, 
+			90-180.0/200.0*pos.ori AS ori,
+			pos.hali as lbl_hali,
+			pos.vali as lbl_vali,
 			pos.grandeur as lbl_grandeur
 		FROM vaud.adresses_des_batiments__entree_batiment eb
 		LEFT OUTER JOIN vaud.adresses_des_batiments__posnumero_maison pos ON eb._tid = pos.posnumero_batiment_de
@@ -527,9 +527,9 @@ CREATE MATERIALIZED VIEW cadastre.no_nomenclature AS
 					nl.nom,
 					nl_pos.pos_0 as lbl_x,
 					nl_pos.pos_1 as lbl_y,
-					90-180.0/200.0*nl_pos.ori AS ori, 
-					nl_pos.hali as lbl_hali, 
-					nl_pos.vali as lbl_vali, 
+					90-180.0/200.0*nl_pos.ori AS ori,
+					nl_pos.hali as lbl_hali,
+					nl_pos.vali as lbl_vali,
 					nl_pos.grandeur as lbl_grandeur,
 					nl_pos.wkb_geometry::geometry(Point,2056) as geometry
 				FROM fribourg.nomenclature__posnom_local nl_pos
@@ -542,9 +542,9 @@ CREATE MATERIALIZED VIEW cadastre.no_nomenclature AS
 					ld.nom,
 					ld_pos.pos_0 as lbl_x,
 					ld_pos.pos_1 as lbl_y,
-					90-180.0/200.0*ld_pos.ori AS ori, 
-					ld_pos.hali as lbl_hali, 
-					ld_pos.vali as lbl_vali, 
+					90-180.0/200.0*ld_pos.ori AS ori,
+					ld_pos.hali as lbl_hali,
+					ld_pos.vali as lbl_vali,
 					ld_pos.grandeur as lbl_grandeur,
 					ld_pos.wkb_geometry::geometry(Point,2056) as geometry
 				FROM fribourg.nomenclature__poslieudit ld_pos
@@ -565,9 +565,9 @@ CREATE MATERIALIZED VIEW cadastre.no_nomenclature AS
 					nl.nom,
 					nl_pos.pos_0 as lbl_x,
 					nl_pos.pos_1 as lbl_y,
-					90-180.0/200.0*nl_pos.ori AS ori, 
-					nl_pos.hali as lbl_hali, 
-					nl_pos.vali as lbl_vali, 
+					90-180.0/200.0*nl_pos.ori AS ori,
+					nl_pos.hali as lbl_hali,
+					nl_pos.vali as lbl_vali,
 					nl_pos.grandeur as lbl_grandeur,
 					nl_pos.wkb_geometry::geometry(Point,2056) as geometry
 				FROM valais.nomenclature__posnom_local nl_pos
@@ -580,9 +580,9 @@ CREATE MATERIALIZED VIEW cadastre.no_nomenclature AS
 					ld.nom,
 					ld_pos.pos_0 as lbl_x,
 					ld_pos.pos_1 as lbl_y,
-					90-180.0/200.0*ld_pos.ori AS ori, 
-					ld_pos.hali as lbl_hali, 
-					ld_pos.vali as lbl_vali, 
+					90-180.0/200.0*ld_pos.ori AS ori,
+					ld_pos.hali as lbl_hali,
+					ld_pos.vali as lbl_vali,
 					ld_pos.grandeur as lbl_grandeur,
 					ld_pos.wkb_geometry::geometry(Point,2056) as geometry
 				FROM valais.nomenclature__poslieudit ld_pos
@@ -603,9 +603,9 @@ CREATE MATERIALIZED VIEW cadastre.no_nomenclature AS
 					nl.nom,
 					nl_pos.pos_0 as lbl_x,
 					nl_pos.pos_1 as lbl_y,
-					90-180.0/200.0*nl_pos.ori AS ori, 
-					nl_pos.hali as lbl_hali, 
-					nl_pos.vali as lbl_vali, 
+					90-180.0/200.0*nl_pos.ori AS ori,
+					nl_pos.hali as lbl_hali,
+					nl_pos.vali as lbl_vali,
 					nl_pos.grandeur as lbl_grandeur,
 					nl_pos.wkb_geometry::geometry(Point,2056) as geometry
 				FROM vaud.nomenclature__posnom_local nl_pos
@@ -618,9 +618,9 @@ CREATE MATERIALIZED VIEW cadastre.no_nomenclature AS
 					ld.nom,
 					ld_pos.pos_0 as lbl_x,
 					ld_pos.pos_1 as lbl_y,
-					90-180.0/200.0*ld_pos.ori AS ori, 
-					ld_pos.hali as lbl_hali, 
-					ld_pos.vali as lbl_vali, 
+					90-180.0/200.0*ld_pos.ori AS ori,
+					ld_pos.hali as lbl_hali,
+					ld_pos.vali as lbl_vali,
 					ld_pos.grandeur as lbl_grandeur,
 					ld_pos.wkb_geometry::geometry(Point,2056) as geometry
 				FROM vaud.nomenclature__poslieudit ld_pos
