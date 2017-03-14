@@ -5,39 +5,39 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="1">
+    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="Cadastre">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="bf_point_limite20161123141033694" name="bf_point_limite">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ab_rue20161122113837293" name="ab_rue">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="bf_immeuble20161019163752305" name="bf_immeuble">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="National_Map_1_25_00020170314120154767" name="Carte 25000">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="National_Map_1_25_00020170314120154767" name="Carte 25000">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" name="Carte">
@@ -55,10 +55,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2547778.94799198023974895</xmin>
-      <ymin>1139955.60769181232899427</ymin>
-      <xmax>2564061.20387725345790386</xmax>
-      <ymax>1150542.17432845663279295</ymax>
+      <xmin>2554320.88299776427447796</xmin>
+      <ymin>1145588.84114584908820689</ymin>
+      <xmax>2554572.9774189367890358</xmax>
+      <ymax>1145752.75052101560868323</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -114,56 +114,56 @@
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::Checked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::Unchecked" name="Cadastre">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="no_nomenclature" showFeatureCount="0">
+      <legendgroup open="true" checked="Qt::Checked" name="Cadastre">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="od_entree_batiment" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_point_limite" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="pf_points_fixes" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ab_rue" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_immeuble" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_surfacique" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cs_couverture_sol" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Carte 25000" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Carte 25000" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020170314120154767" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020170314120154767" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Carte" showFeatureCount="0">
@@ -1801,7 +1801,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="242,242,242,255"/>
+              <prop k="color" v="242,242,242,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1811,40 +1811,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
-            </layer>
-            <layer pass="0" class="LinePatternFill" locked="1">
-              <prop k="angle" v="45"/>
-              <prop k="color" v="52,111,107,255"/>
-              <prop k="distance" v="2"/>
-              <prop k="distance_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="distance_unit" v="MM"/>
-              <prop k="line_width" v="0.1"/>
-              <prop k="line_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <symbol alpha="1" clip_to_extent="1" type="line" name="@1@1">
-                <layer pass="0" class="SimpleLine" locked="0">
-                  <prop k="capstyle" v="square"/>
-                  <prop k="customdash" v="5;2"/>
-                  <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-                  <prop k="customdash_unit" v="MM"/>
-                  <prop k="draw_inside_polygon" v="0"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="line_color" v="0,0,0,255"/>
-                  <prop k="line_style" v="no"/>
-                  <prop k="line_width" v="0.26"/>
-                  <prop k="line_width_unit" v="MM"/>
-                  <prop k="offset" v="0"/>
-                  <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="use_custom_dash" v="0"/>
-                  <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-                </layer>
-              </symbol>
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="10">
@@ -4293,7 +4259,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="205,205,205,255"/>
+              <prop k="color" v="246,246,246,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>

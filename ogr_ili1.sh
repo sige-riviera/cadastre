@@ -16,13 +16,13 @@ export PGSERVICE=cadastre
 
 # VAUD
 psql -c "DROP SCHEMA IF EXISTS vaud CASCADE; CREATE SCHEMA vaud;"
-#echo "*** VD-1 ***"      
+#echo "*** VD-1 ***"
 ./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-1.itf,moch.imd
-#echo "*** VD-2 ***"      
+#echo "*** VD-2 ***"
 ./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-2.itf,moch.imd
-#echo "*** VD-3 ***"      
+#echo "*** VD-3 ***"
 ./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-3.itf,moch.imd
-#echo "*** VD-4 ***"      
+#echo "*** VD-4 ***"
 ./gdal-build/bin/ogr2ogr -lco SCHEMA=vaud   --config OGR_STROKE_CURVE TRUE -a_srs "EPSG:2056" -gt 20000 -append -f PostgreSQL "PG:dbname=cadastre active_schema=vaud" data/vd-4.itf,moch.imd
 
 # VALAIS
@@ -39,5 +39,13 @@ psql -c "DROP SCHEMA IF EXISTS fribourg CASCADE; CREATE SCHEMA fribourg;"
 
 
 
-
-psql -f cadastre.sql -v ON_ERROR_STOP=ON
+# CREATE MATERIALIZED VIEWS
+psql -v ON_ERROR_STOP=1 -f ab_rue.sql
+psql -v ON_ERROR_STOP=1 -f bf_immeuble.sql
+psql -v ON_ERROR_STOP=1 -f bf_point_limite.sql
+psql -v ON_ERROR_STOP=1 -f cs_couverture_sol.sql
+psql -v ON_ERROR_STOP=1 -f no_nomenclature.sql
+psql -v ON_ERROR_STOP=1 -f od_element_lineaire.sql
+psql -v ON_ERROR_STOP=1 -f od_element_surfacique.sql
+psql -v ON_ERROR_STOP=1 -f od_entree_batiment.sql
+psql -v ON_ERROR_STOP=1 -f pf_points_fixes.sql
