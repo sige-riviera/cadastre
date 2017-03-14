@@ -1,46 +1,49 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.1">
+<qgis projectname="" version="2.18.3">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="1">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="no_nomenclature20161124151011953" name="no_nomenclature">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="bf_point_limite20161123141033694" name="bf_point_limite">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ab_rue20161122113837293" name="ab_rue">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="bf_immeuble20161019163752305" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="National_Map_1_25_00020161213094052164" name="National Map 1:25'000">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="National_Map_1_25_00020170314120154767" name="Carte 25000">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20161213094045281" name="SWISSIMAGE">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" name="Carte">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" name="Image aerienne">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" name="OpenStreeMap">
@@ -74,6 +77,8 @@
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_nomenclature20161124151011953"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020170314120154767"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20170314120137660"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_points_fixes20161123144654375"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20161123111234045"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_immeuble20161019163752305"/>
@@ -101,68 +106,74 @@
       <item>pf_points_fixes20161123144654375</item>
       <item>od_entree_batiment20161124100003328</item>
       <item>no_nomenclature20161124151011953</item>
-      <item>SWISSIMAGE20161213094045281</item>
-      <item>National_Map_1_25_00020161213094052164</item>
       <item>OpenStreeMap20170131085532398</item>
+      <item>SWISSIMAGE20170314120137660</item>
+      <item>National_Maps__color_20170314120148938</item>
+      <item>National_Map_1_25_00020170314120154767</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::Checked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Cadastre">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="od_entree_batiment" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_point_limite" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="pf_points_fixes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ab_rue" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_immeuble" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_surfacique" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cs_couverture_sol" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="National Map 1:25'000" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020161213094052164" visible="0"/>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Carte 25000" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020170314120154767" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SWISSIMAGE" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Carte" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20161213094045281" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="National_Maps__color_20170314120148938" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Image aerienne" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20170314120137660" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OpenStreeMap" showFeatureCount="0">
@@ -175,24 +186,69 @@
   <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
-        <xmin>419995.70888743817340583</xmin>
-        <ymin>27366.12590403261128813</ymin>
-        <xmax>916216.83972122299019247</xmax>
-        <ymax>350004.34664214466465637</ymax>
+        <xmin>2419995.74880736321210861</xmin>
+        <ymin>1027366.07117159920744598</ymin>
+        <xmax>2916216.88054902851581573</xmax>
+        <ymax>1350004.29247885243967175</ymax>
       </extent>
-      <id>National_Map_1_25_00020161213094052164</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=21781_26&amp;url=http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml</datasource>
+      <id>National_Map_1_25_00020170314120154767</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_26&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>National Map 1:25'000</layername>
+      <layername>Carte 25000</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2419995.74880736321210861</xmin>
+        <ymin>1027366.07117159920744598</ymin>
+        <xmax>2916216.88054902851581573</xmax>
+        <ymax>1350004.29247885243967175</ymax>
+      </extent>
+      <id>National_Maps__color_20170314120148938</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Carte</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -266,24 +322,24 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
-        <xmin>419995.70888743817340583</xmin>
-        <ymin>27366.12590403261128813</ymin>
-        <xmax>916216.83972122299019247</xmax>
-        <ymax>350004.34664214466465637</ymax>
+        <xmin>2419995.74880736321210861</xmin>
+        <ymin>1027366.07117159920744598</ymin>
+        <xmax>2916216.88054902851581573</xmax>
+        <ymax>1350004.29247885243967175</ymax>
       </extent>
-      <id>SWISSIMAGE20161213094045281</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=21781_27&amp;url=http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml</datasource>
+      <id>SWISSIMAGE20170314120137660</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>SWISSIMAGE</layername>
+      <layername>Image aerienne</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -329,7 +385,6 @@
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -617,6 +672,7 @@ def my_form_open(dialog, layer, feature):
         <default field="cid" expression=""/>
         <default field="nom_rue" expression=""/>
       </defaults>
+      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="8000" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -644,7 +700,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -1076,6 +1131,7 @@ def my_form_open(dialog, layer, feature):
         <default field="lbl_grandeur" expression=""/>
         <default field="has_geometry" expression=""/>
       </defaults>
+      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1500" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>bf_point_limite20161123141033694</id>
@@ -1097,7 +1153,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -1629,6 +1684,7 @@ def my_form_open(dialog, layer, feature):
         <default field="defini_exactement" expression=""/>
         <default field="anc_borne_speciale" expression=""/>
       </defaults>
+      <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>cs_couverture_sol20161117155047081</id>
@@ -1650,7 +1706,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "ogc_fid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -2560,6 +2615,7 @@ def my_form_open(dialog, layer, feature):
         <default field="vali" expression=""/>
         <default field="grandeur" expression=""/>
       </defaults>
+      <previewExpression>COALESCE( "ogc_fid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="7500" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -2587,7 +2643,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -2926,6 +2981,7 @@ def my_form_open(dialog, layer, feature):
         <default field="lbl_vali" expression=""/>
         <default field="lbl_grandeur" expression=""/>
       </defaults>
+      <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="700" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>od_element_lineaire20161123134458480</id>
@@ -2947,7 +3003,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -4111,6 +4166,7 @@ def my_form_open(dialog, layer, feature):
         <default field="qualite" expression=""/>
         <default field="genre" expression=""/>
       </defaults>
+      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>od_element_surfacique20161123111234045</id>
@@ -4132,7 +4188,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -5082,6 +5137,7 @@ def my_form_open(dialog, layer, feature):
         <default field="vali" expression=""/>
         <default field="grandeur" expression=""/>
       </defaults>
+      <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>od_entree_batiment20161124100003328</id>
@@ -5103,7 +5159,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -5472,6 +5527,7 @@ def my_form_open(dialog, layer, feature):
         <default field="lbl_vali" expression=""/>
         <default field="lbl_grandeur" expression=""/>
       </defaults>
+      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="2000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>pf_points_fixes20161123144654375</id>
@@ -5493,7 +5549,6 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -5930,14 +5985,15 @@ def my_form_open(dialog, layer, feature):
         <default field="accessibilite" expression=""/>
         <default field="signe" expression=""/>
       </defaults>
+      <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
   </projectlayers>
   <properties>
-    <WMSContactPerson type="QString"></WMSContactPerson>
     <Variables>
       <variableNames type="QStringList"/>
       <variableValues type="QStringList"/>
     </Variables>
+    <WMSContactPerson type="QString"></WMSContactPerson>
     <WMSOnlineResource type="QString"></WMSOnlineResource>
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
     <WMSContactOrganization type="QString"></WMSContactOrganization>
