@@ -7,10 +7,13 @@ Le but est d'avoir une procédure uniformisée pour l'import des données sur le
 1. Commander les données au format **Interlis 1 au format national MD01MOCH24MN95F** et dans le système **MN95**.
 
 	1.1 Vaud: sur le site de l'asit-vd
+
 		* Commander la MO + le NPCS
 		* En raison de la taille faire 2 commandes:
+
 		  * Riviera (Chardonne, Chexbres, Rivaz, Saint-Saphorin (Lavaux), Puidoux, Corseaux, Jongny, Corsier-sur-Vevey, Vevey, Saint-Légier-La Chiésaz, La Tour-de-Peilz, Blonay, Montreux)
 		  * Haut-Lac (Veytaux, Villeneuve (Vaud), Noville, Chessel, Rennaz, Roche (Vaud))
+
 		* Dans le compte SIGE, il est possible de *remettre au panier* les anciennes commandes (date_mo_ch_region)
 
 	1.2 Fribourg
