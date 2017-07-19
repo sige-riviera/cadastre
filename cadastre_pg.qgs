@@ -1,52 +1,52 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.3">
+<qgis projectname="Cadastre" version="2.18.10">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Cadastre">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="no_nomenclature20161124151011953" name="no_nomenclature">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="no_nomenclature20161124151011953" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_entree_batiment20161124100003328" name="od_entree_batiment">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_entree_batiment20161124100003328" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;od_entree_batiment&quot; (geometry) sql=" name="od_entree_batiment">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_point_limite20161123141033694" name="bf_point_limite">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bf_point_limite20161123141033694" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;bf_point_limite&quot; (geometry) sql=" name="bf_point_limite">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="pf_points_fixes20161123144654375" name="pf_points_fixes">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="pf_points_fixes20161123144654375" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;pf_points_fixes&quot; (wkb_geometry) sql=" name="pf_points_fixes">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ab_rue20161122113837293" name="ab_rue">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ab_rue20161122113837293" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;ab_rue&quot; (geometrie) sql=" name="ab_rue">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_lineaire20161123134458480" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_element_lineaire20161123134458480" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="bf_immeuble20161019163752305" name="bf_immeuble">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bf_immeuble20161019163752305" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="od_element_surfacique20161123111234045" name="od_element_surfacique">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_element_surfacique20161123111234045" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" name="cs_couverture_sol">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;cs_couverture_sol&quot; (geometrie) sql=" name="cs_couverture_sol">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="National_Map_1_25_00020170314120154767" name="Carte 25000">
+      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="National_Map_1_25_00020170314120154767" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_26&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte 25000">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" name="Carte">
+      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" name="Image aerienne">
+      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Image aerienne">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" name="OpenStreeMap">
+      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" source="crs=EPSG:2056&amp;format=&amp;type=xyz&amp;url=http://tile.osm.ch/2056/%7Bz%7D/%7Bx%7D/%7By%7D.png" name="OpenStreeMap">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -55,10 +55,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554320.88299776427447796</xmin>
-      <ymin>1145564.26616500364616513</ymin>
-      <xmax>2554572.9774189367890358</xmax>
-      <ymax>1145777.32550186105072498</ymax>
+      <xmin>2554367.8707051957026124</xmin>
+      <ymin>1145679.94891755655407906</ymin>
+      <xmax>2554430.89431048650294542</xmax>
+      <ymax>1145733.21375177055597305</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -113,8 +113,8 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Checked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fonds de plans">
+      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Cadastre">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
@@ -1645,7 +1645,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1452736512">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
           <column width="-1" hidden="0" type="field" name="origine"/>
@@ -2538,7 +2538,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1245211">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
           <column width="-1" hidden="0" type="field" name="ogc_fid"/>
@@ -2910,7 +2910,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="11384544">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
           <column width="-1" hidden="0" type="field" name="_tid"/>
@@ -4113,7 +4113,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="6356992">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
           <column width="-1" hidden="0" type="field" name="origine"/>
@@ -5105,7 +5105,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="7798784">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -5606,11 +5606,15 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{f368f075-2c18-4ff4-b202-50e044d2184b}">
-          <rule filter="&quot;genre&quot; in ('PFP1','PFP2') AND &quot;accessibilite&quot; = 0" key="{51f6261a-e4f8-4829-80e3-5b97c0412ddc}" symbol="0" label="PFP 1+2 accessible"/>
-          <rule filter="(&quot;genre&quot; in ('PFP1','PFP2') AND &quot;accessibilite&quot; = 1) " key="{251e19aa-f824-46a8-8e67-f27cb871a858}" symbol="1" label="PFP 1+2 inaccessible"/>
-          <rule filter="&quot;genre&quot; = 'PFP3'" key="{5b7caad9-6f12-46cd-8f44-9698b6ab9b18}" symbol="2" label="PFP3"/>
-          <rule checkstate="0" filter="&quot;genre&quot; in ('PFA1','PFA2')" key="{5b9a57c9-f281-4030-a1ac-1be5c5e3b31d}" symbol="3" label="PFA 1+2"/>
-          <rule checkstate="0" filter="&quot;genre&quot; = 'PFA3'" key="{0f8c599d-01b9-4046-b1f0-7030168e0811}" symbol="4" label="PFA 3"/>
+          <rule checkstate="0" filter="&quot;genre&quot; in ('PFP1','PFP2') AND &quot;accessibilite&quot; = 0" key="{51f6261a-e4f8-4829-80e3-5b97c0412ddc}" symbol="0" label="PFP 1+2 accessible"/>
+          <rule filter="&quot;genre&quot; in ('PFP1','PFP2') AND &quot;accessibilite&quot; = 0" key="{3585b604-8355-4f87-a5f1-46fa79609e12}" symbol="1" label="PFP 1+2 accessible"/>
+          <rule checkstate="0" filter="(&quot;genre&quot; in ('PFP1','PFP2') AND &quot;accessibilite&quot; = 1) " key="{251e19aa-f824-46a8-8e67-f27cb871a858}" symbol="2" label="PFP 1+2 inaccessible"/>
+          <rule filter="(&quot;genre&quot; in ('PFP1','PFP2') AND &quot;accessibilite&quot; = 1) " key="{b27de174-17c8-4b0a-91af-b09db30e86fa}" symbol="3" label="PFP 1+2 inaccessible"/>
+          <rule filter="&quot;genre&quot; = 'PFP3'" key="{40049126-2ac8-4e85-8955-370df4899f13}" symbol="4" label="PFP3"/>
+          <rule checkstate="0" filter="&quot;genre&quot; in ('PFA1','PFA2')" key="{5b9a57c9-f281-4030-a1ac-1be5c5e3b31d}" symbol="5" label="PFA 1+2"/>
+          <rule checkstate="0" filter="&quot;genre&quot; in ('PFA1','PFA2')" key="{92aa029b-339c-4f6f-acc4-b7e966c58df0}" symbol="6" label="PFA 1+2"/>
+          <rule checkstate="0" filter="&quot;genre&quot; = 'PFA3'" key="{0f8c599d-01b9-4046-b1f0-7030168e0811}" symbol="7" label="PFA 3"/>
+          <rule checkstate="0" filter="&quot;genre&quot; = 'PFA3'" key="{09855d03-93fa-4e2c-af4c-c792310d0b29}" symbol="8" label="PFA 3"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -5634,6 +5638,48 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1.4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,255,255,255"/>
@@ -5653,27 +5699,91 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
-            <layer pass="0" class="SvgMarker" locked="0">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+            <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="255,255,255,255"/>
+              <prop k="color" v="227,227,227,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="./symbols/PFP3_inaccessible.svg"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="3"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1.4"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1.4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,255,255,255"/>
@@ -5693,7 +5803,49 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1.4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,255,255,255"/>
@@ -5708,6 +5860,48 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="1.8"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,227,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1.4"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -5932,7 +6126,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="6356992">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
           <column width="-1" hidden="0" type="field" name="_tid"/>
@@ -6021,8 +6215,8 @@ def my_form_open(dialog, layer, feature):
       <DegreeFormat type="QString">MU</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSContactPosition type="QString"></WMSContactPosition>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
