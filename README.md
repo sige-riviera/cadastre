@@ -66,5 +66,5 @@ Cette solution ne fonctionne pas actuellement (décembre 2016), voir https://www
 	
 #### FME
 
-Le driver Interlis existe, mais cette voie n'a pas été explorée (non opensource, lenteur et no-CLI)
+Le driver Interlis existe, mais cette voie n'a pas été explorée.
 
