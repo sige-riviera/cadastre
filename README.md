@@ -22,7 +22,7 @@ Dans le compte SIGE d'administration, il est possible de *remettre au panier* le
 Faire une demande au bureau Geosud (veveyse@geosud.ch) pour la commune d'Attalens selon le cadrage suivant: https://github.com/sige-riviera/cadastre/blob/master/sige/zone_attalens.pdf
 
 ### 1.3. Valais
-	
+
 Faire une commande auprès du bureau Vuadens (info@jmvuadens.ch) pour la commune de Port-Valais
 
 
@@ -32,14 +32,22 @@ L'intégration dans la base se fait via ogr2ogr (pour autre solutions voir 2.3).
 
 	* Cette solution nécessite GDAL minimum 2.0.4+ / 2.1.2+ (2.2)
 	* Pour compiler en local, voir notes (3)
+	* Renommer les fichiers sources comme suit (l'ordre n'a pas d'importance):
+		* data/vd-1.itf (Riviera MO)
+		* data/vd-2.itf (Riviera NPCS)
+		* data/vd-3.itf (Haut-Lac MO)
+		* data/vd-4.itf (Haut-Lac NPCS)
+		* data/vs.itf
+		* data/fr-1.itf
+		* data/fr-2.itf
 	* Lancer le script `ogr_ili1.sh`
-	
-	
+
+
 ## 2.1. GDAL minimum 2.0.4+ / 2.1.2+
 
 Deux bugs ont été corrigés par Even Rouault (Spatialys)
 
-* https://trac.osgeo.org/gdal/ticket/6688 
+* https://trac.osgeo.org/gdal/ticket/6688
 * https://trac.osgeo.org/gdal/ticket/6728
 
 ## 2.3 Compilation GDAL:
@@ -63,7 +71,7 @@ Cette solution ne fonctionne pas actuellement (décembre 2016), voir https://www
 	1. Faire un fichier zip avec les fichiers ITF et ILI
 	2. Lancer le script itf2xml.sh avec le nom du zip comme paramètre (voir doc itf2xml)
 	3. Utiliser l'outil ili2pg avec `ili2pg_ili2.sh`
-	
+
 #### FME
 
 Le driver Interlis existe, mais cette voie n'a pas été explorée.
