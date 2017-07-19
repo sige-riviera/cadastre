@@ -19,7 +19,7 @@ Dans le compte SIGE d'administration, il est possible de *remettre au panier* le
 
 ### 1.2. Fribourg
 
-Faire une demande au bureau Geosud (veveyse@geosud.ch) pour la commune d'Attalens selon le cadrage suivant: https://github.com/sige-riviera/cadastre/sige/zone_attalens.pdf
+Faire une demande au bureau Geosud (veveyse@geosud.ch) pour la commune d'Attalens selon le cadrage suivant: https://github.com/sige-riviera/cadastre/blob/master/sige/zone_attalens.pdf
 
 ### 1.3. Valais
 	
