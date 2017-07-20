@@ -32,7 +32,11 @@ L'intégration dans la base se fait via ogr2ogr (pour autre solutions voir 2.3).
 
 	* Cette solution nécessite GDAL minimum 2.0.4+ / 2.1.2+ (2.2)
 	* Pour compiler en local, voir notes (3)
-	* Pour recréer le fichier modèle: installer Java, puis télécharger ili2c sur cette page https://www.interlis.ch/interlis2/download23_f.php et activer la ligne commentée dans le script `ogr_ili1.sh`.
+	* Pour recréer le fichier modèle:
+		* installer Java
+		* télécharger ili2c sur cette page https://www.interlis.ch/interlis2/download23_f.php
+		* activer la ligne commentée dans le script `ogr_ili1.sh`
+		* ou lancer ̀directement ̀ java -jar ili2c-4.7.2/ili2c.jar --ilidirs '%ILI_DIR;http://models.interlis.ch/;%JAR_DIR' -oIMD --out moch.imd model/DM.01-AV-CH_LV95_24f_ili1.ili`
 	* Renommer les fichiers sources comme suit (l'ordre n'a pas d'importance):
 		* data/vd-1.itf (Riviera MO)
 		* data/vd-2.itf (Riviera NPCS)
