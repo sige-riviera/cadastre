@@ -32,6 +32,7 @@ L'intégration dans la base se fait via ogr2ogr (pour autre solutions voir 2.3).
 
 	* Cette solution nécessite GDAL minimum 2.0.4+ / 2.1.2+ (2.2)
 	* Pour compiler en local, voir notes (3)
+	* Pour recréer le fichier modèle: installer Java, puis télécharger ili2c sur cette page https://www.interlis.ch/interlis2/download23_f.php et activer la ligne commentée dans le script `ogr_ili1.sh`.
 	* Renommer les fichiers sources comme suit (l'ordre n'a pas d'importance):
 		* data/vd-1.itf (Riviera MO)
 		* data/vd-2.itf (Riviera NPCS)
@@ -67,6 +68,7 @@ D'autres solutions sont envisageables pour importer les données
 
 Solution interlis 1 (-> itf2xml -> interlis 2) -> ili2pg -> postgis
 Cette solution ne fonctionne pas actuellement (décembre 2016), voir https://www.interlis2.ch/index.php?p=/discussion/13/dangling-references
+Une nouvelle option -skipGeometryErros (mars 2017) permet peut-être de régler le problème.qui
 
 	1. Faire un fichier zip avec les fichiers ITF et ILI
 	2. Lancer le script itf2xml.sh avec le nom du zip comme paramètre (voir doc itf2xml)
@@ -75,4 +77,3 @@ Cette solution ne fonctionne pas actuellement (décembre 2016), voir https://www
 #### FME
 
 Le driver Interlis existe, mais cette voie n'a pas été explorée.
-
