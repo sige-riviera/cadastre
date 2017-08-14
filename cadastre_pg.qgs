@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.10">
+<qgis projectname="Cadastre" version="2.18.11">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -55,10 +55,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554367.8707051957026124</xmin>
-      <ymin>1145679.94891755655407906</ymin>
-      <xmax>2554430.89431048650294542</xmax>
-      <ymax>1145733.21375177055597305</ymax>
+      <xmin>2554542.06958328653126955</xmin>
+      <ymin>1146365.41319400235079229</ymin>
+      <xmax>2555222.71020897943526506</xmax>
+      <ymax>1147110.87673642835579813</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -480,23 +480,23 @@
         <property key="labeling/isExpression" value="false"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/labelPerPart" value="true"/>
         <property key="labeling/leftDirectionSymbol" value="&lt;"/>
         <property key="labeling/limitNumLabels" value="false"/>
         <property key="labeling/maxCurvedCharAngleIn" value="25"/>
         <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
         <property key="labeling/maxNumLabels" value="200"/>
-        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/mergeLines" value="true"/>
         <property key="labeling/minFeatureSize" value="10"/>
         <property key="labeling/multilineAlign" value="4294967295"/>
         <property key="labeling/multilineHeight" value="1"/>
         <property key="labeling/namedStyle" value="Bold Italic"/>
-        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacle" value="false"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
         <property key="labeling/offsetType" value="0"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="3"/>
+        <property key="labeling/placement" value="2"/>
         <property key="labeling/placementFlags" value="15"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
@@ -504,7 +504,7 @@
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="5"/>
         <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistance" value="200"/>
         <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/repeatDistanceUnit" value="1"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
@@ -572,7 +572,7 @@
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
-        <property key="labeling/zIndex" value="0"/>
+        <property key="labeling/zIndex" value="3"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
