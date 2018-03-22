@@ -1,13 +1,13 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.11">
+<qgis projectname="Cadastre" version="2.18.17">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Cadastre">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="no_nomenclature20161124151011953" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
           <customproperties/>
@@ -37,16 +37,28 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="National_Map_1_25_00020170314120154767" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_26&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte 25000">
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="National_Map_1_25_00020170314120154767" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe-pk25.noscale&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_26&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte 25000">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte">
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Image aerienne">
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Image aerienne">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" source="crs=EPSG:2056&amp;format=&amp;type=xyz&amp;url=http://tile.osm.ch/2056/%7Bz%7D/%7Bx%7D/%7By%7D.png" name="OpenStreeMap">
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" source="crs=EPSG:2056&amp;format=&amp;type=xyz&amp;url=http://tile.osm.ch/2056/%7Bz%7D/%7Bx%7D/%7By%7D.png" name="OpenStreeMap">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___cadastral20180322144711527" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_cadastral&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - cadastral">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___couleur20180322144715694" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_couleur&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - couleur">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___niveaux_de_gris20180322144719023" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - niveaux de gris">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - niveaux de gris sans labels">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -110,11 +122,15 @@
       <item>SWISSIMAGE20170314120137660</item>
       <item>National_Maps__color_20170314120148938</item>
       <item>National_Map_1_25_00020170314120154767</item>
+      <item>Fond_ASIT_VD___cadastral20180322144711527</item>
+      <item>Fond_ASIT_VD___couleur20180322144715694</item>
+      <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
+      <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Cadastre">
+    <legendgroup open="true" checked="Qt::Checked" name="Fonds de plans">
+      <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
@@ -161,29 +177,229 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Carte 25000" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Carte 25000" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020170314120154767" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Carte" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Carte" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="National_Maps__color_20170314120148938" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Image aerienne" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Image aerienne" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20170314120137660" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OpenStreeMap" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="OpenStreeMap" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="OpenStreeMap20170131085532398" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Fond ASIT VD - cadastral" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___cadastral20180322144711527" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Fond ASIT VD - couleur" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___couleur20180322144715694" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Fond ASIT VD - niveaux de gris" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___niveaux_de_gris20180322144719023" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Fond ASIT VD - niveaux de gris sans labels" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
   <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2420000</xmin>
+        <ymin>325999.99999999545980245</ymin>
+        <xmax>3444000</xmax>
+        <ymax>1350000.00000000279396772</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___cadastral20180322144711527</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_cadastral&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond ASIT VD - cadastral</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2420000</xmin>
+        <ymin>325999.99999999545980245</ymin>
+        <xmax>3444000</xmax>
+        <ymax>1350000.00000000279396772</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___couleur20180322144715694</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_couleur&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond ASIT VD - couleur</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2420000</xmin>
+        <ymin>325999.99999999545980245</ymin>
+        <xmax>3444000</xmax>
+        <ymax>1350000.00000000279396772</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___niveaux_de_gris20180322144719023</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond ASIT VD - niveaux de gris</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2420000</xmin>
+        <ymin>325999.99999999545980245</ymin>
+        <xmax>3444000</xmax>
+        <ymax>1350000.00000000279396772</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond ASIT VD - niveaux de gris sans labels</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>2419995.74880736321210861</xmin>
