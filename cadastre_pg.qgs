@@ -1,13 +1,13 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.17">
+<qgis projectname="Cadastre" version="2.18.20">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Cadastre">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="no_nomenclature20161124151011953" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
           <customproperties/>
@@ -133,8 +133,8 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Checked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fonds de plans">
+      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Cadastre">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
@@ -681,14 +681,14 @@
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="true"/>
         <property key="labeling/dist" value="10"/>
-        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distInMapUnits" value="true"/>
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
         <property key="labeling/fieldName" value="nom_rue"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Sans Serif"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -721,8 +721,8 @@
         <property key="labeling/obstacleType" value="0"/>
         <property key="labeling/offsetType" value="0"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="2"/>
-        <property key="labeling/placementFlags" value="15"/>
+        <property key="labeling/placement" value="3"/>
+        <property key="labeling/placementFlags" value="1"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
         <property key="labeling/preserveRotation" value="true"/>
@@ -731,7 +731,7 @@
         <property key="labeling/quadOffset" value="4"/>
         <property key="labeling/repeatDistance" value="200"/>
         <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/repeatDistanceUnit" value="2"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
         <property key="labeling/scaleMax" value="3000"/>
@@ -867,7 +867,6 @@
         <columns>
           <column width="-1" hidden="0" type="field" name="cid"/>
           <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="troncon_rue_de"/>
           <column width="-1" hidden="0" type="field" name="nom_rue"/>
         </columns>
       </attributetableconfig>
@@ -3092,6 +3091,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
