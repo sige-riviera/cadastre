@@ -1947,7 +1947,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>550000</xmin>
         <ymin>146000</ymin>
@@ -1973,6 +1973,7 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="identify/format" value="Value"/>
       </customproperties>
       <provider>gdal</provider>
@@ -1983,7 +1984,7 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+        <rasterrenderer opacity="0.298039" alphaBand="0" band="1" type="paletted">
           <rasterTransparency/>
           <colorPalette>
             <paletteEntry value="0" color="#080808" label="0"/>
@@ -2001,7 +2002,7 @@ def my_form_open(dialog, layer, feature):
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>550000</xmin>
         <ymin>134000</ymin>
@@ -2027,6 +2028,7 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="identify/format" value="Value"/>
       </customproperties>
       <provider>gdal</provider>
@@ -2037,7 +2039,7 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+        <rasterrenderer opacity="0.298039" alphaBand="0" band="1" type="paletted">
           <rasterTransparency/>
           <colorPalette>
             <paletteEntry value="0" color="#080808" label="0"/>
