@@ -1,42 +1,42 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.20">
+<qgis projectname="Cadastre" version="2.18.23">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+  <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="9">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Cadastre">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
         <customproperties/>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="no_nomenclature20161124151011953" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="no_nomenclature20161124151011953" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_entree_batiment20161124100003328" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;od_entree_batiment&quot; (geometry) sql=" name="od_entree_batiment">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="od_entree_batiment20161124100003328" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;od_entree_batiment&quot; (geometry) sql=" name="od_entree_batiment">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bf_point_limite20161123141033694" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;bf_point_limite&quot; (geometry) sql=" name="bf_point_limite">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_point_limite20161123141033694" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;bf_point_limite&quot; (geometry) sql=" name="bf_point_limite">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="pf_points_fixes20161123144654375" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;pf_points_fixes&quot; (wkb_geometry) sql=" name="pf_points_fixes">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="pf_points_fixes20161123144654375" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;pf_points_fixes&quot; (wkb_geometry) sql=" name="pf_points_fixes">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ab_rue20161122113837293" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;ab_rue&quot; (geometrie) sql=" name="ab_rue">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ab_rue20161122113837293" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;ab_rue&quot; (geometrie) sql=" name="ab_rue">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="lc_limites_commune20180525110719694" source="dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;lc_limites_commune&quot; (geom) sql=" name="lc_limites_commune">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="lc_limites_commune20180525110719694" source="dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;lc_limites_commune&quot; (geom) sql=" name="lc_limites_commune">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_element_lineaire20161123134458480" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_lineaire20161123134458480" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bf_immeuble20161019163752305" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_immeuble20161019163752305" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_element_surfacique20161123111234045" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_surfacique20161123111234045" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="cs_couverture_sol20161117155047081" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;cs_couverture_sol&quot; (geometrie) sql=" name="cs_couverture_sol">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="cs_couverture_sol20161117155047081" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;cs_couverture_sol&quot; (geometrie) sql=" name="cs_couverture_sol">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -64,16 +64,25 @@
       <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - niveaux de gris sans labels">
         <customproperties/>
       </layer-tree-layer>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
+        <customproperties/>
+        <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="cn124420180821142505088" source="W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1244.png" name="cn1244">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="cn126420180821142456803" source="W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1264.png" name="cn1264">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
     </layer-tree-group>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554542.06958328653126955</xmin>
-      <ymin>1146365.41319400235079229</ymin>
-      <xmax>2555222.71020897943526506</xmax>
-      <ymax>1147110.87673642835579813</ymax>
+      <xmin>2554340.37829557806253433</xmin>
+      <ymin>1146040.27049112017266452</ymin>
+      <xmax>2555701.65954696387052536</xmax>
+      <ymax>1147531.1975759721826762</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -91,23 +100,25 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_nomenclature20161124151011953"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020170314120154767"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20170314120137660"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_points_fixes20161123144654375"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20161123111234045"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_immeuble20161019163752305"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131085532398"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131095532655"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_couverture_sol20161117155047081"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_lineaire20161123134458480"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020161213094052164"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_point_limite20161123141033694"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ab_rue20161122113837293"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_entree_batiment20161124100003328"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020161213094052164"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_lineaire20161123134458480"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_point_limite20161123141033694"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020170314120154767"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="100001" destDatumTransform="-1" layerid="cn126420180821142456803"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_nomenclature20161124151011953"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="100001" destDatumTransform="-1" layerid="cn124420180821142505088"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="swissima20170131095739340"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20161213094045281"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="12HC20_demande_export_MNT_Bignières20161215155123630"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_couverture_sol20161117155047081"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20161123111234045"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20161213094045281"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_points_fixes20161123144654375"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131085532398"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_immeuble20161019163752305"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20170314120137660"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ab_rue20161122113837293"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131095532655"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -130,59 +141,61 @@
       <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
       <item>lc_limites_commune20180525110719694</item>
+      <item>cn126420180821142456803</item>
+      <item>cn124420180821142505088</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Cadastre">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Fonds de plans">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Cadastre">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="no_nomenclature20161124151011953" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="od_entree_batiment" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="od_entree_batiment20161124100003328" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_point_limite" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="bf_point_limite20161123141033694" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="pf_points_fixes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="pf_points_fixes20161123144654375" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ab_rue" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ab_rue20161122113837293" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="lc_limites_commune" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="lc_limites_commune" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="lc_limites_commune20180525110719694" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="lc_limites_commune20180525110719694" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_immeuble" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_surfacique" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_surfacique20161123111234045" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cs_couverture_sol" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol20161117155047081" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
@@ -226,6 +239,18 @@
           <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" visible="0"/>
         </filegroup>
       </legendlayer>
+      <legendgroup open="false" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cn1244" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="cn124420180821142505088" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cn1264" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="cn126420180821142456803" visible="0"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
     </legendgroup>
   </legend>
   <projectlayers>
@@ -1921,6 +1946,114 @@ def my_form_open(dialog, layer, feature):
         <default field="anc_borne_speciale" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>550000</xmin>
+        <ymin>146000</ymin>
+        <xmax>567500</xmax>
+        <ymax>158000</ymax>
+      </extent>
+      <id>cn124420180821142505088</id>
+      <datasource>W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1244.png</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>cn1244</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+          <rasterTransparency/>
+          <colorPalette>
+            <paletteEntry value="0" color="#080808" label="0"/>
+            <paletteEntry value="1" color="#ffffff" label="1"/>
+            <paletteEntry value="2" color="#c87508" label="2"/>
+            <paletteEntry value="3" color="#089808" label="3"/>
+            <paletteEntry value="4" color="#c8f8c8" label="4"/>
+            <paletteEntry value="5" color="#5054e8" label="5"/>
+            <paletteEntry value="6" color="#b8f8f8" label="6"/>
+          </colorPalette>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>550000</xmin>
+        <ymin>134000</ymin>
+        <xmax>567500</xmax>
+        <ymax>146000</ymax>
+      </extent>
+      <id>cn126420180821142456803</id>
+      <datasource>W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1264.png</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>cn1264</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+          <rasterTransparency/>
+          <colorPalette>
+            <paletteEntry value="0" color="#080808" label="0"/>
+            <paletteEntry value="1" color="#ffffff" label="1"/>
+            <paletteEntry value="2" color="#b8f8f8" label="2"/>
+            <paletteEntry value="3" color="#5054e8" label="3"/>
+            <paletteEntry value="4" color="#c87508" label="4"/>
+            <paletteEntry value="5" color="#089808" label="5"/>
+            <paletteEntry value="6" color="#c8f8c8" label="6"/>
+          </colorPalette>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
