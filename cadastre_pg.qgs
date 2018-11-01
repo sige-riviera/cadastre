@@ -66,7 +66,7 @@
       </layer-tree-layer>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
         <customproperties/>
-        <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE20181101140652194" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10_LV95_SIGE.tif" name="SMR10_LV95_SIGE">
+        <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE20181101151017825" source="C:\develop\Geotraitements\SMR10\SMR10_LV95_SIGE.tif" name="SMR10_LV95_SIGE">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -76,10 +76,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554340.37829557806253433</xmin>
-      <ymin>1146040.27049112017266452</ymin>
-      <xmax>2555701.65954696387052536</xmax>
-      <ymax>1147531.1975759721826762</ymax>
+      <xmin>2552266.86383153405040503</xmin>
+      <ymin>1145303.92019493412226439</ymin>
+      <xmax>2557711.98883707728236914</xmax>
+      <ymax>1151267.62853434216231108</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -138,7 +138,7 @@
       <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
       <item>lc_limites_commune20180525110719694</item>
-      <item>SMR10_LV95_SIGE20181101140652194</item>
+      <item>SMR10_LV95_SIGE20181101151017825</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -238,7 +238,7 @@
       <legendgroup open="false" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE20181101140652194" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE20181101151017825" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
@@ -568,8 +568,8 @@
         <xmax>2569000</xmax>
         <ymax>1155000</ymax>
       </extent>
-      <id>SMR10_LV95_SIGE20181101140652194</id>
-      <datasource>S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10_LV95_SIGE.tif</datasource>
+      <id>SMR10_LV95_SIGE20181101151017825</id>
+      <datasource>../../develop/Geotraitements/SMR10/SMR10_LV95_SIGE.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
