@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.23">
+<qgis projectname="Cadastre" version="2.18.24">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -66,10 +66,7 @@
       </layer-tree-layer>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
         <customproperties/>
-        <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="cn124420180821142505088" source="W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1244.png" name="cn1244">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="cn126420180821142456803" source="W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1264.png" name="cn1264">
+        <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE20181101140652194" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10_LV95_SIGE.tif" name="SMR10_LV95_SIGE">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -141,8 +138,7 @@
       <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
       <item>lc_limites_commune20180525110719694</item>
-      <item>cn126420180821142456803</item>
-      <item>cn124420180821142505088</item>
+      <item>SMR10_LV95_SIGE20181101140652194</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -240,14 +236,9 @@
         </filegroup>
       </legendlayer>
       <legendgroup open="false" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cn1244" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="cn124420180821142505088" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cn1264" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="cn126420180821142456803" visible="0"/>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE20181101140652194" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
@@ -563,6 +554,68 @@
       <pipe>
         <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
           <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2546000</xmin>
+        <ymin>1130000</ymin>
+        <xmax>2569000</xmax>
+        <ymax>1155000</ymax>
+      </extent>
+      <id>SMR10_LV95_SIGE20181101140652194</id>
+      <datasource>S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10_LV95_SIGE.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>SMR10_LV95_SIGE</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+          <rasterTransparency/>
+          <redContrastEnhancement>
+            <minValue>13.005</minValue>
+            <maxValue>254.745</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </redContrastEnhancement>
+          <greenContrastEnhancement>
+            <minValue>13.005</minValue>
+            <maxValue>254.745</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </greenContrastEnhancement>
+          <blueContrastEnhancement>
+            <minValue>13.005</minValue>
+            <maxValue>254.745</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </blueContrastEnhancement>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
         <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
@@ -1946,116 +1999,6 @@ def my_form_open(dialog, layer, feature):
         <default field="anc_borne_speciale" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
-    </maplayer>
-    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-      <extent>
-        <xmin>550000</xmin>
-        <ymin>146000</ymin>
-        <xmax>567500</xmax>
-        <ymax>158000</ymax>
-      </extent>
-      <id>cn124420180821142505088</id>
-      <datasource>W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1244.png</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>cn1244</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
-          <projectionacronym>somerc</projectionacronym>
-          <ellipsoidacronym>bessel</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="identify/format" value="Value"/>
-      </customproperties>
-      <provider>gdal</provider>
-      <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
-      </noData>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <pipe>
-        <rasterrenderer opacity="0.298039" alphaBand="0" band="1" type="paletted">
-          <rasterTransparency/>
-          <colorPalette>
-            <paletteEntry value="0" color="#080808" label="0"/>
-            <paletteEntry value="1" color="#ffffff" label="1"/>
-            <paletteEntry value="2" color="#c87508" label="2"/>
-            <paletteEntry value="3" color="#089808" label="3"/>
-            <paletteEntry value="4" color="#c8f8c8" label="4"/>
-            <paletteEntry value="5" color="#5054e8" label="5"/>
-            <paletteEntry value="6" color="#b8f8f8" label="6"/>
-          </colorPalette>
-        </rasterrenderer>
-        <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-        <rasterresampler maxOversampling="2"/>
-      </pipe>
-      <blendMode>0</blendMode>
-    </maplayer>
-    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-      <extent>
-        <xmin>550000</xmin>
-        <ymin>134000</ymin>
-        <xmax>567500</xmax>
-        <ymax>146000</ymax>
-      </extent>
-      <id>cn126420180821142456803</id>
-      <datasource>W:/05_DONNEES_SIT/CN25/swisstopo/png/CN25/cn1264.png</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>cn1264</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
-          <projectionacronym>somerc</projectionacronym>
-          <ellipsoidacronym>bessel</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="identify/format" value="Value"/>
-      </customproperties>
-      <provider>gdal</provider>
-      <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
-      </noData>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <pipe>
-        <rasterrenderer opacity="0.298039" alphaBand="0" band="1" type="paletted">
-          <rasterTransparency/>
-          <colorPalette>
-            <paletteEntry value="0" color="#080808" label="0"/>
-            <paletteEntry value="1" color="#ffffff" label="1"/>
-            <paletteEntry value="2" color="#b8f8f8" label="2"/>
-            <paletteEntry value="3" color="#5054e8" label="3"/>
-            <paletteEntry value="4" color="#c87508" label="4"/>
-            <paletteEntry value="5" color="#089808" label="5"/>
-            <paletteEntry value="6" color="#c8f8c8" label="6"/>
-          </colorPalette>
-        </rasterrenderer>
-        <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-        <rasterresampler maxOversampling="2"/>
-      </pipe>
-      <blendMode>0</blendMode>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -6963,6 +6906,7 @@ def my_form_open(dialog, layer, feature):
         <value>bf_immeuble20161019163752305</value>
         <value>bf_point_limite20161123141033694</value>
         <value>cs_couverture_sol20161117155047081</value>
+        <value>lc_limites_commune20180525110719694</value>
         <value>no_nomenclature20161124151011953</value>
         <value>od_element_lineaire20161123134458480</value>
         <value>od_element_surfacique20161123111234045</value>
@@ -6974,6 +6918,7 @@ def my_form_open(dialog, layer, feature):
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
+        <value>disabled</value>
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
@@ -6987,6 +6932,7 @@ def my_form_open(dialog, layer, feature):
         <value>1</value>
         <value>1</value>
         <value>1</value>
+        <value>2</value>
         <value>1</value>
         <value>1</value>
         <value>1</value>
@@ -6998,6 +6944,7 @@ def my_form_open(dialog, layer, feature):
         <value>to_vertex</value>
         <value>to_vertex</value>
         <value>to_vertex</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex</value>
         <value>to_vertex</value>
         <value>to_vertex</value>
@@ -7011,6 +6958,7 @@ def my_form_open(dialog, layer, feature):
         <value>10.000000</value>
         <value>10.000000</value>
         <value>10.000000</value>
+        <value>0.000000</value>
         <value>10.000000</value>
         <value>10.000000</value>
         <value>10.000000</value>
