@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fonds de plans">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
         <customproperties/>
@@ -64,15 +64,15 @@
       <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - niveaux de gris sans labels">
         <customproperties/>
       </layer-tree-layer>
-    </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
-      <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE_M_resampled20181107111357915" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 MEAN resampled\SMR10_LV95_SIGE_M_resampled.tif" name="SMR10_LV95_SIGE_M_resampled">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
         <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE_NN_resampled20181107111112733" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 NN resampled\SMR10_LV95_SIGE_NN_resampled.tif" name="SMR10_LV95_SIGE_NN_resampled">
-        <customproperties/>
-      </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE_M_resampled20181107111357915" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 MEAN resampled\SMR10_LV95_SIGE_M_resampled.tif" name="SMR10_LV95_SIGE_M_resampled">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE_NN_resampled20181107111112733" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 NN resampled\SMR10_LV95_SIGE_NN_resampled.tif" name="SMR10_LV95_SIGE_NN_resampled">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
     </layer-tree-group>
   </layer-tree-group>
   <relations/>
@@ -239,18 +239,18 @@
           <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" visible="0"/>
         </filegroup>
       </legendlayer>
-    </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE_M_resampled" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE_M_resampled20181107111357915" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE_NN_resampled" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE_NN_resampled20181107111112733" visible="0"/>
-        </filegroup>
-      </legendlayer>
+      <legendgroup open="false" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE_M_resampled" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE_M_resampled20181107111357915" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE_NN_resampled" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE_NN_resampled20181107111112733" visible="0"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
     </legendgroup>
   </legend>
   <projectlayers>
