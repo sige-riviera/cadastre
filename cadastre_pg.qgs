@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="9">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
         <customproperties/>
@@ -64,22 +64,25 @@
       <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=2056&amp;url=http://ows.asitvd.ch/wmts" name="Fond ASIT VD - niveaux de gris sans labels">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
+    </layer-tree-group>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
+      <customproperties/>
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE_M_resampled20181107111357915" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 MEAN resampled\SMR10_LV95_SIGE_M_resampled.tif" name="SMR10_LV95_SIGE_M_resampled">
         <customproperties/>
-        <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE20181101151017825" source="C:\develop\Geotraitements\SMR10\SMR10_LV95_SIGE.tif" name="SMR10_LV95_SIGE">
-          <customproperties/>
-        </layer-tree-layer>
-      </layer-tree-group>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SMR10_LV95_SIGE_NN_resampled20181107111112733" source="S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 NN resampled\SMR10_LV95_SIGE_NN_resampled.tif" name="SMR10_LV95_SIGE_NN_resampled">
+        <customproperties/>
+      </layer-tree-layer>
     </layer-tree-group>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2552266.86383153405040503</xmin>
-      <ymin>1145303.92019493412226439</ymin>
-      <xmax>2557711.98883707728236914</xmax>
-      <ymax>1151267.62853434216231108</ymax>
+      <xmin>2552824.56189416954293847</xmin>
+      <ymin>1144363.20637079351581633</ymin>
+      <xmax>2558269.68689971277490258</xmax>
+      <ymax>1150326.91471020155586302</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -138,7 +141,8 @@
       <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
       <item>lc_limites_commune20180525110719694</item>
-      <item>SMR10_LV95_SIGE20181101151017825</item>
+      <item>SMR10_LV95_SIGE_NN_resampled20181107111112733</item>
+      <item>SMR10_LV95_SIGE_M_resampled20181107111357915</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -235,13 +239,18 @@
           <legendlayerfile isInOverview="0" layerid="Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="false" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE20181101151017825" visible="0"/>
-          </filegroup>
-        </legendlayer>
-      </legendgroup>
+    </legendgroup>
+    <legendgroup open="true" checked="Qt::Unchecked" name="Fonds de plans - impression 5000">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE_M_resampled" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE_M_resampled20181107111357915" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SMR10_LV95_SIGE_NN_resampled" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="SMR10_LV95_SIGE_NN_resampled20181107111112733" visible="0"/>
+        </filegroup>
+      </legendlayer>
     </legendgroup>
   </legend>
   <projectlayers>
@@ -568,12 +577,74 @@
         <xmax>2569000</xmax>
         <ymax>1155000</ymax>
       </extent>
-      <id>SMR10_LV95_SIGE20181101151017825</id>
-      <datasource>../../develop/Geotraitements/SMR10/SMR10_LV95_SIGE.tif</datasource>
+      <id>SMR10_LV95_SIGE_M_resampled20181107111357915</id>
+      <datasource>S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 MEAN resampled\SMR10_LV95_SIGE_M_resampled.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>SMR10_LV95_SIGE</layername>
+      <layername>SMR10_LV95_SIGE_M_resampled</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+          <rasterTransparency/>
+          <redContrastEnhancement>
+            <minValue>13.005</minValue>
+            <maxValue>254.745</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </redContrastEnhancement>
+          <greenContrastEnhancement>
+            <minValue>13.005</minValue>
+            <maxValue>254.745</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </greenContrastEnhancement>
+          <blueContrastEnhancement>
+            <minValue>13.005</minValue>
+            <maxValue>254.745</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </blueContrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>2546000</xmin>
+        <ymin>1130000</ymin>
+        <xmax>2569000</xmax>
+        <ymax>1155000</ymax>
+      </extent>
+      <id>SMR10_LV95_SIGE_NN_resampled20181107111112733</id>
+      <datasource>S:\05_CADASTRE\DATA_PROD\Basemaps\SMR10 NN resampled\SMR10_LV95_SIGE_NN_resampled.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>SMR10_LV95_SIGE_NN_resampled</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
