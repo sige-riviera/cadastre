@@ -27,10 +27,10 @@
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="lc_limites_commune_copier20181108104112378" source="dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;lc_limites_commune&quot; (geom) sql=" name="lc_limites_commune">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_lineaire_copier20181108104112570" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_immeuble_copier20181108104112829" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_immeuble_copier20181108104112829" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_lineaire_copier20181108104112570" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_surfacique_copier20181108104112995" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
@@ -60,10 +60,10 @@
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="lc_limites_commune20180525110719694" source="dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;lc_limites_commune&quot; (geom) sql=" name="lc_limites_commune">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_lineaire20161123134458480" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_immeuble20161019163752305" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_immeuble20161019163752305" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_lineaire20161123134458480" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_surfacique20161123111234045" source="service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
@@ -112,10 +112,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2552824.56189416954293847</xmin>
-      <ymin>1144363.20637079351581633</ymin>
-      <xmax>2558269.68689971277490258</xmax>
-      <ymax>1150326.91471020155586302</ymax>
+      <xmin>2550207.83764233300462365</xmin>
+      <ymin>1139421.93022561422549188</ymin>
+      <xmax>2562064.39200219279155135</xmax>
+      <ymax>1152407.68023883434943855</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -221,14 +221,14 @@
             <legendlayerfile isInOverview="0" layerid="lc_limites_commune_copier20181108104112378" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_lineaire_copier20181108104112570" visible="0"/>
-          </filegroup>
-        </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_immeuble" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="bf_immeuble_copier20181108104112829" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire_copier20181108104112570" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_surfacique" showFeatureCount="0">
@@ -273,14 +273,14 @@
             <legendlayerfile isInOverview="0" layerid="lc_limites_commune20180525110719694" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="0"/>
-          </filegroup>
-        </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_immeuble" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="bf_immeuble20161019163752305" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire20161123134458480" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_surfacique" showFeatureCount="0">
@@ -1150,6 +1150,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2545622.25</xmin>
+        <ymin>1132946.875</ymin>
+        <xmax>2574624.25</xmax>
+        <ymax>1155225</ymax>
+      </extent>
       <id>ab_rue_copier20181108104112287</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table="cadastre"."ab_rue" (geometrie) sql=</datasource>
       <keywordList>
@@ -1916,6 +1922,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="8000" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2542045</xmin>
+        <ymin>1131519.125</ymin>
+        <xmax>2571975.75</xmax>
+        <ymax>1155514.625</ymax>
+      </extent>
       <id>bf_immeuble_copier20181108104112829</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."bf_immeuble" (geometry) sql=</datasource>
       <keywordList>
@@ -2927,6 +2939,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1500" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2545712.25</xmin>
+        <ymin>1132186.875</ymin>
+        <xmax>2569472</xmax>
+        <ymax>1155497.625</ymax>
+      </extent>
       <id>bf_point_limite_copier20181108104111885</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."bf_point_limite" (geometry) sql=</datasource>
       <keywordList>
@@ -4382,6 +4400,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "ogc_fid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2542057.25</xmin>
+        <ymin>1131925.5</ymin>
+        <xmax>2569535.5</xmax>
+        <ymax>1155512.625</ymax>
+      </extent>
       <id>cs_couverture_sol_copier20181108104113163</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."cs_couverture_sol" (geometrie) sql=</datasource>
       <keywordList>
@@ -4486,9 +4510,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="128,128,128,127"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4496,14 +4520,14 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="242,242,242,0"/>
+              <prop k="color" v="108,208,65,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="114,133,132,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4516,9 +4540,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4531,9 +4555,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4546,9 +4570,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4561,9 +4585,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4610,9 +4634,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -4663,9 +4687,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -4712,9 +4736,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -4727,9 +4751,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4742,9 +4766,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4757,9 +4781,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4772,9 +4796,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4787,9 +4811,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4802,9 +4826,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4817,9 +4841,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4832,9 +4856,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4847,9 +4871,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4862,9 +4886,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4877,9 +4901,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4892,9 +4916,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4907,9 +4931,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4922,9 +4946,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4937,9 +4961,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4952,9 +4976,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4967,9 +4991,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4997,6 +5021,7 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -5028,7 +5053,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fieldName" value="numero"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Sans Serif"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -5636,6 +5661,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "ogc_fid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2542193.42700000014156103</xmin>
+        <ymin>1130253.85000000009313226</ymin>
+        <xmax>2582414.79400000022724271</xmax>
+        <ymax>1159568.89899999997578561</ymax>
+      </extent>
       <id>lc_limites_commune_copier20181108104112378</id>
       <datasource>dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."lc_limites_commune" (geom) sql=</datasource>
       <keywordList>
@@ -6359,6 +6390,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="7500" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2547087.75</xmin>
+        <ymin>1132315</ymin>
+        <xmax>2568963</xmax>
+        <ymax>1155416.125</ymax>
+      </extent>
       <id>no_nomenclature_copier20181108104111532</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."no_nomenclature" (geometry) sql=</datasource>
       <keywordList>
@@ -7909,6 +7946,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="700" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2547095</xmin>
+        <ymin>1134577.625</ymin>
+        <xmax>2567355.25</xmax>
+        <ymax>1155297.25</ymax>
+      </extent>
       <id>od_element_lineaire_copier20181108104112570</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table="cadastre"."od_element_lineaire" (geometry) sql=</datasource>
       <keywordList>
@@ -10070,6 +10113,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2547216.25</xmin>
+        <ymin>1133046.25</ymin>
+        <xmax>2565656.5</xmax>
+        <ymax>1153981.375</ymax>
+      </extent>
       <id>od_element_surfacique_copier20181108104112995</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table="cadastre"."od_element_surfacique" (geometry) sql=</datasource>
       <keywordList>
@@ -11437,6 +11486,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2545908.5</xmin>
+        <ymin>1133034.75</ymin>
+        <xmax>2564601.25</xmax>
+        <ymax>1155393.5</ymax>
+      </extent>
       <id>od_entree_batiment_copier20181108104111732</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."od_entree_batiment" (geometry) sql=</datasource>
       <keywordList>
@@ -12484,6 +12539,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "cid", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="2000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2547092.75</xmin>
+        <ymin>1133042.25</ymin>
+        <xmax>2569444.5</xmax>
+        <ymax>1155489</ymax>
+      </extent>
       <id>pf_points_fixes_copier20181108104112082</id>
       <datasource>service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table="cadastre"."pf_points_fixes" (wkb_geometry) sql=</datasource>
       <keywordList>
