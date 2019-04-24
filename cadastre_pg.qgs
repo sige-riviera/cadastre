@@ -1,42 +1,42 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Cadastre" version="2.18.26">
+<qgis projectname="Cadastre" version="2.18.28">
   <title>Cadastre</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fonds de plans">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Fonds de plans">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="Cadastre">
         <customproperties/>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="no_nomenclature_copier20181108104111532" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="no_nomenclature_copier20181108104111532" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;no_nomenclature&quot; (geometry) sql=" name="no_nomenclature">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="od_entree_batiment_copier20181108104111732" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;od_entree_batiment&quot; (geometry) sql=" name="od_entree_batiment">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_entree_batiment_copier20181108104111732" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;od_entree_batiment&quot; (geometry) sql=" name="od_entree_batiment">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_point_limite_copier20181108104111885" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;bf_point_limite&quot; (geometry) sql=" name="bf_point_limite">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bf_point_limite_copier20181108104111885" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;bf_point_limite&quot; (geometry) sql=" name="bf_point_limite">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="pf_points_fixes_copier20181108104112082" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;pf_points_fixes&quot; (wkb_geometry) sql=" name="pf_points_fixes">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="pf_points_fixes_copier20181108104112082" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Point table=&quot;cadastre&quot;.&quot;pf_points_fixes&quot; (wkb_geometry) sql=" name="pf_points_fixes">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ab_rue_copier20181108104112287" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;ab_rue&quot; (geometrie) sql=" name="ab_rue">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ab_rue_copier20181108104112287" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;ab_rue&quot; (geometrie) sql=" name="ab_rue">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="lc_limites_commune_copier20181108104112378" source="dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;lc_limites_commune&quot; (geom) sql=" name="lc_limites_commune">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="lc_limites_commune_copier20181108104112378" source="dbname='cadastre' service='cadastre' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;lc_limites_commune&quot; (geom) sql=" name="lc_limites_commune">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="bf_immeuble_copier20181108104112829" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bf_immeuble_copier20181108104112829" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;bf_immeuble&quot; (geometry) sql=" name="bf_immeuble">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_lineaire_copier20181108104112570" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_element_lineaire_copier20181108104112570" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=MultiLineString table=&quot;cadastre&quot;.&quot;od_element_lineaire&quot; (geometry) sql=" name="od_element_lineaire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="od_element_surfacique_copier20181108104112995" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_element_surfacique_copier20181108104112995" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;od_element_surfacique&quot; (geometry) sql=" name="od_element_surfacique">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="cs_couverture_sol_copier20181108104113163" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;cs_couverture_sol&quot; (geometrie) sql=" name="cs_couverture_sol">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="cs_couverture_sol_copier20181108104113163" source="service='cadastre_update' sslmode=disable key='cid' srid=2056 type=Polygon table=&quot;cadastre&quot;.&quot;cs_couverture_sol&quot; (geometrie) sql=" name="cs_couverture_sol">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -112,10 +112,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2550207.83764233300462365</xmin>
-      <ymin>1139421.93022561422549188</ymin>
-      <xmax>2562064.39200219279155135</xmax>
-      <ymax>1152407.68023883434943855</ymax>
+      <xmin>2544633.57987804850563407</xmin>
+      <ymin>1129279.13878852291963995</ymin>
+      <xmax>2583993.57987804850563407</xmax>
+      <ymax>1160079.39478856488130987</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -189,56 +189,56 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Unchecked" name="Fonds de plans">
-      <legendgroup open="false" checked="Qt::Unchecked" name="Cadastre">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="no_nomenclature" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fonds de plans">
+      <legendgroup open="true" checked="Qt::Checked" name="Cadastre">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="no_nomenclature" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="no_nomenclature_copier20181108104111532" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="no_nomenclature_copier20181108104111532" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="od_entree_batiment" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_entree_batiment" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_entree_batiment_copier20181108104111732" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="od_entree_batiment_copier20181108104111732" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_point_limite" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_point_limite" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_point_limite_copier20181108104111885" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="bf_point_limite_copier20181108104111885" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="pf_points_fixes" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pf_points_fixes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="pf_points_fixes_copier20181108104112082" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="pf_points_fixes_copier20181108104112082" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ab_rue" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ab_rue" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ab_rue_copier20181108104112287" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="ab_rue_copier20181108104112287" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="lc_limites_commune" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="lc_limites_commune" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="lc_limites_commune_copier20181108104112378" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="lc_limites_commune_copier20181108104112378" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="bf_immeuble" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bf_immeuble" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="bf_immeuble_copier20181108104112829" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="bf_immeuble_copier20181108104112829" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_lineaire" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_lineaire" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_lineaire_copier20181108104112570" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_lineaire_copier20181108104112570" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="od_element_surfacique" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="od_element_surfacique" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="od_element_surfacique_copier20181108104112995" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="od_element_surfacique_copier20181108104112995" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="cs_couverture_sol" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="cs_couverture_sol" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol_copier20181108104113163" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="cs_couverture_sol_copier20181108104113163" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
@@ -3609,7 +3609,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3617,12 +3617,12 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="242,242,242,0"/>
+              <prop k="color" v="108,208,65,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="114,133,132,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -3637,9 +3637,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3652,9 +3652,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3667,9 +3667,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3682,9 +3682,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3731,9 +3731,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -3784,9 +3784,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -3833,9 +3833,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -3848,9 +3848,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3863,9 +3863,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3878,9 +3878,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3893,9 +3893,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3908,9 +3908,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3923,9 +3923,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3938,9 +3938,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3953,9 +3953,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3968,9 +3968,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3983,9 +3983,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -3998,9 +3998,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4013,9 +4013,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4028,9 +4028,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4043,9 +4043,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4058,9 +4058,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4073,9 +4073,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4088,9 +4088,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.16"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4150,7 +4150,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fieldName" value="numero"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Sans Serif"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -4510,9 +4510,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,128,128,127"/>
+              <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4527,7 +4527,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4542,7 +4542,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4557,7 +4557,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4572,7 +4572,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4587,7 +4587,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4636,7 +4636,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -4689,7 +4689,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -4738,7 +4738,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
             </layer>
@@ -4753,7 +4753,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4768,7 +4768,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4783,7 +4783,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4798,7 +4798,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4813,7 +4813,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4828,7 +4828,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4843,7 +4843,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4858,7 +4858,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4873,7 +4873,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4888,7 +4888,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4903,7 +4903,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4918,7 +4918,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4933,7 +4933,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4948,7 +4948,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4963,7 +4963,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4978,7 +4978,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -4993,7 +4993,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="204,204,204,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
