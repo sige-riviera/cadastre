@@ -79,7 +79,7 @@
       <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="National_Maps__color_20170314120148938" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Carte">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Image aerienne">
+      <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="SWISSIMAGE20170314120137660" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_28&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml" name="Image aerienne">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="OpenStreeMap20170131085532398" source="crs=EPSG:2056&amp;format=&amp;type=xyz&amp;url=http://tile.osm.ch/2056/%7Bz%7D/%7Bx%7D/%7By%7D.png" name="OpenStreeMap">
@@ -792,13 +792,13 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
-        <xmin>2419995.74880736321210861</xmin>
-        <ymin>1027366.07117159920744598</ymin>
-        <xmax>2916216.88054902851581573</xmax>
-        <ymax>1350004.29247885243967175</ymax>
+        <xmin>2419995.74880999978631735</xmin>
+        <ymin>1027366.07117000001017004</ymin>
+        <xmax>2916216.88054999988526106</xmax>
+        <ymax>1350004.29248000006191432</ymax>
       </extent>
       <id>SWISSIMAGE20170314120137660</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_27&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_28&amp;url=http://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml</datasource>
       <keywordList>
         <value></value>
       </keywordList>
