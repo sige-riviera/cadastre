@@ -3569,7 +3569,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="genre" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
+      <renderer-v2 attr="genre" forceraster="0" symbollevels="1" type="categorizedSymbol" enableorderby="0">
         <categories>
           <category render="true" symbol="0" value="0" label="Bâtiment"/>
           <category render="true" symbol="1" value="1" label="Revêtement dur - route chemin"/>
@@ -3600,7 +3600,7 @@ def my_form_open(dialog, layer, feature):
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="227,227,227,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -3724,7 +3724,7 @@ def my_form_open(dialog, layer, feature):
                 </layer>
               </symbol>
             </layer>
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -3777,7 +3777,7 @@ def my_form_open(dialog, layer, feature):
                 </layer>
               </symbol>
             </layer>
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -3826,7 +3826,7 @@ def my_form_open(dialog, layer, feature):
                 </layer>
               </symbol>
             </layer>
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -4472,7 +4472,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="genre" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
+      <renderer-v2 attr="genre" forceraster="0" symbollevels="1" type="categorizedSymbol" enableorderby="0">
         <categories>
           <category render="true" symbol="0" value="0" label="Bâtiment"/>
           <category render="true" symbol="1" value="1" label="Revêtement dur - route chemin"/>
@@ -4503,7 +4503,7 @@ def my_form_open(dialog, layer, feature):
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="227,227,227,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -4627,7 +4627,7 @@ def my_form_open(dialog, layer, feature):
                 </layer>
               </symbol>
             </layer>
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -4680,7 +4680,7 @@ def my_form_open(dialog, layer, feature):
                 </layer>
               </symbol>
             </layer>
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -4729,7 +4729,7 @@ def my_form_open(dialog, layer, feature):
                 </layer>
               </symbol>
             </layer>
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
               <prop k="joinstyle" v="bevel"/>
