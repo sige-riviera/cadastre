@@ -19,11 +19,20 @@ Dans le compte SIGE d'administration, il est possible de *remettre au panier* le
 
 ### 1.2. Fribourg
 
-Faire une demande au bureau Geosud (veveyse@geosud.ch) pour la commune d'Attalens selon le cadrage suivant: https://github.com/sige-riviera/cadastre/blob/master/sige/zone_attalens.pdf
+Depuis le 1er janvier 2021, il est possible de commander gratuitement les géodonnées de la mensuration officielle du canton de Fribourg au format Interlis, notamment à l'aide de l'extracteur cantonal de géodonnées de la MO : 
+https://adm.appls.fr.ch/sit/extracteurmo/
+
+Pour plus d'informations :
+https://www.fr.ch/territoire-amenagement-et-constructions/cartes-plans-cadastre-et-geomatique/acces-aux-geodonnees-de-la-mensuration-officielle
+https://www.fr.ch/dfin/scg/actualites/gratuite-des-geodonnees-pour-le-canton-de-fribourg) et d’un article  publiés sur le site fr.ch.
+
+Le périmètre de commande doit comprendre les communes d'Attalens, de Remaufens et de Châtel-St-Denis.
+
+Alternativement, il est possible de faire une demande au bureau Geosud (veveyse@geosud.ch) selon le cadrage suivant: https://github.com/sige-riviera/cadastre/blob/master/sige/zone_attalens.pdf
 
 ### 1.3. Valais
 
-Faire une commande auprès du bureau Vuadens (info@jmvuadens.ch) pour la commune de Port-Valais
+Faire une commande auprès du bureau Vuadens (jmvuadens@geo4me.ch) pour la commune de Port-Valais
 
 
 ## 2. Intégrer les données dans la base PostGIS
