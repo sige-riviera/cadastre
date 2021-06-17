@@ -32,7 +32,7 @@ Alternativement, il est possible de faire une demande au bureau Geosud (veveyse@
 
 ### 1.3. Valais
 
-Faire une commande auprès du bureau Vuadens (jmvuadens@geo4me.ch) pour la commune de Port-Valais
+Faire une commande auprès du bureau Vuadens (jmvuadens@geo4me.ch) pour la commune de Port-Valais. Les données sont dorénavant centralisées au canton et il est possible de les commander depuis https://www.vs.ch/web/egeo/commande-geodonnees. Un contrat doit toutefois être conclu.
 
 
 ## 2. Intégrer les données dans la base PostGIS
@@ -41,19 +41,20 @@ L'intégration dans la base se fait via ogr2ogr (pour autre solutions voir 2.3).
 
 	* Cette solution nécessite GDAL minimum 2.0.4+ / 2.1.2+ (2.2)
 	* Pour compiler en local, voir notes (3)
-	* Pour recréer le fichier modèle:
+	* Optionnellement, il est possible de recréer le fichier modèle (disponible sous  model/DM.01-AV-CH_LV95_24f_ili1.ili):
 		* installer Java
 		* télécharger ili2c sur cette page https://www.interlis.ch/interlis2/download23_f.php
 		* activer la ligne commentée dans le script `ogr_ili1.sh`
 		* ou lancer ̀directement ̀ java -jar ili2c-4.7.2/ili2c.jar --ilidirs '%ILI_DIR;http://models.interlis.ch/;%JAR_DIR' -oIMD --out moch.imd model/DM.01-AV-CH_LV95_24f_ili1.ili`
-	* Renommer les fichiers sources comme suit (l'ordre n'a pas d'importance):
+	* Déposer les fichiers sources dans le dossier data du dépot et les renommer comme suit (l'ordre n'a pas d'importance):
 		* data/vd-1.itf (Riviera MO)
 		* data/vd-2.itf (Riviera NPCS)
 		* data/vd-3.itf (Haut-Lac MO)
 		* data/vd-4.itf (Haut-Lac NPCS)
-		* data/vs.itf
-		* data/fr-1.itf
-		* data/fr-2.itf
+		* data/vs-1.itf (Port-Valais)
+		* data/fr-1.itf (Attalens)
+		* data/fr-2.itf (Remaufens)
+		* data/fr-3.itf (Chatel-St-Denis)
 	* Lancer le script `ogr_ili1.sh`
 
 
