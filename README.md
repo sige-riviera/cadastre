@@ -32,7 +32,9 @@ Alternativement, il est possible de faire une demande au bureau Geosud (veveyse@
 
 ### 1.3. Valais
 
-Faire une commande auprès du bureau Vuadens (jmvuadens@geo4me.ch) pour la commune de Port-Valais. Les données sont dorénavant centralisées au canton et il est possible de les commander depuis https://www.vs.ch/web/egeo/commande-geodonnees. Un contrat doit toutefois être conclu.
+Les données cadastrales sont dorénavant centralisées au canton. Il est possible de commander les données pour la commune de Port-Valais auprès du service cantonal SITVS : SITVS@admin.vs.ch
+Il est aussi possible de les commander depuis https://www.vs.ch/web/egeo/commande-geodonnees, un contrat doit toutefois être conclu.
+Alternativement, il est possible de faire une commande auprès du bureau Vuadens (jmvuadens@geo4me.ch).
 
 
 ## 2. Intégrer les données dans la base PostGIS
