@@ -14,7 +14,7 @@ DIR=$(git rev-parse --show-toplevel)
 #java -jar ili2c-4.7.2/ili2c.jar --ilidirs '%ILI_DIR;http://models.interlis.ch/;%JAR_DIR' -oIMD --out moch.imd model/DM.01-AV-CH_LV95_24f_ili1.ili
 
 # Define PGSERVICE to import data
-export PGSERVICE=cadastre_update
+#export PGSERVICE=cadastre_update
 
 
 # VAUD
