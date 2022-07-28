@@ -21,8 +21,8 @@ WHERE ogc_fid = 1;
 DROP MATERIALIZED VIEW IF EXISTS cadastre.lc_limites_commune;
 CREATE MATERIALIZED VIEW cadastre.lc_limites_commune AS
     SELECT 1000000 + row_number() OVER (ORDER BY dups_table.ogc_fid, dups_table._tid) AS cid,
-		dups_table.row_table,
-		dups_valuelist.row_valuelist,
+		-- dups_table.row_table,
+		-- dups_valuelist.row_valuelist,
 		dups_valuelist.noofs,
 		dups_valuelist.nom,
 		dups_table.ogc_fid,
@@ -51,8 +51,8 @@ CREATE MATERIALIZED VIEW cadastre.lc_limites_commune AS
 	WHERE row_table = 1 AND row_valuelist = 1
 	UNION
 	SELECT 2000000 + row_number() OVER (ORDER BY dups_table.ogc_fid, dups_table._tid) AS cid,
-		dups_table.row_table,
-		dups_valuelist.row_valuelist,
+		-- dups_table.row_table,
+		-- dups_valuelist.row_valuelist,
 		dups_valuelist.noofs,
 		dups_valuelist.nom,
 		dups_table.ogc_fid,
@@ -81,8 +81,8 @@ CREATE MATERIALIZED VIEW cadastre.lc_limites_commune AS
 	WHERE row_table = 1 AND row_valuelist = 1
 	UNION
 	SELECT 3000000 + row_number() OVER (ORDER BY dups_table.ogc_fid, dups_table._tid) AS cid,
-		dups_table.row_table,
-		dups_valuelist.row_valuelist,
+		-- dups_table.row_table,
+		-- dups_valuelist.row_valuelist,
 		dups_valuelist.noofs,
 		dups_valuelist.nom,
 		dups_table.ogc_fid,
